@@ -88,3 +88,4 @@ Children:
     ModellingRule: Optional
     Value: "Optix_Toolkit"
 - File: Screens/Screens.yaml
+- File: Widgets/Widgets.yaml
