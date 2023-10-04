@@ -1,2 +1,381 @@
 Name: Loggers
 Type: LoggersCategoryFolder
+Children:
+- Name: GOptix_DiscreteAlarmLogger
+  Type: EventLogger
+  Children:
+  - Name: Enabled
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":10}
+  - Name: EventConfigurations
+    Type: BaseObjectType
+    Children:
+    - Name: EventConfiguration1
+      Type: EventConfiguration
+      Children:
+      - Name: EventType
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: {"Id":10523}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":2041}
+  - Name: EventFieldPaths
+    Type: BaseObjectType
+    Children:
+    - Name: EnabledState_Id
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:EnabledState/0:Id"
+    - Name: AckedState_Id
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:AckedState/0:Id"
+    - Name: ActiveState_Id
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ActiveState/0:Id"
+    - Name: SuppressedOrShelved
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SuppressedOrShelved"
+    - Name: Class
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/7:Class"
+    - Name: Group
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/7:Group"
+    - Name: Tag1Value
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/7:Tag1Value"
+    - Name: Tag2Value
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/7:Tag2Value"
+    - Name: Tag3Value
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/7:Tag3Value"
+    - Name: Tag4Value
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/7:Tag4Value"
+    - Name: Quality
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Quality"
+    - Name: Retain
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Retain"
+    - Name: ConfirmedState_Id
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ConfirmedState/0:Id"
+    - Name: LocalTime
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:LocalTime"
+    - Name: Severity
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Severity"
+    - Name: SourceName
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceName"
+    - Name: ReceiveTime
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ReceiveTime"
+    - Name: SourceNode
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceNode"
+    - Name: Time
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Time"
+  - Name: EventArguments
+    Type: BaseObjectType
+    Children:
+    - Name: EventTypeId
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: EnabledState_Id
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: AckedState_Id
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ActiveState_Id
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: SuppressedOrShelved
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Class
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Group
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Tag1Value
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: Tag2Value
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: Tag3Value
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: Tag4Value
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: Quality
+      Type: BaseDataVariableType
+      DataType: StatusCode
+      Value: 0
+    - Name: Retain
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ConfirmedState_Id
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: LocalTime
+      Type: BaseDataVariableType
+      DataType: TimeZoneDataType
+      Value: 
+       {
+        "TypeId": {
+         "Id": 8912
+        },
+        "Body": {
+         "offset": 0,
+         "daylightSavingInOffset": false
+        }
+       }
+    - Name: Severity
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 0
+    - Name: SourceName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: ReceiveTime
+      Type: BaseDataVariableType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: SourceNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: EventFieldsToLog
+    Type: BaseObjectType
+    Children:
+    - Name: EnabledState_Id
+      Type: EventFieldToLog
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/EnabledState_Id"
+    - Name: AckedState_Id
+      Type: EventFieldToLog
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/AckedState_Id"
+    - Name: ActiveState_Id
+      Type: EventFieldToLog
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ActiveState_Id"
+    - Name: SuppressedOrShelved
+      Type: EventFieldToLog
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SuppressedOrShelved"
+    - Name: Class
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Class"
+    - Name: Group
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Group"
+    - Name: Tag1Value
+      Type: EventFieldToLog
+      DataType: BaseDataType
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Tag1Value"
+    - Name: Tag2Value
+      Type: EventFieldToLog
+      DataType: BaseDataType
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Tag2Value"
+    - Name: Tag3Value
+      Type: EventFieldToLog
+      DataType: BaseDataType
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Tag3Value"
+    - Name: Tag4Value
+      Type: EventFieldToLog
+      DataType: BaseDataType
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Tag4Value"
+    - Name: Quality
+      Type: EventFieldToLog
+      DataType: StatusCode
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Quality"
+    - Name: Retain
+      Type: EventFieldToLog
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Retain"
+    - Name: ConfirmedState_Id
+      Type: EventFieldToLog
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ConfirmedState_Id"
+    - Name: LocalTime
+      Type: EventFieldToLog
+      DataType: TimeZoneDataType
+      Value: 
+       {
+        "TypeId": {
+         "Id": 8912
+        },
+        "Body": {
+         "offset": 0,
+         "daylightSavingInOffset": false
+        }
+       }
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/LocalTime"
+    - Name: Severity
+      Type: EventFieldToLog
+      DataType: UInt16
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Severity"
+    - Name: SourceName
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceName"
+    - Name: ReceiveTime
+      Type: EventFieldToLog
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ReceiveTime"
+    - Name: SourceNode
+      Type: EventFieldToLog
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceNode@Pointer"
+    - Name: Time
+      Type: EventFieldToLog
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Time"

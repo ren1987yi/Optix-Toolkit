@@ -1,7 +1,7 @@
 Name: Widgets
 Type: FolderType
 Children:
-- Name: PanelTest
+- Name: GOptix_WidgetTest
   Id: g=b527205c59db26d5571fd9f7edf6f46f
   Supertype: Panel
   ReferenceType: HasComponent
@@ -24,3 +24,4 @@ Children:
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"aaaa"}
+- File: RungSummaryViewer/RungSummaryViewer.yaml

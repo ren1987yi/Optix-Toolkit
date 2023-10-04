@@ -1,3 +1,5 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- File: AlarmTypes/AlarmTypes.yaml

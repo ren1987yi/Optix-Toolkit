@@ -1,0 +1,69 @@
+Name: AlarmTypes
+Id: g=45920cc0b554f50a056681601ef0390c
+Type: FolderType
+Children:
+- Name: GOptix_DigitalAlarm
+  Id: g=a6b27d4c2df7b0bb4b9ab28df8d886b1
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=8;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=7d0108a12b8ff585bdf3c8c8dca72dd4
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=2a79ffc13e0426c74e931ff0e8c4ae25
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: LastEvent
+    Id: g=91ed9cb4afeef3d536e5a5832349a1e9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Class
+    Id: g=4ed34049ac15150a08f639a6950f0862
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"报警类别"}
+    Value: "0"
+  - Name: Group
+    Id: g=1314f1256169304f7fa7fcee045f750e
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"报警组"}
+    Value: "0"
+  - Name: Tag1Value
+    Id: g=e4ff50df64a93e81f845c18a6c02279c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Description: {"LocaleId":"en-US","Text":"附属值"}
+    Value: {"Type":6,"Body":0}
+  - Name: Tag2Value
+    Id: g=c562c50164e668749bf0f0fda5471878
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag3Value
+    Id: g=95cb5fc97411cb2f24e9df74b0e589b9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag4Value
+    Id: g=a706827dc3fca5e88de9145600444ba1
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=b134dc9e7e2ec1f6acccf1d532b27b70

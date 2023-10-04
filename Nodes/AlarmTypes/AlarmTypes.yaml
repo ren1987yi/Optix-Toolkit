@@ -1,0 +1,167 @@
+Name: AlarmTypes
+Type: FolderType
+Children:
+- Name: AlarmType_GOptix_DigitalAlarm
+  Id: g=b134dc9e7e2ec1f6acccf1d532b27b70
+  Supertype: OffNormalAlarmType
+  DisplayName: {"LocaleId":"","Text":"GOptix_DigitalAlarm"}
+  Children:
+  - Name: NormalState
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: ActiveState
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: Id
+      Type: PropertyType
+      DataType: Boolean
+      Value: false
+  - Name: InputNode
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SuppressedOrShelved
+    Type: PropertyType
+    DataType: Boolean
+    Value: false
+  - Name: AckedState
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: Id
+      Type: PropertyType
+      DataType: Boolean
+      Value: false
+  - Class: Reference
+    Target: ns=0;i=9111
+    Direction: Forward
+  - Name: ConditionClassId
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: ConditionClassName
+    Type: PropertyType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: ConditionName
+    Type: PropertyType
+    DataType: String
+    Value: ""
+  - Name: BranchId
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Retain
+    Type: PropertyType
+    DataType: Boolean
+    Value: false
+  - Name: EnabledState
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: Id
+      Type: PropertyType
+      DataType: Boolean
+      Value: false
+  - Name: Quality
+    Type: ConditionVariableType
+    DataType: StatusCode
+    Value: 0
+    Children:
+    - Name: SourceTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: LastSeverity
+    Type: ConditionVariableType
+    DataType: UInt16
+    Value: 0
+    Children:
+    - Name: SourceTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: Comment
+    Type: ConditionVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: SourceTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: ClientUserId
+    Type: PropertyType
+    DataType: String
+    ReferenceType: HasComponent
+    Value: ""
+  - Class: Reference
+    Target: ns=0;i=9027
+    Direction: Forward
+  - Class: Reference
+    Target: ns=0;i=9028
+    Direction: Forward
+  - Class: Reference
+    Target: ns=0;i=9029
+    Direction: Forward
+  - Name: EventId
+    Type: PropertyType
+    DataType: ByteString
+    Value: ""
+  - Name: EventType
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SourceNode
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SourceName
+    Type: PropertyType
+    DataType: String
+    Value: ""
+  - Name: Time
+    Type: PropertyType
+    DataType: UtcTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: ReceiveTime
+    Type: PropertyType
+    DataType: UtcTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Message
+    Type: PropertyType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Severity
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: Class
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Tag1Value
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag2Value
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag3Value
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag4Value
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
