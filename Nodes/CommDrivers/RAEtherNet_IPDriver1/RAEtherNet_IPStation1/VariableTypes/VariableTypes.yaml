@@ -1,2 +1,51 @@
 Name: VariableTypes
 Type: FolderType
+Children:
+- Name: udt1
+  Id: g=4d85dac36b0b4bdb52555beb9d9f8488
+  Supertype: TagStructure
+  DataType: udt1
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+     "Namespace": 7
+    },
+    "Body": {
+     "a": 0,
+     "b": 0.0,
+     "c": [0,0,0,0,0,0,0,0,0,0]
+    }
+   }
+  Children:
+  - Name: a
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "a"
+  - Name: b
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "b"
+  - Name: c
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [10]
+    Value: [0,0,0,0,0,0,0,0,0,0]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "c"

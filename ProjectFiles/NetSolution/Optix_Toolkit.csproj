@@ -15,5 +15,9 @@
   <PropertyGroup>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
-  <Import Project="Optix_Toolkit.references"/>
+  <ItemGroup>
+    <PackageReference Include="OptixHelper" Version="0.0.1.2" />
+    <PackageReference Include="GFlow.OptixWrapper" Version="1.0.6.3-alpha" />
+  </ItemGroup>
+  <Import Project="Optix_Toolkit.references" />
 </Project>

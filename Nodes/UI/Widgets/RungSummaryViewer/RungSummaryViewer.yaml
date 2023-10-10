@@ -1072,7 +1072,7 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "{NodeId:ns=7;g=e0fbd2ba-f369-ff2a-2984-068711ab3137}"
+      Value: "{NodeId:ns=7;g=419bbf04-fc5d-cc0c-68be-28a13c313520}[3].7"
       Children:
       - Name: Mode
         Type: BaseVariableType

@@ -1,2 +1,30 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
+Children:
+- Name: GFlow_RuntimeNetLogic
+  Id: g=7b9ea0df514d8476c907149a6608c1e0
+  Type: NetLogic
+  Children:
+  - Name: FolderPaths
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"split with ;"}
+    Value: ""
+  - Name: FilePaths
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"split with ;"}
+    Value: "D:\\ifelse_js_inject.json;D:\\c_js_inject.json"
+  - Name: Workflows
+    Id: g=8e094104993b9034505d54529a3c7348
+    Type: BaseObjectType
+  - Class: Method
+    Name: StartWorkflow
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"id","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

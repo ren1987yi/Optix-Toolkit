@@ -38,3 +38,931 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "a"
+- Name: hah
+  Type: udt1
+  DataType: udt1
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}}]
+  Children:
+  - Name: 0
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[0].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[0].b"
+    - Name: c
+      Id: g=419bbf04fc5dcc0c68be28a13c313520
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[0].c"
+  - Name: 1
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[1].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[1].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[1].c"
+  - Name: 2
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[2].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[2].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[2].c"
+  - Name: 3
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[3].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[3].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[3].c"
+  - Name: 4
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[4].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[4].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[4].c"
+  - Name: 5
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[5].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[5].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[5].c"
+  - Name: 6
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[6].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[6].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[6].c"
+  - Name: 7
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[7].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[7].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[7].c"
+  - Name: 8
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[8].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[8].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[8].c"
+  - Name: 9
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[9].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[9].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[9].c"
+  - Name: 10
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[10].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[10].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[10].c"
+  - Name: 11
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[11].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[11].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[11].c"
+  - Name: 12
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[12].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[12].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[12].c"
+  - Name: 13
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[13].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[13].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[13].c"
+  - Name: 14
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[14].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[14].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[14].c"
+  - Name: 15
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[15].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[15].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[15].c"
+  - Name: 16
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[16].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[16].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[16].c"
+  - Name: 17
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[17].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[17].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[17].c"
+  - Name: 18
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[18].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[18].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[18].c"
+  - Name: 19
+    Type: udt1
+    DataType: udt1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Namespace": 7
+      },
+      "Body": {
+       "a": 0,
+       "b": 0.0,
+       "c": [0,0,0,0,0,0,0,0,0,0]
+      }
+     }
+    Children:
+    - Name: a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[19].a"
+    - Name: b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[19].b"
+    - Name: c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [10]
+      Value: [0,0,0,0,0,0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "hah[19].c"

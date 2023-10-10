@@ -24,4 +24,9 @@ Children:
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"aaaa"}
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    Value: 0.0
 - File: RungSummaryViewer/RungSummaryViewer.yaml
+- File: GFlow/GFlow.yaml

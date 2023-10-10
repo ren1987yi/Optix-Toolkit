@@ -1,2 +1,41 @@
 Name: DataTypes
 Type: FolderType
+Children:
+- Class: DataType
+  Name: udt1
+  Id: g=ce148e7e4b946d12d0ad0c15aa5bb663
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "udt1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "a",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "b",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "c",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [10]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"udt1"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

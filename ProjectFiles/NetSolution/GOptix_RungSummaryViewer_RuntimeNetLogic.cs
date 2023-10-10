@@ -24,6 +24,7 @@ using FTOptix.CommunicationDriver;
 using System.Linq;
 using UAManagedCore.OpcUa;
 using System.Security;
+using System.Collections;
 public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
 {
 
@@ -100,6 +101,10 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
         
         v = Owner.GetVariable("Variable2");
         var dlink2 = v.Get("DynamicLink") as DynamicLink;
+
+        v.Value = false;
+
+
     }
 
     public override void Stop()
@@ -253,6 +258,10 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
 
             //var tag = TagsFolder.Find(tagpath);
             var tag = FindNodeByNodePath(TagsFolder,tagpath,out var arrayIndex ,out var bitIndex);
+
+            
+
+
             if(tag == null){
                 Log.Error(this.GetType().Name,$"tag : {tagpath} is not exists");
                 continue;
@@ -275,7 +284,14 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
                     model.ValueVariable.Add(dlink);
                 }
             }else{
-                model.ValueVariable.SetDynamicLink(tag as IUAVariable,(uint)arrayIndex,DynamicLinkMode.Read);
+                if(bitIndex == null){
+                    model.ValueVariable.SetDynamicLink(tag as IUAVariable,(uint)arrayIndex,DynamicLinkMode.Read);
+                }else{
+                    var dlink = InformationModel.Make<DynamicLink>("DynamicLink");
+                    //dlink.Value = tag.NodeId.ToString();
+                    dlink.Value = $"{{NodeId:ns={tag.NodeId.NamespaceIndex};{tag.NodeId.IdTypeShortString}={tag.NodeId.Id.ToString()}}}[{arrayIndex}].{bitIndex}";
+                    model.ValueVariable.Add(dlink);
+                }
                 
             }
 
@@ -289,7 +305,83 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
     }
 
 
+    /// <summary>
+    /// 从PLC 标签路径转换到Optix Browse Path
+    /// </summary>
+    /// <param name="tag"></param>
+    /// <param name="browsePath"></param>
+    /// <param name="arrayIndex"></param>
+    /// <param name="bitIndex"></param>
+    /// <returns></returns>
+
+    private bool ConvertPlcTagToBrowsePath(string tag,out string browsePath,out uint? arrayIndex,out uint? bitIndex){
+        arrayIndex = null;
+        bitIndex = null;
+
+        var tagpaths = tag.Split('.');
+        if(uint.TryParse( tagpaths.Last(),out uint _bit)){
+            tagpaths = tagpaths.Take(tagpaths.Length-1).ToArray();
+            bitIndex = _bit;
+        }
+
+        var paths = new Queue<string>();
+        for(var i = 0 ;i<tagpaths.Length;i++){
+            var text = tagpaths[i];
+
+            int num1 = text.LastIndexOf('[');
+            int num2 = text.LastIndexOf(']');
+
+            if (num1 == -1 || num2 == -1)
+            {
+                paths.Enqueue(text);
+            }else{
+                var symbol = text.Substring(0,num1);
+                string text2 = text.Substring(num1 + 1, num2 - num1 - 1);
+                paths.Enqueue(symbol);
+                
+                if(i == tagpaths.Length - 1){
+                    //最后出现的数组
+                    if(uint.TryParse(text2,out var idx)){
+                        arrayIndex = idx;
+                    }
+                }else{
+                    if(int.TryParse(text2,out var idx)){
+                        paths.Enqueue(text2);
+                        //arrayIndex = idx;
+                    }
+                }
+            }
+
+        }
+
+        browsePath = string.Join('/',paths);
+
+        return true;
+
+    }
+
     private IUANode FindNodeByNodePath(IUANode root,string path,out uint? arrayIndex,out uint? bitIndex){
+
+        
+        var res = ConvertPlcTagToBrowsePath(path,out string browsePath,out arrayIndex,out bitIndex);
+        if(res){
+            var node = root.Get(browsePath);
+            return node;
+        }else{
+            return null;
+        }
+
+/*
+        var rootpath = "CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/";
+        //TODO 用project.current.
+        var vvv = Project.Current.Get(rootpath + "Controller Tags/ga");
+
+        var vvv2 = root.Get("Controller Tags/ga");
+        var vvv3 = root.Get("Controller Tags/hah/3/a");
+        var vvv4 = root.Get("Controller Tags/hah/3/c[1]");
+        
+
+
         arrayIndex = null;
         bitIndex = null;
         string spliter = ".";
@@ -327,7 +419,7 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
             }
         }
         return node;
-
+*/
 
     }
 
