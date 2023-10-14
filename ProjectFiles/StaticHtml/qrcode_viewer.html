@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QRCodeViewer</title>
+	<script src="js/qrcode.js"></script>
+	<script src="js/utils.js"></script>
+</head>
+<body>
+	<div id="qrcode"></div>
+	  <script type="text/javascript">
+		const option_names = [
+			
+			'width'
+			,'height'
+			,'dark'
+			,'light'
+
+			
+			
+		];
+
+
+
+	  var option= {
+		
+		width:128,
+		height:128,
+		dark : "#000000",
+		light  : "#ffffff",
+		// useSVG: true
+
+	  };
+
+	  var url_string = window.location;
+		option_names.forEach(p => {
+			
+			var val = getQueryString(url_string,p);
+			if(val != undefined){
+				option[p] = val ;
+			}
+		});
+
+
+		option.width = Number(option.width);
+		option.height = Number(option.height);
+
+		if(option.dark.charAt(0) != '#'){
+			option.dark = '#' + option.dark;
+		}
+
+		if(option.light.charAt(0) != '#'){
+			option.light = '#' + option.light;
+		}
+
+		option.colorDark = option.dark.toString();		
+		option.colorLight = option.light.toString();		
+
+	  var qrcode = new QRCode(document.getElementById("qrcode"),option);
+	
+	  function makeCode (value) {		
+
+		  if(value != undefined){
+
+			  qrcode.makeCode(value);
+		  }
+	
+	  }
+
+
+	var val = getQueryString(url_string,'value');
+	if(val == undefined){
+		val = 'http://www.baidu.com'
+	}
+
+	
+	makeCode(val);
+	
+	 
+	</script>
+</body>
+</html>

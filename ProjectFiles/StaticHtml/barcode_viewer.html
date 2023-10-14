@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>BarcodeViewer</title>
+	<script src="js/JsBarcode.all.min.js"></script>
+	<script src="js/utils.js"></script>
+</head>
+<body>
+	<img id="barcode"/>
+<script>
+	//barcode lib is JsBarcode
+	//https://github.com/lindell/JsBarcode	
+	const option_names = [
+		'format'
+		,'width'
+		,'height'
+		,'displayValue'
+		,'font'
+		,'textAlign'
+		,'textPosition'
+		,'textMargin'
+		,'fontSize'
+		,'background'
+		,'lineColor'
+		,'margin'
+		,'marginTop'
+		,'marginBottom'
+		,'marginLeft'
+		,'marginRight'
+		
+	];
+
+	var option = {
+	
+	};
+
+	var url_string = window.location;
+	option_names.forEach(p => {
+		
+		var val = getQueryString(url_string,p);
+		if(val != undefined){
+			option[p] = val ;
+		}
+	});
+
+	var val = getQueryString(url_string,'value');
+	if(val == undefined){
+		val = '123456789123'
+	}
+
+	JsBarcode("#barcode", val.toString(), option);
+
+</script>
+</body>
+</html>

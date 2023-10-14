@@ -10,23 +10,858 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
+    Value: 900.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 680.0
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    Value: 0.0
+  - Name: GOptix_BarcodeViewer1
+    Type: GOptix_BarcodeViewer
+    Children:
+    - Name: URL
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+    - Class: Reference
+      Target: ns=3;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=3;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=3;i=358
+      Direction: Forward
+    - Name: _format
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _width
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _height
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _value
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0123456789"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=7;g=9513f176-c826-aac8-010c-9b2eff512664}"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: _displayValue
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _font
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _textAlign
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _textPosition
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _textMargin
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _fontSize
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _background
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _lineColor
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "#f00"
+    - Name: _margin
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: GOptix_BarcodeViewer_RuntimeNetLogic
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=4540cfc7ff9000376017da380e2279a8
+        Direction: Forward
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: RootPath
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "StaticHtml/barcode_viewer.html"
+    - Name: TriggerRefresh
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: TriggerRefreshChanged
+      Type: VariableChangedEventDispatcher
+      Children:
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../TriggerRefresh"
+      - Name: VariableValueChangedEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":42,"Namespace":2}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../..@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Refresh"
+            - Name: InputArguments
+              Type: BaseObjectType
+        - Name: EventArguments
+          Type: VariableValueChangedEvent
+          Children:
+          - Name: VariableNodeId
+            Type: BaseVariableType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: NewValue
+            Type: BaseVariableType
+            DataType: BaseDataType
+          - Name: OldValue
+            Type: BaseVariableType
+            DataType: BaseDataType
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 360.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 410.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: GOptix_QRcodeViewer1
+    Type: GOptix_QRcodeViewer
+    Children:
+    - Name: URL
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+    - Class: Reference
+      Target: ns=3;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=3;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=3;i=358
+      Direction: Forward
+    - Name: _width
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _height
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _value
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0123456789"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=7;g=9513f176-c826-aac8-010c-9b2eff512664}"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: _displayValue
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: _dark
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "#ff0000"
+    - Name: _light
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: RootPath
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "StaticHtml/qrcode_viewer.html"
+    - Name: TriggerRefresh
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: TriggerRefreshChanged
+      Type: VariableChangedEventDispatcher
+      Children:
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../TriggerRefresh"
+    - Name: GOptix_QRcodeViewer_RuntimeNetLogic
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=dd0798264a3bd17a7c304e475512b4a3
+        Direction: Forward
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 410.0
+- File: RungSummaryViewer/RungSummaryViewer.yaml
+- File: GFlow/GFlow.yaml
+- File: MagneMotion/MagneMotion.yaml
+- Name: GOptix_BarcodeViewer
+  Id: g=747ad381de416a10377329b7ddff69f4
+  Supertype: WebBrowser
+  ReferenceType: HasComponent
+  Children:
+  - Name: URL
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Class: Reference
+    Target: ns=3;i=354
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=356
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=358
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
     Value: 300.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
-  - Name: Label1
-    Type: Label
+  - Name: _format
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _width
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _height
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _value
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0123456789"
+  - Name: _displayValue
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _font
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _textAlign
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _textPosition
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _textMargin
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _fontSize
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _background
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _lineColor
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _margin
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: GOptix_BarcodeViewer_RuntimeNetLogic
+    Type: NetLogic
     Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"aaaa"}
-  - Name: LeftMargin
+    - Class: Method
+      Name: Refresh
+      Id: g=4540cfc7ff9000376017da380e2279a8
+  - Name: RootPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "StaticHtml/barcode_viewer.html"
+  - Name: TriggerRefresh
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: TriggerRefreshChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../TriggerRefresh"
+    - Name: VariableValueChangedEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":42,"Namespace":2}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Refresh"
+          - Name: InputArguments
+            Type: BaseObjectType
+      - Name: EventArguments
+        Type: VariableValueChangedEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+- File: Treeview/Treeview.yaml
+- Name: GOptix_QRcodeViewer
+  Id: g=26fe3107ef92337735c3d6a780527ba0
+  Supertype: WebBrowser
+  ReferenceType: HasComponent
+  Children:
+  - Name: URL
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Class: Reference
+    Target: ns=3;i=354
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=356
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=358
+    Direction: Forward
+  - Name: Width
     Type: BaseVariableType
     DataType: Size
-    Value: 0.0
-- File: RungSummaryViewer/RungSummaryViewer.yaml
-- File: GFlow/GFlow.yaml
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: _width
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _height
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _value
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0123456789"
+  - Name: _displayValue
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _dark
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: _light
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: RootPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "StaticHtml/qrcode_viewer.html"
+  - Name: TriggerRefresh
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: TriggerRefreshChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../TriggerRefresh"
+  - Name: GOptix_QRcodeViewer_RuntimeNetLogic
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Refresh
+      Id: g=dd0798264a3bd17a7c304e475512b4a3
+- File: CAM/CAM.yaml
+- File: Favorites/Favorites.yaml
+- Name: GOptix_DialogTemplate
+  Id: g=10efc97bbd8f2457b35b325cf32105b7
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: MoveTarget
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":71,"Namespace":3}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
+  - Name: bg
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: Title
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: VL
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Titlebar
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#eeeeee"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: Button1
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"X"}
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":16,"Namespace":3}
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":58}
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../..@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "Close"
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+              Value: ""
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+              Value: ""
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+              Value: 0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Title"
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+    - Name: Body
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#00000000"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0

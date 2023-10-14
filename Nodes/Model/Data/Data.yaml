@@ -1,0 +1,381 @@
+Name: Data
+Type: FolderType
+Children:
+- Name: Object1
+  Type: BaseObjectType
+  Children:
+  - Name: V1
+    Id: g=1b506a4431bc4ce7f38a95e1fd262739
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V2
+    Id: g=9513f176c826aac8010c9b2eff512664
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "234"
+  - Name: GOptix_RandomVariable_RuntimeLogic
+    Type: NetLogic
+    Children:
+    - Name: Period
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1000
+- Name: TestTreeModel
+  Id: g=9a31a598bda884f6545ca3da8bbf3b73
+  Type: BaseObjectType
+  Children:
+  - Name: 1
+    Type: GOptix_Type_TreeNode
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "1"
+    - Name: Image
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+    - Name: Tag
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"1b506a4431bc4ce7f38a95e1fd262739","Namespace":7}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Nodes
+      Type: BaseObjectType
+      Children:
+      - Name: '1-1'
+        Type: GOptix_Type_TreeNode
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "1-1"
+        - Name: Image
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: ""
+        - Name: Tag
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: Nodes
+          Type: BaseObjectType
+          Children:
+          - Name: '1-1-1'
+            Type: GOptix_Type_TreeNode
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "1-1-1"
+            - Name: Image
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: ""
+            - Name: Tag
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: Nodes
+              Type: BaseObjectType
+      - Name: '1-2'
+        Type: GOptix_Type_TreeNode
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "1-2"
+        - Name: Image
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: ""
+        - Name: Tag
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: Nodes
+          Type: BaseObjectType
+      - Name: '1-3'
+        Type: GOptix_Type_TreeNode
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "1-3"
+        - Name: Image
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: ""
+        - Name: Tag
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: Nodes
+          Type: BaseObjectType
+  - Name: 2
+    Type: GOptix_Type_TreeNode
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "2"
+    - Name: Image
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+    - Name: Tag
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Nodes
+      Type: BaseObjectType
+- Name: MML
+  Type: BaseObjectType
+  Children:
+  - Name: VehicleStatus
+    Id: g=bb0c84168ede6a4d565b95e97d278952
+    Type: BaseObjectType
+    Children:
+    - Name: 1
+      Type: GOptix_Type_MML_VehicleStatus
+      Children:
+      - Name: PathId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: DestPathId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: DestPosition
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: Flags
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Command
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: ID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "1"
+      - Name: Index
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 1
+      - Name: Tag
+        Type: BaseObjectType
+      - Name: Location
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../PathId"
+          - Name: Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Position"
+    - Name: 2
+      Type: GOptix_Type_MML_VehicleStatus
+      Children:
+      - Name: PathId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: DestPathId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: DestPosition
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: Flags
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Command
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: ID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "2"
+      - Name: Index
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 2
+      - Name: Tag
+        Type: BaseObjectType
+      - Name: Location
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../PathId"
+          - Name: Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Position"
+    - Name: 3
+      Type: GOptix_Type_MML_VehicleStatus
+      Children:
+      - Name: PathId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: DestPathId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: DestPosition
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: Flags
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Command
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: ID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "3"
+      - Name: Index
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 3
+      - Name: Tag
+        Type: BaseObjectType
+      - Name: Location
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../PathId"
+          - Name: Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Position"

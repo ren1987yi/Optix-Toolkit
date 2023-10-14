@@ -10,6 +10,9 @@ using FTOptix.CoreBase;
 using FTOptix.Core;
 #endregion
 using GFlow.OptixWrapper;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAServer;
+using FTOptix.Recipe;
 public class GFlow_DiagramCanvas_RuntimeLogic : BaseNetLogic
 {
     Diagram diagram;

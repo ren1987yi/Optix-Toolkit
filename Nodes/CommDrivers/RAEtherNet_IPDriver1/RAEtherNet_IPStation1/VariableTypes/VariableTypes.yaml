@@ -2,7 +2,7 @@ Name: VariableTypes
 Type: FolderType
 Children:
 - Name: udt1
-  Id: g=4d85dac36b0b4bdb52555beb9d9f8488
+  Id: g=84d2176e759d6c071c9d266043b5d467
   Supertype: TagStructure
   DataType: udt1
   ValueRank: Any
@@ -10,7 +10,7 @@ Children:
    {
     "TypeId": {
      "IdType": 2,
-     "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+     "Id": "55c12688e1617d87ff4fe68d02192ac3",
      "Namespace": 7
     },
     "Body": {
@@ -49,3 +49,49 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "c"
+- Name: CAM
+  Id: g=6b94c5db629b406a01cddb6ea9373042
+  Supertype: TagStructure
+  DataType: CAM
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "27c0130b060cd677b513538b8c8eb74f",
+     "Namespace": 7
+    },
+    "Body": {
+     "Master": 0.0,
+     "SegmentType": 0,
+     "Slave": 0.0
+    }
+   }
+  Children:
+  - Name: Master
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Master"
+  - Name: SegmentType
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SegmentType"
+  - Name: Slave
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Slave"

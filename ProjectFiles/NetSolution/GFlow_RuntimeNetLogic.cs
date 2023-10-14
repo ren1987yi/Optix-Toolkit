@@ -20,6 +20,9 @@ using System.Collections.Generic;
 using System.IO;
 using GFlow.Services;
 using System.Linq;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAServer;
+using FTOptix.Recipe;
 public class GFlow_RuntimeNetLogic : BaseNetLogic
 {
     IServiceProvider serviceProvider;
@@ -123,6 +126,13 @@ public class GFlow_RuntimeNetLogic : BaseNetLogic
     public void StartWorkflow(string id){
         if(serviceProvider != null){
             workers.ExecuteWork(id);
+        }
+    }
+
+    [ExportMethod]
+    public void SetWorkflowTimer(string id,bool is_start){
+        if(serviceProvider != null){
+            workers.SetWorkTimer(id,is_start);
         }
     }
 

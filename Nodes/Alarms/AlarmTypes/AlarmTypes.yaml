@@ -36,13 +36,13 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Description: {"LocaleId":"en-US","Text":"报警类别"}
-    Value: "0"
+    Value: ""
   - Name: Group
     Id: g=1314f1256169304f7fa7fcee045f750e
     Type: BaseDataVariableType
     DataType: String
     Description: {"LocaleId":"en-US","Text":"报警组"}
-    Value: "0"
+    Value: ""
   - Name: Tag1Value
     Id: g=e4ff50df64a93e81f845c18a6c02279c
     Type: BaseDataVariableType

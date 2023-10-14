@@ -165,6 +165,54 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: {"Id":71,"Namespace":3}
+      - Name: Panel5
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"a79f96d2286a7a3c3bc28fa173e55898","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
+      - Name: Panel6
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"2db82feda513d4de679f589d5ab3cb42","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
+      - Name: Panel7
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"b0cf4c4e9617a73c87c2c24c02e6d9f8","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -204,7 +252,7 @@ Children:
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
-      Value: 0
+      Value: 3
     - Name: AttachedPanelLoader
       Type: NodePointer
       DataType: NodeId
@@ -214,64 +262,6 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: {"Id":183,"Namespace":3}
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../PanelLoader1@NodeId"
-  - Name: PanelLoader1
-    Type: PanelLoader
-    Children:
-    - Name: Panel
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"Id":71,"Namespace":3}
-    - Name: CurrentPanel
-      Type: NodePointer
-      DataType: NodeId
-      AccessLevel: Read
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"Id":6,"Namespace":3}
-    - Class: Reference
-      Target: ns=3;i=478
-      Direction: Forward
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1270.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 900.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: EnterAnimation
-      Type: BaseDataVariableType
-      DataType: PanelLoaderAnimationTypeEnum
-      ModellingRule: Optional
-      Value: 1
-    - Name: ExitAnimation
-      Type: BaseDataVariableType
-      DataType: PanelLoaderAnimationTypeEnum
-      ModellingRule: Optional
-      Value: 2
 - File: Screens/Screens.yaml
 - File: Widgets/Widgets.yaml
+- File: Test/Test.yaml

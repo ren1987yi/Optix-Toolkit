@@ -144,11 +144,11 @@ Children:
   - Name: Class
     Type: BaseDataVariableType
     DataType: String
-    Value: "0"
+    Value: ""
   - Name: Group
     Type: BaseDataVariableType
     DataType: String
-    Value: "0"
+    Value: ""
   - Name: Tag1Value
     Type: BaseDataVariableType
     DataType: BaseDataType

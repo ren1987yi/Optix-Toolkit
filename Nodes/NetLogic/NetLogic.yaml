@@ -14,7 +14,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Description: {"LocaleId":"en-US","Text":"split with ;"}
-    Value: "D:\\ifelse_js_inject.json;D:\\c_js_inject.json"
+    Value: "D:\\test_workflow\\new_log_output.json"
   - Name: Workflows
     Id: g=8e094104993b9034505d54529a3c7348
     Type: BaseObjectType
@@ -28,3 +28,13 @@ Children:
       ValueRank: OneDimension
       ArrayDimensions: [0]
       Value: [{"TypeId":{"Id":296},"Body":{"Name":"id","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: SetWorkflowTimer
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"id","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"is_start","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

@@ -1,0 +1,367 @@
+Name: CAM
+Type: FolderType
+Children:
+- Name: GOptix_CAMEditor
+  Id: g=7ee5546596ac7bd432ec6ca388df91fe
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: CAM
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"6b94c5db629b406a01cddb6ea9373042","Namespace":7}
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Panel1
+      Type: Panel
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+    - Name: Panel2
+      Type: Panel
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: HorizontalLayout1
+        Type: RowLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: Panel2
+          Type: Panel
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: XYChart1
+            Type: XYChart
+            Children:
+            - Name: Pens
+              Type: BaseObjectType
+              Children:
+              - Name: CamCurve
+                Type: XYChartArrayLinePen
+                Children:
+                - Name: PointArray
+                  Type: BaseDataVariableType
+                  DataType: Number
+                  ValueRank: 2
+                  ArrayDimensions: [2,2]
+                  Value: 
+                   {
+                    "Type": 11,
+                    "Dimensions": [2,2],
+                    "Body": [
+                     0.0,0.0,
+                     0.0,0.0
+                    ]
+                   }
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../GOptix_CAMEditor_RuntimeNetLogic/CAM"
+                - Name: Thickness
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -1.0
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Editable
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+              - Name: ScaleLinePen1
+                Type: XYChartScalarLinePen
+                Children:
+                - Name: X
+                  Type: BaseDataVariableType
+                  DataType: Number
+                  Value: {"Type":11,"Body":0.0}
+                - Name: Y
+                  Type: BaseDataVariableType
+                  DataType: Number
+                  Value: {"Type":11,"Body":0.0}
+                - Name: Thickness
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -1.0
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Color
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ff0000"
+              - Name: ArrayLinePen1
+                Type: XYChartArrayLinePen
+                Children:
+                - Name: PointArray
+                  Type: BaseDataVariableType
+                  DataType: Number
+                  ValueRank: 2
+                  ArrayDimensions: [2,2]
+                  Value: 
+                   {
+                    "Type": 11,
+                    "Dimensions": [2,2],
+                    "Body": [
+                     0.0,0.0,
+                     0.0,0.0
+                    ]
+                   }
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../GOptix_CAMEditor_RuntimeNetLogic/CAM"
+                - Name: Thickness
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -1.0
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Color
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#00ff00"
+              - Name: PolygonPen1
+                Type: XYChartPolygonPen
+                Children:
+                - Name: PointArray
+                  Type: BaseDataVariableType
+                  DataType: Number
+                  ValueRank: 2
+                  ArrayDimensions: [2,2]
+                  Value: 
+                   {
+                    "Type": 11,
+                    "Dimensions": [2,2],
+                    "Body": [
+                     0.0,0.0,
+                     0.0,0.0
+                    ]
+                   }
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../GOptix_CAMEditor_RuntimeNetLogic/CAM"
+                - Name: FillColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#00000000"
+                - Name: BorderColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#0000ff"
+                - Name: Thickness
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -1.0
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+            - Name: LegendVisible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Class: Reference
+              Target: ns=3;i=573
+              Direction: Forward
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 400.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 400.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+        - Name: Panel1
+          Type: Panel
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+  - Name: GOptix_CAMEditor_RuntimeNetLogic
+    Type: NetLogic
+    Children:
+    - Name: CAM
+      Type: BaseDataVariableType
+      DataType: Number
+      ValueRank: 2
+      ArrayDimensions: [2,2]
+      Value: 
+       {
+        "Type": 6,
+        "Dimensions": [2,2],
+        "Body": [
+         0,0,
+         0,0
+        ]
+       }

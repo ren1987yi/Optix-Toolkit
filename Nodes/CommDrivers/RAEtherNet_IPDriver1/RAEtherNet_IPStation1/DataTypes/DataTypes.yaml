@@ -3,14 +3,14 @@ Type: FolderType
 Children:
 - Class: DataType
   Name: udt1
-  Id: g=ce148e7e4b946d12d0ad0c15aa5bb663
+  Id: g=55c12688e1617d87ff4fe68d02192ac3
   Supertype: Structure
   StructDefinition: 
    {
     "Name": "udt1",
     "DataType": {
      "IdType": 2,
-     "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+     "Id": "55c12688e1617d87ff4fe68d02192ac3",
      "Namespace": 7
     },
     "Fields": [{
@@ -33,6 +33,42 @@ Children:
      }]
    }
   DisplayName: {"LocaleId":"","Text":"udt1"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: CAM
+  Id: g=27c0130b060cd677b513538b8c8eb74f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CAM",
+    "DataType": {
+     "IdType": 2,
+     "Id": "27c0130b060cd677b513538b8c8eb74f",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Master",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SegmentType",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Slave",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CAM"}
   Children:
   - Name: ns=0;Default Binary
     Type: DataTypeEncodingType

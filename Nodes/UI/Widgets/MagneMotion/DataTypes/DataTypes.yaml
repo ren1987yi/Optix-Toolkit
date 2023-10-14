@@ -1,0 +1,73 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Name: GOptix_Type_MML_VehicleStatus
+  Id: g=8625fa88caea74729b015c50b042de87
+  Supertype: BaseObjectType
+  Children:
+  - Name: PathId
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Position
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: DestPathId
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DestPosition
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Flags
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Command
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Tag
+    Type: BaseObjectType
+  - Name: Location
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"{0};{1}"}
+      - Name: ns=2;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PathId"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Position"

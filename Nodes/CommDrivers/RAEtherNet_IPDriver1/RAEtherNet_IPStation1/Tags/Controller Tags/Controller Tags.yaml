@@ -43,7 +43,7 @@ Children:
   DataType: udt1
   ValueRank: OneDimension
   ArrayDimensions: [20]
-  Value: [{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"ce148e7e4b946d12d0ad0c15aa5bb663","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}}]
+  Value: [{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}},{"TypeId":{"IdType":2,"Id":"55c12688e1617d87ff4fe68d02192ac3","Namespace":7},"Body":{"a":0,"b":0.0,"c":[0,0,0,0,0,0,0,0,0,0]}}]
   Children:
   - Name: 0
     Type: udt1
@@ -52,7 +52,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -99,7 +99,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -145,7 +145,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -191,7 +191,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -237,7 +237,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -283,7 +283,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -329,7 +329,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -375,7 +375,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -421,7 +421,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -467,7 +467,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -513,7 +513,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -559,7 +559,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -605,7 +605,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -651,7 +651,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -697,7 +697,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -743,7 +743,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -789,7 +789,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -835,7 +835,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -881,7 +881,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -927,7 +927,7 @@ Children:
      {
       "TypeId": {
        "IdType": 2,
-       "Id": "ce148e7e4b946d12d0ad0c15aa5bb663",
+       "Id": "55c12688e1617d87ff4fe68d02192ac3",
        "Namespace": 7
       },
       "Body": {
@@ -966,3 +966,4410 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "hah[19].c"
+- Name: Cam1
+  Type: CAM
+  DataType: CAM
+  ValueRank: OneDimension
+  ArrayDimensions: [100]
+  Value: [{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}},{"TypeId":{"IdType":2,"Id":"27c0130b060cd677b513538b8c8eb74f","Namespace":7},"Body":{"Master":0.0,"SegmentType":0,"Slave":0.0}}]
+  Children:
+  - Name: 0
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[0].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[0].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[0].Slave"
+  - Name: 1
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[1].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[1].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[1].Slave"
+  - Name: 2
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[2].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[2].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[2].Slave"
+  - Name: 3
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[3].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[3].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[3].Slave"
+  - Name: 4
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[4].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[4].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[4].Slave"
+  - Name: 5
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[5].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[5].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[5].Slave"
+  - Name: 6
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[6].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[6].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[6].Slave"
+  - Name: 7
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[7].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[7].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[7].Slave"
+  - Name: 8
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[8].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[8].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[8].Slave"
+  - Name: 9
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[9].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[9].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[9].Slave"
+  - Name: 10
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[10].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[10].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[10].Slave"
+  - Name: 11
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[11].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[11].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[11].Slave"
+  - Name: 12
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[12].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[12].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[12].Slave"
+  - Name: 13
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[13].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[13].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[13].Slave"
+  - Name: 14
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[14].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[14].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[14].Slave"
+  - Name: 15
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[15].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[15].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[15].Slave"
+  - Name: 16
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[16].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[16].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[16].Slave"
+  - Name: 17
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[17].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[17].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[17].Slave"
+  - Name: 18
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[18].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[18].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[18].Slave"
+  - Name: 19
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[19].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[19].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[19].Slave"
+  - Name: 20
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[20].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[20].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[20].Slave"
+  - Name: 21
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[21].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[21].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[21].Slave"
+  - Name: 22
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[22].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[22].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[22].Slave"
+  - Name: 23
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[23].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[23].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[23].Slave"
+  - Name: 24
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[24].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[24].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[24].Slave"
+  - Name: 25
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[25].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[25].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[25].Slave"
+  - Name: 26
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[26].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[26].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[26].Slave"
+  - Name: 27
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[27].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[27].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[27].Slave"
+  - Name: 28
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[28].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[28].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[28].Slave"
+  - Name: 29
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[29].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[29].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[29].Slave"
+  - Name: 30
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[30].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[30].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[30].Slave"
+  - Name: 31
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[31].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[31].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[31].Slave"
+  - Name: 32
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[32].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[32].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[32].Slave"
+  - Name: 33
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[33].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[33].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[33].Slave"
+  - Name: 34
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[34].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[34].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[34].Slave"
+  - Name: 35
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[35].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[35].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[35].Slave"
+  - Name: 36
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[36].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[36].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[36].Slave"
+  - Name: 37
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[37].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[37].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[37].Slave"
+  - Name: 38
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[38].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[38].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[38].Slave"
+  - Name: 39
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[39].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[39].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[39].Slave"
+  - Name: 40
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[40].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[40].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[40].Slave"
+  - Name: 41
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[41].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[41].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[41].Slave"
+  - Name: 42
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[42].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[42].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[42].Slave"
+  - Name: 43
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[43].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[43].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[43].Slave"
+  - Name: 44
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[44].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[44].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[44].Slave"
+  - Name: 45
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[45].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[45].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[45].Slave"
+  - Name: 46
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[46].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[46].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[46].Slave"
+  - Name: 47
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[47].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[47].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[47].Slave"
+  - Name: 48
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[48].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[48].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[48].Slave"
+  - Name: 49
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[49].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[49].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[49].Slave"
+  - Name: 50
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[50].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[50].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[50].Slave"
+  - Name: 51
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[51].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[51].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[51].Slave"
+  - Name: 52
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[52].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[52].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[52].Slave"
+  - Name: 53
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[53].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[53].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[53].Slave"
+  - Name: 54
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[54].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[54].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[54].Slave"
+  - Name: 55
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[55].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[55].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[55].Slave"
+  - Name: 56
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[56].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[56].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[56].Slave"
+  - Name: 57
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[57].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[57].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[57].Slave"
+  - Name: 58
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[58].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[58].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[58].Slave"
+  - Name: 59
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[59].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[59].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[59].Slave"
+  - Name: 60
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[60].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[60].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[60].Slave"
+  - Name: 61
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[61].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[61].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[61].Slave"
+  - Name: 62
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[62].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[62].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[62].Slave"
+  - Name: 63
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[63].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[63].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[63].Slave"
+  - Name: 64
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[64].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[64].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[64].Slave"
+  - Name: 65
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[65].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[65].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[65].Slave"
+  - Name: 66
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[66].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[66].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[66].Slave"
+  - Name: 67
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[67].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[67].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[67].Slave"
+  - Name: 68
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[68].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[68].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[68].Slave"
+  - Name: 69
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[69].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[69].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[69].Slave"
+  - Name: 70
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[70].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[70].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[70].Slave"
+  - Name: 71
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[71].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[71].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[71].Slave"
+  - Name: 72
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[72].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[72].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[72].Slave"
+  - Name: 73
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[73].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[73].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[73].Slave"
+  - Name: 74
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[74].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[74].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[74].Slave"
+  - Name: 75
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[75].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[75].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[75].Slave"
+  - Name: 76
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[76].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[76].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[76].Slave"
+  - Name: 77
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[77].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[77].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[77].Slave"
+  - Name: 78
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[78].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[78].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[78].Slave"
+  - Name: 79
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[79].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[79].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[79].Slave"
+  - Name: 80
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[80].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[80].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[80].Slave"
+  - Name: 81
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[81].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[81].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[81].Slave"
+  - Name: 82
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[82].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[82].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[82].Slave"
+  - Name: 83
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[83].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[83].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[83].Slave"
+  - Name: 84
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[84].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[84].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[84].Slave"
+  - Name: 85
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[85].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[85].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[85].Slave"
+  - Name: 86
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[86].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[86].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[86].Slave"
+  - Name: 87
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[87].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[87].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[87].Slave"
+  - Name: 88
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[88].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[88].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[88].Slave"
+  - Name: 89
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[89].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[89].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[89].Slave"
+  - Name: 90
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[90].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[90].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[90].Slave"
+  - Name: 91
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[91].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[91].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[91].Slave"
+  - Name: 92
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[92].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[92].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[92].Slave"
+  - Name: 93
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[93].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[93].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[93].Slave"
+  - Name: 94
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[94].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[94].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[94].Slave"
+  - Name: 95
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[95].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[95].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[95].Slave"
+  - Name: 96
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[96].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[96].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[96].Slave"
+  - Name: 97
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[97].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[97].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[97].Slave"
+  - Name: 98
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[98].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[98].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[98].Slave"
+  - Name: 99
+    Type: CAM
+    DataType: CAM
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "27c0130b060cd677b513538b8c8eb74f",
+       "Namespace": 7
+      },
+      "Body": {
+       "Master": 0.0,
+       "SegmentType": 0,
+       "Slave": 0.0
+      }
+     }
+    Children:
+    - Name: Master
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[99].Master"
+    - Name: SegmentType
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[99].SegmentType"
+    - Name: Slave
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cam1[99].Slave"
