@@ -16,6 +16,7 @@ using FTOptix.Store;
 using FTOptix.Core;
 using FTOptix.Recipe;
 using FTOptix.SQLiteStore;
+using FTOptix.WebUI;
 #endregion
 
 public class test_Treeview_RuntimeNetLogic : BaseNetLogic

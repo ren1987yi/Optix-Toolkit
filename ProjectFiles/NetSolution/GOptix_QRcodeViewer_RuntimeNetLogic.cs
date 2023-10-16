@@ -22,6 +22,7 @@ using System.Web;
 using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
+using FTOptix.WebUI;
 public class GOptix_QRcodeViewer_RuntimeNetLogic : BaseNetLogic
 {
     string WebRootPath;

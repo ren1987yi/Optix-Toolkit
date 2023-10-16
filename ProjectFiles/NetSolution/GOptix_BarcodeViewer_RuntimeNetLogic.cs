@@ -23,6 +23,7 @@ using System.ComponentModel.DataAnnotations;
 using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
+using FTOptix.WebUI;
 public class GOptix_BarcodeViewer_RuntimeNetLogic : BaseNetLogic
 {
     string WebRootPath;
@@ -77,6 +78,7 @@ public class GOptix_BarcodeViewer_RuntimeNetLogic : BaseNetLogic
 
     private void OnBarcodeChange_Handle(object sender,VariableChangeEventArgs args){
         Refresh();
+        
     }
 
 

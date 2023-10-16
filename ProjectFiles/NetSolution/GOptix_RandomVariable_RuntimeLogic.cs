@@ -21,6 +21,7 @@ using System.Linq;
 using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
+using FTOptix.WebUI;
 
 public class GOptix_RandomVariable_RuntimeLogic : BaseNetLogic
 {

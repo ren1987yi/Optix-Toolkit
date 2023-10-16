@@ -97,5 +97,13 @@ Project:
    Uri: 'urn:FTOptix:RAEtherNetIP:Net'
    Module: FTOptix.RAEtherNetIP.Net
    Version: 2.0
+  25:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.1
+  26:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 1.1
  Nodes:
  - File: Nodes/Optix_Toolkit.yaml

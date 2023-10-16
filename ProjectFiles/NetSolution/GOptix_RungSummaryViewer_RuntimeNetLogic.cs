@@ -28,6 +28,7 @@ using System.Collections;
 using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
+using FTOptix.WebUI;
 public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
 {
 

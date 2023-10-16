@@ -18,7 +18,11 @@ using System.Linq;
 #endregion
 
 
+
 namespace GOptix.Widget{
+
+
+
     public class TreeView : IDisposable{
         
         readonly Item _container;
@@ -44,6 +48,8 @@ namespace GOptix.Widget{
                         v.Value = false;
                     }
                 } 
+                
+                  
 
                 if(value != null){
                     var v = value.GetVariable("Selected");
