@@ -15,6 +15,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.CoreBase;
 using FTOptix.Store;
 using FTOptix.Core;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class GOptix_Calendar_Day_RuntimeNetLogic : BaseNetLogic

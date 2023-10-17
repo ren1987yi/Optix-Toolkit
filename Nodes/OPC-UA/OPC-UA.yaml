@@ -1,2 +1,68 @@
 Name: 'OPC-UA'
 Type: OPCUACategoryFolder
+Children:
+- Name: OPCUAServer
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://localhost:59100"
+  - Name: NodesToPublish
+    Type: BaseObjectType
+    Children:
+    - Name: Configuration1
+      Type: NodesToPublishConfigurationEntry
+      Children:
+      - Name: Nodes
+        Type: BaseObjectType
+        Children:
+        - Name: Node1
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"a97d7d10b5c7d55dab937b781ae5f588","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
+      - Name: Users
+        Type: BaseObjectType
+        Children:
+        - Name: User1
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"9cbb276e4ce1beaff1854fccb99e21ef","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":14,"Namespace":1}
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
+      - Name: PublishDynamicConfiguration
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+  - Name: MinimumMessageSecurityMode
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 0
+  - Name: MinimumSecurityPolicy
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 0
+  - Name: UseNodePathInNodeIds
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 3

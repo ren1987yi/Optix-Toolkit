@@ -16,16 +16,11 @@
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="OptixHelper" Version="0.0.1.2"/>
-    <PackageReference Include="GFlow.OptixWrapper" Version="1.0.6.5"/>
-    <PackageReference Include="GFlow.Steps" Version="1.0.6.6"/>
-    <PackageReference Include="QuikGraph" Version="2.5.0"/>
+    <PackageReference Include="OptixHelper" Version="0.0.1.3" />
+    <PackageReference Include="GFlow.OptixWrapper" Version="1.0.6.5" />
+    <PackageReference Include="GFlow.Steps" Version="1.0.6.6" />
+    <PackageReference Include="MagneMotion.DSL" Version="0.0.1" />
+    
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="MagneMotion.DSL">
-      <HintPath>D:\code\csharp\RAFI\MagneMotion.DSL\bin\Debug\netstandard2.1\MagneMotion.DSL.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <Import Project="Optix_Toolkit.references"/>
+  <Import Project="Optix_Toolkit.references" />
 </Project>

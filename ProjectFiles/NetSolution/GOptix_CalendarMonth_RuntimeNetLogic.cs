@@ -20,6 +20,7 @@ using System.Linq;
 #endregion
 using GOptixLib.Utils;
 using System.Reflection;
+using FTOptix.OPCUAServer;
 public class GOptix_CalendarMonth_RuntimeNetLogic : BaseNetLogic
 {
 
@@ -176,7 +177,7 @@ public class GOptix_CalendarMonth_RuntimeNetLogic : BaseNetLogic
             var month_last_day_week = month_last_day.DayOfWeek;
             var after_month_last_day = month_last_day.AddDays(6-(int)month_last_day_week);
 
-            DayOfWeek a;
+            //DayOfWeek a;
 
             var dt_start = before_month_first_day;
             var dt_end = after_month_last_day;

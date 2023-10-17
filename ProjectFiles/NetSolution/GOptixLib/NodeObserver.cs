@@ -22,7 +22,7 @@ using WorkflowCore.Models;
 namespace GOptix{
 	public class NodeObserver : IDisposable{
 
-		IUANode _node;
+		// IUANode _node;
 
     	IEventRegistration _registration;
     	IEventObserver _observer;
@@ -44,7 +44,7 @@ namespace GOptix{
 					, EventType.ForwardReferenceAdded | EventType.ForwardReferenceRemoved | EventType.ReferenceChanged | EventType.InverseReferenceRemoved
 					, affinityId);
 
-			}catch(Exception ex){
+			}catch{
 
 			}
 		}

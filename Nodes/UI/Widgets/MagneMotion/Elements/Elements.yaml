@@ -3,9 +3,34 @@ Type: FolderType
 Children:
 - Name: GOptix_MML_Motor250mm
   Id: g=c9e2edb4d2cc967947388be1e639f5e3
-  Supertype: Panel
+  Supertype: GOptix_MML_MotorBase
   ReferenceType: HasComponent
   Children:
+  - Name: Motor
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
   - Name: AdvancedSVGImage1
     Type: AdvancedSVGImage
     Children:
@@ -90,31 +115,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Rotation
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+- Name: GOptix_MML_Motor1000mm
+  Id: g=b20924435928fb92306c99b1f786be2d
+  Supertype: GOptix_MML_MotorBase
+  ReferenceType: HasComponent
+  Children:
   - Name: Motor
     Type: Alias
     DataType: NodeId
@@ -124,21 +129,22 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":0,"Id":0,"Namespace":-1}
-- Name: GOptix_MML_Motor1000mm
-  Id: g=b20924435928fb92306c99b1f786be2d
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
   - Name: AdvancedSVGImage1
     Type: AdvancedSVGImage
     Children:
@@ -204,21 +210,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: -43.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Rotation
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+- Name: GOptix_MML_MotorCurveRight
+  Id: g=acd0d0b5b7bc23fd75d958b7c0091a99
+  Supertype: GOptix_MML_MotorBase
+  ReferenceType: HasComponent
+  Children:
   - Name: Motor
     Type: Alias
     DataType: NodeId
@@ -228,21 +224,22 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":0,"Id":0,"Namespace":-1}
-- Name: GOptix_MML_MotorCurveRight
-  Id: g=acd0d0b5b7bc23fd75d958b7c0091a99
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
   - Name: AdvancedSVGImage1
     Type: AdvancedSVGImage
     Children:
@@ -313,21 +310,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: -168.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Rotation
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+- Name: GOptix_MML_MotorCurveLeft
+  Id: g=966f5c4f05dedc562544dc4b6ef44ec2
+  Supertype: GOptix_MML_MotorBase
+  ReferenceType: HasComponent
+  Children:
   - Name: Motor
     Type: Alias
     DataType: NodeId
@@ -337,21 +324,22 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":0,"Id":0,"Namespace":-1}
-- Name: GOptix_MML_MotorCurveLeft
-  Id: g=966f5c4f05dedc562544dc4b6ef44ec2
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
   - Name: AdvancedSVGImage1
     Type: AdvancedSVGImage
     Children:
@@ -422,21 +410,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: -168.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Rotation
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+- Name: GOptix_MML_MotorSwitchRight
+  Id: g=09e90a9472e3445033aa62be73614573
+  Supertype: GOptix_MML_MotorBase
+  ReferenceType: HasComponent
+  Children:
   - Name: Motor
     Type: Alias
     DataType: NodeId
@@ -446,21 +424,22 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":0,"Id":0,"Namespace":-1}
-- Name: GOptix_MML_MotorSwitchRight
-  Id: g=09e90a9472e3445033aa62be73614573
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
   - Name: AdvancedSVGImage1
     Type: AdvancedSVGImage
     Children:
@@ -531,21 +510,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: -53.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Rotation
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+- Name: GOptix_MML_MotorSwitchLeft
+  Id: g=d2541a6170548f1704b440800af26948
+  Supertype: GOptix_MML_MotorBase
+  ReferenceType: HasComponent
+  Children:
   - Name: Motor
     Type: Alias
     DataType: NodeId
@@ -555,21 +524,22 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":0,"Id":0,"Namespace":-1}
-- Name: GOptix_MML_MotorSwitchLeft
-  Id: g=d2541a6170548f1704b440800af26948
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
   - Name: AdvancedSVGImage1
     Type: AdvancedSVGImage
     Children:
@@ -640,30 +610,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: -125.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Rotation
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 0.0
-  - Name: Motor
-    Type: Alias
-    DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
 - Name: GOptix_MML_VehicleBase
   Id: g=04ed0972b4165989c42dfd3216ddf5d2
   Supertype: Panel
@@ -1002,3 +948,43 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: false
+- Name: GOptix_MML_MotorBase
+  Id: g=f4ea5fcab4d9afd50e73fdfd290f637e
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: Motor
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: PathID1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PathID2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Index2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0

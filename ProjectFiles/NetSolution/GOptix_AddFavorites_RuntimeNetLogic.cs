@@ -17,6 +17,7 @@ using FTOptix.Core;
 using FTOptix.Recipe;
 using FTOptix.SQLiteStore;
 using FTOptix.WebUI;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class GOptix_AddFavorites_RuntimeNetLogic : BaseNetLogic

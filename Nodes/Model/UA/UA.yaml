@@ -1,0 +1,35 @@
+Name: UA
+Id: g=a97d7d10b5c7d55dab937b781ae5f588
+Type: FolderType
+Children:
+- Name: GOptix_Type_UAServer
+  Id: g=4325429ede95b37fd28d9fae31162694
+  Supertype: BaseObjectType
+  Children:
+  - Class: Method
+    Name: GetNodeInfo
+    Id: g=2a5a6b7398079b71a805a7561bf39f96
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=79a0a9b1090e046e19bb9737a3f53849
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"nodepath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Name: ns=0;OutputArguments
+      Id: g=debd051d5b0a2100105ba6aaf8c9344e
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"result","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: GOptix_UAServer_Host
+  Id: g=12e2aa1ed6a6204a0741a0aa9698da03
+  Type: GOptix_Type_UAServer
+  Children:
+  - Class: Reference
+    Target: g=2a5a6b7398079b71a805a7561bf39f96
+    Direction: Forward

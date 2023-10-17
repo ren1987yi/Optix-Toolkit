@@ -1,3 +1,58 @@
 Name: Users
 Id: g=8cdfe95c558e909385d4fe7ddc9a2655
 Type: UsersCategoryFolder
+Children:
+- Name: 1
+  Id: g=9cbb276e4ce1beaff1854fccb99e21ef
+  Type: UserType
+  Children:
+  - Name: Password
+    Id: g=87646dfccd5fa1f10f34ec6b8e64e70b
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Id: g=36cde3bb28e3681795894ce3a53dacd2
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [143,8,202,39,120,177,19,167,17,175,229,36,109,66,205,227,177,220,133,17,153,98,154,3,83,95,120,155,199,145,143,78],
+         "Salt": [253,113,245,11,181,70,32,242,5,53,78,7,107,168,87,93,101,243,193,61,157,218,222,130,157,48,113,238,159,220,198,137]
+        }
+       }
+    - Name: ChangeTimestamp
+      Id: g=ef42bc0d0279b39a7587405eb59f9833
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2023-10-17T07:09:01.8864926"
+    - Name: History
+      Id: g=be060085e8adf1f9a7a4c42d4bcd7e4f
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+  - Name: MeasurementSystem
+    Id: g=23b0120f712a676109f6f542e8fcfbba
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 0
+  - Name: Domain
+    Id: g=3073ebfd35f63a9f7a6fc175c0a504d8
+    Type: BaseVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    Value: ""

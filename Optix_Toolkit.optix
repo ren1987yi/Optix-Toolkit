@@ -105,5 +105,13 @@ Project:
    Uri: 'urn:FTOptix:WebUI:Net'
    Module: FTOptix.WebUI.Net
    Version: 1.1
+  27:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  28:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
  Nodes:
  - File: Nodes/Optix_Toolkit.yaml
