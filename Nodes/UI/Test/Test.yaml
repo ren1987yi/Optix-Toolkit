@@ -16,214 +16,6 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 800.0
-  - Name: GOptix_TreeView1
-    Type: GOptix_TreeView
-    Children:
-    - Name: Model
-      Type: Alias
-      DataType: NodeId
-      Value: {"IdType":2,"Id":"9a31a598bda884f6545ca3da8bbf3b73","Namespace":7}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":2,"Id":"9a31a598bda884f6545ca3da8bbf3b73","Namespace":7}
-    - Name: GOptix_TreeView_RuntimeNetLogic
-      Type: NetLogic
-      Children:
-      - Name: Container
-        Type: Alias
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../SV/VL@NodeId"
-      - Class: Reference
-        Target: g=369eba92da79710d700270df0b34e86e
-        Direction: Forward
-    - Name: SV
-      Type: ScrollView
-      Children:
-      - Name: VL
-        Type: ColumnLayout
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: ClickedNode
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":2,"Id":"d83de1915f3dd985229146acb7f00579","Namespace":7}
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 0
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: SelectedNode
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":2,"Id":"2abd05da592d5abb6f7cb1762598217b","Namespace":7}
-    - Name: SelectedTag
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: colorNormal
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#00000000"
-    - Name: colorNormal
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#00000000"
-    - Name: colorSelected
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-    - Name: colorArrow
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#000000"
-    - Name: Refresh
-      Type: MethodInvocation
-      Children:
-      - Name: ObjectPointer
-        Type: NodePointer
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"Id":58}
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../GOptix_TreeView_RuntimeNetLogic@NodeId"
-      - Name: Method
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Refresh"
-      - Class: Reference
-        Target: ns=2;i=98
-        Direction: Forward
-    - Name: TriggerRefresh
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-    - Name: TriggerRefreshChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../TriggerRefresh"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"Id":42,"Namespace":2}
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":58}
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../Refresh@NodeId"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Invoke"
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-            Value: ""
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-            Value: ""
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
-            Value: 0
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -245,7 +37,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../GOptix_TreeView1/SelectedNode/Text"
+        Value: "../../Rectangle1/GOptix_TreeView1/SelectedNode/Text"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -267,7 +59,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../GOptix_TreeView1/SelectedTag@Value"
+        Value: "../../Rectangle1/GOptix_TreeView1/SelectedTag@Value"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -463,6 +255,252 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: GOptix_TreeView1
+      Type: GOptix_TreeView
+      Children:
+      - Name: Model
+        Type: Alias
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"9a31a598bda884f6545ca3da8bbf3b73","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"9a31a598bda884f6545ca3da8bbf3b73","Namespace":7}
+      - Name: GOptix_TreeView_RuntimeNetLogic
+        Type: NetLogic
+        Children:
+        - Name: Container
+          Type: Alias
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../SV/VL@NodeId"
+        - Class: Reference
+          Target: g=369eba92da79710d700270df0b34e86e
+          Direction: Forward
+      - Name: SV
+        Type: ScrollView
+        Children:
+        - Name: VL
+          Type: ColumnLayout
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: ClickedNode
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"d83de1915f3dd985229146acb7f00579","Namespace":7}
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: SelectedNode
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"2abd05da592d5abb6f7cb1762598217b","Namespace":7}
+      - Name: SelectedTag
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: colorNormal
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#00000000"
+      - Name: colorNormal
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: colorSelected
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ff0000"
+      - Name: colorArrow
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: Refresh
+        Type: MethodInvocation
+        Children:
+        - Name: ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../GOptix_TreeView_RuntimeNetLogic@NodeId"
+        - Name: Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Refresh"
+        - Class: Reference
+          Target: ns=2;i=98
+          Direction: Forward
+      - Name: TriggerRefresh
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: TriggerRefreshChanged
+        Type: VariableChangedEventDispatcher
+        Children:
+        - Name: VariableNodePath
+          Type: BaseVariableType
+          DataType: NodePath
+          Value: "../TriggerRefresh"
+        - Name: VariableValueChangedEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":42,"Namespace":2}
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":58}
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../Refresh@NodeId"
+              - Name: Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "Invoke"
+          - Name: EventArguments
+            Type: VariableValueChangedEvent
+            Children:
+            - Name: VariableNodeId
+              Type: BaseVariableType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: NewValue
+              Type: BaseVariableType
+              DataType: BaseDataType
+            - Name: OldValue
+              Type: BaseVariableType
+              DataType: BaseDataType
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+              Value: ""
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+              Value: ""
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+              Value: 0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#eeeeee"
 - Name: test_CamEditor
   Id: g=b0cf4c4e9617a73c87c2c24c02e6d9f8
   Supertype: Panel

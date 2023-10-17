@@ -596,10 +596,12 @@ Children:
         ValueRank: OneDimension
         ArrayDimensions: [0]
         Value: [{"TypeId":{"Id":296},"Body":{"Name":"vehicleNo","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"pathId","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"position","DataType":{"Id":10},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: BuildLayout
   - Name: TrackFile
     Type: BaseDataVariableType
-    DataType: ResourceUri
-    Value: "file:///D:/Work/Projects/PLC/MML/optix_test/t1.mmtrk"
+    DataType: String
+    Value: "D:\\Work\\Projects\\PLC\\MML\\optix_test\\slovt2.mmlopt"
   - Name: MotorModel
     Type: Alias
     DataType: NodeId
@@ -703,6 +705,40 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: BuildLayout
+    Type: MethodInvocation
+    Children:
+    - Name: ObjectPointer
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":58}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../GOptix_MML_Viewer_RuntimeNetLogic@NodeId"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Method
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "BuildLayout"
+    - Class: Reference
+      Target: ns=2;i=98
+      Direction: Forward
+  - Name: StatePullingTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"en-US","Text":"State Pulling Time(ms)"}
+    Value: 100
 - Name: GOptix_Dlg_Motor
   Id: g=c11089f0a1fa71d5541d36b523d704e4
   Supertype: Dialog

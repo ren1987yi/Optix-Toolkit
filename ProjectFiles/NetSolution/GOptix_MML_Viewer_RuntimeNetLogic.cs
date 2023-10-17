@@ -33,7 +33,8 @@ public class GOptix_MML_Viewer_RuntimeNetLogic : BaseNetLogic
 
     IUANode VehicleModel;
 
-
+    string _trackFilePath;
+    LongRunningTask _taskBuildTrack;
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
@@ -53,10 +54,24 @@ public class GOptix_MML_Viewer_RuntimeNetLogic : BaseNetLogic
             MotorSwitchRightTypeId= Owner.GetAlias("MotorSwitchRightType").NodeId,
             VehicleTypeId= Owner.GetAlias("VehicleType").NodeId,
         };
-        layoutViewer = new LayoutViewer2D(container,config,LogicObject);
 
-        var filepath = "D:\\Work\\Projects\\PLC\\MML\\optix_test\\slovt.mmtrk";
-        layoutViewer.BuildTrack(filepath,VehicleModel);
+        // var filepath = "D:\\Work\\Projects\\PLC\\MML\\optix_test\\t1.mmlopt";
+        // var filepath = "D:\\Work\\Projects\\PLC\\MML\\optix_test\\slovt2.mmlopt";
+        // var filepath = "D:\\aaaaaa.bin";
+
+
+        var pullingTime = 100;
+        var v = Owner.GetVariable("StatePullingTime");
+        if(v != null){
+            pullingTime = (int)v.Value;
+        }
+        layoutViewer = new LayoutViewer2D(container,config,LogicObject,pullingTime);
+
+        _taskBuildTrack = new LongRunningTask(TaskBuildTrack,LogicObject);
+        _trackFilePath = (string)varTrackFile.Value;
+        _taskBuildTrack.Start();
+
+        
 
     }
 
@@ -66,8 +81,18 @@ public class GOptix_MML_Viewer_RuntimeNetLogic : BaseNetLogic
         layoutViewer?.Dispose();
     }
 
-    public void BuildTrack(){
 
+
+
+    [ExportMethod]
+    public void BuildLayout(){
+         _trackFilePath = (string)varTrackFile.Value;
+        _taskBuildTrack.Start();
+    }
+
+
+    public void TaskBuildTrack(){
+        layoutViewer.BuildTrack(_trackFilePath,VehicleModel);
     }
 
     [ExportMethod]

@@ -22,8 +22,8 @@
     <PackageReference Include="QuikGraph" Version="2.5.0"/>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MagneMotion">
-      <HintPath>D:\code\csharp\RAFI\MagneMotion\bin\Debug\netstandard2.1\MagneMotion.dll</HintPath>
+    <Reference Include="MagneMotion.DSL">
+      <HintPath>D:\code\csharp\RAFI\MagneMotion.DSL\bin\Debug\netstandard2.1\MagneMotion.DSL.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

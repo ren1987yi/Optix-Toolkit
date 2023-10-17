@@ -27,12 +27,13 @@ using FTOptix.CoreBase;
 using FTOptix.Store;
 using FTOptix.Core;
 #endregion
-using MagneMotion;
-using MagneMotion.ML;
+// using MagneMotion;
+// using MagneMotion.ML;
 using System.Linq;
 using System.Collections.Generic;
 using System.Numerics;
-
+using MagneMotion.DSL;
+using MagneMotion;
 
 
 namespace GOptixLib.MagneMotionLite{
@@ -45,13 +46,17 @@ namespace GOptixLib.MagneMotionLite{
 		const string _PLACEHOLDER_OBJECT_NAME_ = "a6ad371a0950da0e1d6741b6b2383b2bb5657203851fb55cd21f6f62d7b320f6eee11f2696403d330131c44349abb9b870f44c6f7ed60e71ff4601a79a6cc535";
 		readonly Item _container;// viewer 容器 scrollerviewer
 		readonly LayoutViewer2DConfiguration _config; //配置
-		Map _map; //地图
-		TrackPath _trackPath; //轨迹路径
+		MapDSL _map; //地图
+		// TrackPath _trackPath; //轨迹路径
 		
 		readonly List<Item> _vehicles = new List<Item>(); //车 ui
 		readonly List<IUANode> _motors = new List<IUANode>(); // motor ui
 
 		readonly IUAObject LogicObject; //optix logic object, this host
+
+		
+
+
 		public LayoutViewer2D(Item container,LayoutViewer2DConfiguration configure,IUAObject logicObject,int update_period=100){
 			_container = container;
 			_config = configure;
@@ -65,6 +70,10 @@ namespace GOptixLib.MagneMotionLite{
 			try{
 				_taskUpdateVehicleLocation.Cancel();
 				_taskUpdateVehicleLocation?.Dispose();
+				_taskUpdateVehicleLocation = null;
+
+				_map.Dispose();
+				_map = null;
 
 			}catch{
 
@@ -72,31 +81,26 @@ namespace GOptixLib.MagneMotionLite{
 		}
 
 		public void BuildTrack(string filepath,IUANode vehicleModel,int update_period=100){
+
+			ClearContainer(_container);
 			if(_map != null){
 
 				_taskUpdateVehicleLocation.Cancel();
 			}
 			
-			
-			ClearContainer(_container);
-			
-			var map = FileHelper.LoadMMLTrackFile(filepath);
-			_map = map;
-
-#if DEBUG
-			Log.Info("ICT","OLD===================================================");
-			foreach(var motor in map.MotorEntities){
-				Log.Info("ICT", $"{motor.TypeName} angle:{motor.Rotation} x:{motor.Location.X} y:{motor.Location.Y}");
+			var map = MapDSL.Load(filepath);
+			if(map == null){
+				Log.Error("load track file is error");
+				return;
 			}
-#endif
+			_map = map;
+			#if DEBUG
+			Log.Info("ICT","motors ===================================================");
+			foreach(var motor in map.Motors){
+				Log.Info("ICT", $"{motor.TypeName} angle:{motor.Location.RotateAngle} x:{motor.Location.X} y:{motor.Location.Y}");
+			}
+			#endif
 
-
-			var res = FileHelper.TrackToOptix(map);
-			var wrl = res[0];
-			var box = res[1];
-		
-
-			
 
 
 			var idx = 0; //motor index
@@ -119,9 +123,9 @@ namespace GOptixLib.MagneMotionLite{
 			
 
 			//build motor ,add to container
-			foreach(var motor in map.MotorEntities){
+			foreach(var motor in map.Motors){
 				#if DEBUG
-				Log.Info("ICT", $"{motor.TypeName} angle:{motor.Rotation} x:{motor.Location.X} y:{motor.Location.Y}");
+				Log.Info("ICT", $"{motor.TypeName} angle:{motor.Location.RotateAngle} x:{motor.Location.X} y:{motor.Location.Y}");
 				#endif
 
 				//motor 里由 path 的 信息
@@ -132,7 +136,7 @@ namespace GOptixLib.MagneMotionLite{
 						var m_l_curve = InformationModel.MakeObject($"{idx}",ui_l_curve) as Item;
 						m_l_curve.LeftMargin = motor.Location.X;
 						m_l_curve.TopMargin = motor.Location.Y;
-						m_l_curve.Rotation = motor.Rotation;
+						m_l_curve.Rotation = motor.Location.RotateAngle;
 						
 						_container.Add(m_l_curve);
 						_motors.Add(m_l_curve);
@@ -141,7 +145,7 @@ namespace GOptixLib.MagneMotionLite{
 						var m_r_curve = InformationModel.MakeObject($"{idx}",ui_r_curve) as Item;
 						m_r_curve.LeftMargin = motor.Location.X;
 						m_r_curve.TopMargin = motor.Location.Y;
-						m_r_curve.Rotation = motor.Rotation;
+						m_r_curve.Rotation = motor.Location.RotateAngle;
 						_container.Add(m_r_curve);
 						_motors.Add(m_r_curve);
 						break;
@@ -149,7 +153,7 @@ namespace GOptixLib.MagneMotionLite{
 						var m_q_meter = InformationModel.MakeObject($"{idx}",ui_qmeter) as Item;
 						m_q_meter.LeftMargin = motor.Location.X;
 						m_q_meter.TopMargin = motor.Location.Y;
-						m_q_meter.Rotation = motor.Rotation;
+						m_q_meter.Rotation = motor.Location.RotateAngle;
 						_container.Add(m_q_meter);
 						_motors.Add(m_q_meter);
 						break;
@@ -157,7 +161,7 @@ namespace GOptixLib.MagneMotionLite{
 						var m_1_meter = InformationModel.MakeObject($"{idx}",ui_1meter) as Item;
 						m_1_meter.LeftMargin = motor.Location.X;
 						m_1_meter.TopMargin = motor.Location.Y;
-						m_1_meter.Rotation = motor.Rotation;
+						m_1_meter.Rotation = motor.Location.RotateAngle;
 						_container.Add(m_1_meter);
 						_motors.Add(m_1_meter);
 						break;
@@ -165,7 +169,7 @@ namespace GOptixLib.MagneMotionLite{
 						var m_l_switch = InformationModel.MakeObject($"{idx}",ui_l_switch) as Item;
 						m_l_switch.LeftMargin = motor.Location.X;
 						m_l_switch.TopMargin = motor.Location.Y;
-						m_l_switch.Rotation = motor.Rotation;
+						m_l_switch.Rotation = motor.Location.RotateAngle;
 						_container.Add(m_l_switch);
 						_motors.Add(m_l_switch);
 						break;
@@ -173,7 +177,7 @@ namespace GOptixLib.MagneMotionLite{
 						var m_r_switch = InformationModel.MakeObject($"{idx}",ui_r_switch) as Item;
 						m_r_switch.LeftMargin = motor.Location.X;
 						m_r_switch.TopMargin = motor.Location.Y;
-						m_r_switch.Rotation = motor.Rotation;
+						m_r_switch.Rotation = motor.Location.RotateAngle;
 						_container.Add(m_r_switch);
 						_motors.Add(m_r_switch);
 						break;
@@ -184,24 +188,24 @@ namespace GOptixLib.MagneMotionLite{
 				idx++;
 			}
 
+
+				//add a hide box
+			var _rect = InformationModel.Make<Rectangle>(_PLACEHOLDER_OBJECT_NAME_ + "2");
 			
-			//add a hide box
-			var _rect = InformationModel.Make<Rectangle>(_PLACEHOLDER_OBJECT_NAME_);
-			_rect.LeftMargin = box.X +1000 ;
-			_rect.TopMargin = box.Y+1000;
+			_rect.LeftMargin = map.BoundBox.X *1.1f;
+			_rect.TopMargin = map.BoundBox.Y *1.1f;
 			_container.Add(_rect);
 
 
-		
-		
-
-			//build track path
-			var track = new TrackPath(map.Paths);
-			track.WorldLoc = new Vector2(wrl.X,wrl.Y);
-			_trackPath = track;
+			// _rect = InformationModel.Make<Rectangle>(_PLACEHOLDER_OBJECT_NAME_ + "1");
+			
+			// _rect.LeftMargin = - 1000;
+			// _rect.TopMargin = -1000;
+			// _container.Add(_rect);
 
 
-			// add vehicle from model
+
+				// add vehicle from model
 			if(vehicleModel != null){
 				foreach(var vehicle in vehicleModel.Children.OfType<IUAObject>()){
 					AddVehicle(1,0,vehicle);
@@ -210,9 +214,158 @@ namespace GOptixLib.MagneMotionLite{
 
 
 			_taskUpdateVehicleLocation.Start();
+		
 
 
 		}
+
+
+// 		[Obsolete]
+// 		public void BuildTrack2222222222222222222222222222222222(string filepath,IUANode vehicleModel,int update_period=100){
+// 			if(_map != null){
+
+// 				_taskUpdateVehicleLocation.Cancel();
+// 			}
+			
+			
+// 			ClearContainer(_container);
+			
+
+
+
+// 			var map = FileHelper.LoadMMLTrackFile(filepath);
+// 			_map = map;
+
+// #if DEBUG
+// 			Log.Info("ICT","OLD===================================================");
+// 			foreach(var motor in map.MotorEntities){
+// 				Log.Info("ICT", $"{motor.TypeName} angle:{motor.Rotation} x:{motor.Location.X} y:{motor.Location.Y}");
+// 			}
+// #endif
+
+
+// 			var res = FileHelper.TrackToOptix(map);
+// 			var wrl = res[0];
+// 			var box = res[1];
+		
+
+			
+
+
+// 			var idx = 0; //motor index
+
+// 			#if DEBUG
+// 			Log.Info("ICT","NEW===================================================");
+// 			#endif
+
+			
+
+// 			var ui_qmeter = _config.Motor250mmTypeId;
+// 			var ui_1meter = _config.Motor1000mmTypeId;
+// 			var ui_l_curve = _config.MotorCurveLeftTypeId;
+// 			var ui_r_curve = _config.MotorCurveRightTypeId;
+// 			var ui_l_switch = _config.MotorSwitchLeftTypeId;
+// 			var ui_r_switch = _config.MotorSwitchRightTypeId;
+// 			var ui_vehicle = _config.VehicleTypeId;
+
+			
+			
+
+// 			//build motor ,add to container
+// 			foreach(var motor in map.MotorEntities){
+// 				#if DEBUG
+// 				Log.Info("ICT", $"{motor.TypeName} angle:{motor.Rotation} x:{motor.Location.X} y:{motor.Location.Y}");
+// 				#endif
+
+// 				//motor 里由 path 的 信息
+
+// 				switch(motor.TypeName){
+// 					case "motor_l_curve":
+						
+// 						var m_l_curve = InformationModel.MakeObject($"{idx}",ui_l_curve) as Item;
+// 						m_l_curve.LeftMargin = motor.Location.X;
+// 						m_l_curve.TopMargin = motor.Location.Y;
+// 						m_l_curve.Rotation = motor.Rotation;
+						
+// 						_container.Add(m_l_curve);
+// 						_motors.Add(m_l_curve);
+// 						break;
+// 					case "motor_r_curve":
+// 						var m_r_curve = InformationModel.MakeObject($"{idx}",ui_r_curve) as Item;
+// 						m_r_curve.LeftMargin = motor.Location.X;
+// 						m_r_curve.TopMargin = motor.Location.Y;
+// 						m_r_curve.Rotation = motor.Rotation;
+// 						_container.Add(m_r_curve);
+// 						_motors.Add(m_r_curve);
+// 						break;
+// 					case "motor_q_meter":
+// 						var m_q_meter = InformationModel.MakeObject($"{idx}",ui_qmeter) as Item;
+// 						m_q_meter.LeftMargin = motor.Location.X;
+// 						m_q_meter.TopMargin = motor.Location.Y;
+// 						m_q_meter.Rotation = motor.Rotation;
+// 						_container.Add(m_q_meter);
+// 						_motors.Add(m_q_meter);
+// 						break;
+// 					case "motor_1_meter":
+// 						var m_1_meter = InformationModel.MakeObject($"{idx}",ui_1meter) as Item;
+// 						m_1_meter.LeftMargin = motor.Location.X;
+// 						m_1_meter.TopMargin = motor.Location.Y;
+// 						m_1_meter.Rotation = motor.Rotation;
+// 						_container.Add(m_1_meter);
+// 						_motors.Add(m_1_meter);
+// 						break;
+// 					case "motor_l_switch":
+// 						var m_l_switch = InformationModel.MakeObject($"{idx}",ui_l_switch) as Item;
+// 						m_l_switch.LeftMargin = motor.Location.X;
+// 						m_l_switch.TopMargin = motor.Location.Y;
+// 						m_l_switch.Rotation = motor.Rotation;
+// 						_container.Add(m_l_switch);
+// 						_motors.Add(m_l_switch);
+// 						break;
+// 					case "motor_r_switch":
+// 						var m_r_switch = InformationModel.MakeObject($"{idx}",ui_r_switch) as Item;
+// 						m_r_switch.LeftMargin = motor.Location.X;
+// 						m_r_switch.TopMargin = motor.Location.Y;
+// 						m_r_switch.Rotation = motor.Rotation;
+// 						_container.Add(m_r_switch);
+// 						_motors.Add(m_r_switch);
+// 						break;
+						
+// 				}
+
+
+// 				idx++;
+// 			}
+
+			
+// 			//add a hide box
+// 			var _rect = InformationModel.Make<Rectangle>(_PLACEHOLDER_OBJECT_NAME_);
+// 			_rect.LeftMargin = box.X +1000 ;
+// 			_rect.TopMargin = box.Y+1000;
+// 			_container.Add(_rect);
+
+
+		
+		
+
+// 			//build track path
+// 			var track = new TrackPath(map.Paths);
+// 			track.WorldLoc = new Vector2(wrl.X,wrl.Y);
+// 			_trackPath = track;
+
+
+// 			// add vehicle from model
+// 			if(vehicleModel != null){
+// 				foreach(var vehicle in vehicleModel.Children.OfType<IUAObject>()){
+// 					AddVehicle(1,0,vehicle);
+// 				}
+// 			}
+
+
+// 			_taskUpdateVehicleLocation.Start();
+
+
+// 		}
 
 
 		private void ClearContainer(Item container){
@@ -253,7 +406,11 @@ namespace GOptixLib.MagneMotionLite{
 				var status = model as GOptix_Type_MML_VehicleStatus;
 				_vehicleMapper.Add(status.LocationVariable,m_vehicle);
 			}
-			_trackPath?.MoveVehicle(pathId,position,m_vehicle);
+			//_trackPath?.MoveVehicle(pathId,position,m_vehicle);
+			MoveVehicle(pathId,position,m_vehicle);
+			
+
+
 			_container?.Add(m_vehicle);
 			_vehicles?.Add(m_vehicle);
 		}
@@ -267,7 +424,8 @@ namespace GOptixLib.MagneMotionLite{
 		public void MoveVehicle(int id,int pathId,float position){
 			if(id > 0 && id <= _vehicles.Count){
 				var m_vehicle = _vehicles[id-1];
-				_trackPath?.MoveVehicle(pathId,position,m_vehicle);
+				// _trackPath?.MoveVehicle(pathId,position,m_vehicle);
+				MoveVehicle(pathId,position,m_vehicle);
 			}
 		}
 
@@ -300,12 +458,33 @@ namespace GOptixLib.MagneMotionLite{
 				if(locs.Length == 2){
 					
 					if(int.TryParse(locs[0],out var pathId) && float.TryParse(locs[1],out var position)){
-						_trackPath?.MoveVehicle(pathId,position,kv.Value);
+						// _trackPath?.MoveVehicle(pathId,position,kv.Value);
+						MoveVehicle(pathId,position,kv.Value);
 					}
 				}
 				
 			}
 		}
+
+		void MoveVehicle(int pathId,float position,Item vehicle){
+			var loc = _map.Track?.GetLocation(pathId,position);
+			if(loc != null){
+
+				LocationToOptix(loc,out var x,out var y,out var angle);
+				vehicle.LeftMargin = x;
+				vehicle.TopMargin = y;
+				vehicle.Rotation = angle;
+			}
+
+		}
+
+		void LocationToOptix(Location loc,out float x,out float y,out float angle){
+			x = loc.X + _map.WorldLocation.X;
+			y = _map.WorldLocation.Y - loc.Y;
+			angle = loc.RotateAngle *- 1;
+
+
+		} 
 
 
 	}
