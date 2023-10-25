@@ -36,12 +36,15 @@ Optix Version : **V1.2.0.272**
 官方流程 :https://learn.microsoft.com/zh-cn/nuget/consume-packages/install-use-packages-visual-studio
 
 1.若要更改 Visual Studio 从中加载包元数据的源，请从 包源 选择器中选择源。
+
 ![](https://learn.microsoft.com/zh-cn/nuget/consume-packages/media/package-source-selector.png)
 
 2.若要管理包源，请选择“设置”图标或选择“工具>选项”。
+
 ![](https://learn.microsoft.com/zh-cn/nuget/consume-packages/media/package-source-settings.png)
 
 3.在 “选项” 窗口中，展开 NuGet 包管理器 节点，然后选择 “包源”。
+
 ![](https://learn.microsoft.com/zh-cn/nuget/consume-packages/media/package-sources.png)
 
 4.要添加源，请选择 +，编辑名称，在“源”控件中输入 URL 或路径，然后选择“更新”。
@@ -109,6 +112,7 @@ Panel
 ### 1.2 GOptix_TreeView
 
 树形控件
+
 ![](doc\treeview.png)
 
 #### Browse Name
@@ -500,8 +504,6 @@ Panel
 ### 1.12 GOptix_GridCollection
 
 可根据主数据节点内元素的个数，自动填充控件，并完成数据绑定。主数据节点内元素变更时自动更新界面UI。排布方式为 二维表格
-
-
 
 ![](doc\gridcollection.png)
 
