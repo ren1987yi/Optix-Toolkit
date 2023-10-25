@@ -132,10 +132,6 @@ Children:
       DataType: NodePointerNodeClass
       ModellingRule: Optional
       Value: 2
-    - Name: colorNormal
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#00000000"
   - Name: colorNormal
     Type: BaseDataVariableType
     DataType: Color
@@ -269,14 +265,23 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+  - Name: TreeNodeUIType
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"d83de1915f3dd985229146acb7f00579","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
 - Name: GOptix_Type_TreeNode
   Id: g=2abd05da592d5abb6f7cb1762598217b
   Supertype: BaseObjectType
   Children:
   - Name: Text
     Type: BaseDataVariableType
-    DataType: String
-    Value: ""
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":""}
   - Name: Image
     Type: BaseDataVariableType
     DataType: ResourceUri
@@ -330,6 +335,7 @@ Children:
     Children:
     - Class: Method
       Name: ClickNode
+      Id: g=887def827a5507a8dab9c742a363188c
     - Name: Container
       Type: Alias
       DataType: NodeId
@@ -351,6 +357,7 @@ Children:
           Value: 2
     - Class: Method
       Name: OnExpand_Handle
+      Id: g=cd6dcb23b8e56c1e8f6de2b3cde4e36d
   - Name: TreeView
     Type: Alias
     DataType: NodeId
@@ -509,65 +516,6 @@ Children:
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
-        - Name: Icon
-          Type: Image
-          Children:
-          - Name: Path
-            Type: BaseDataVariableType
-            DataType: ResourceUri
-            Value: ""
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{TreeNode}/Image"
-          - Name: Width
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 32.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 32.0
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 2
-        - Name: lbText
-          Type: Label
-          Children:
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{TreeNode}/Text"
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 2
-          - Name: HorizontalAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-            ModellingRule: Optional
-            Value: 3
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 4.0
-          - Name: RightMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 4.0
         - Name: _img_
           Type: Image
           Children:
@@ -733,6 +681,65 @@ Children:
               Type: DynamicLink
               DataType: NodePath
               Value: "../../../../../colorArrow"
+        - Name: Icon
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{TreeNode}/Image"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 32.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 32.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: lbText
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{TreeNode}/Text"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 4.0
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 4.0
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean

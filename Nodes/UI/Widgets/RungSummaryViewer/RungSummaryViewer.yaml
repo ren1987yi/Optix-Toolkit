@@ -913,6 +913,7 @@ Children:
       Type: BaseObjectType
     - Class: Method
       Name: Program_SelectChangeHandle
+      Id: g=b9ea2931366bb9f06e349e5803b79bcd
       Children:
       - Name: ns=0;InputArguments
         Type: BaseVariableType
@@ -923,6 +924,7 @@ Children:
         Value: [{"TypeId":{"Id":296},"Body":{"Name":"item","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
     - Class: Method
       Name: Routine_SelectChangeHandle
+      Id: g=3c7751a735e9aa20a95fe9fc7171bedb
       Children:
       - Name: ns=0;InputArguments
         Type: BaseVariableType
@@ -933,6 +935,7 @@ Children:
         Value: [{"TypeId":{"Id":296},"Body":{"Name":"item","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
     - Class: Method
       Name: Rung_SelectChangeHandle
+      Id: g=7753d0713df2bb90645e26b8343eb4ee
       Children:
       - Name: ns=0;InputArguments
         Type: BaseVariableType
@@ -943,8 +946,10 @@ Children:
         Value: [{"TypeId":{"Id":296},"Body":{"Name":"item","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
     - Class: Method
       Name: OpenRung
+      Id: g=2b3d259d12d966289937c64ae3c0d872
     - Class: Method
       Name: ExOpenRung
+      Id: g=2c12cb1b9cc47ee7ea954928d2d1f98a
       Children:
       - Name: ns=0;InputArguments
         Type: BaseVariableType

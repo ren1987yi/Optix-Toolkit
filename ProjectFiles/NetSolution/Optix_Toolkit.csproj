@@ -16,11 +16,10 @@
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="OptixHelper" Version="0.0.1.3" />
-    <PackageReference Include="GFlow.OptixWrapper" Version="1.0.6.5" />
-    <PackageReference Include="GFlow.Steps" Version="1.0.6.6" />
-    <PackageReference Include="MagneMotion.DSL" Version="0.0.1" />
-    
+    <PackageReference Include="OptixHelper" Version="0.0.1.3"/>
+    <PackageReference Include="GFlow.OptixWrapper" Version="1.0.6.5"/>
+    <PackageReference Include="GFlow.Steps" Version="1.0.6.6"/>
+    <PackageReference Include="MagneMotion.DSL" Version="0.0.1"/>
   </ItemGroup>
-  <Import Project="Optix_Toolkit.references" />
+  <Import Project="Optix_Toolkit.references"/>
 </Project>

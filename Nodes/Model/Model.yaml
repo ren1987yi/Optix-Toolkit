@@ -4,3 +4,15 @@ Children:
 - File: DataTypes/DataTypes.yaml
 - File: Data/Data.yaml
 - File: UA/UA.yaml
+- Class: DataType
+  Name: Enumeration1
+  Id: g=46c065fee62ffca752021ccd87d23565
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: []

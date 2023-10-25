@@ -1,7 +1,7 @@
 Name: Data
 Type: FolderType
 Children:
-- Name: Object1
+- Name: RandomObject
   Type: BaseObjectType
   Children:
   - Name: V1
@@ -21,6 +21,311 @@ Children:
       Type: BaseDataVariableType
       DataType: Int32
       Value: 1000
+  - Name: V3
+    Id: g=4da78dd4be817094dda4fabcde2ba665
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V10
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V11
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V12
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V13
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V14
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V15
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V16
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V17
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V18
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V19
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V20
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V21
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V22
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V23
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V24
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V25
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V26
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V27
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V28
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V29
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V30
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V31
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V32
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V33
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V34
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V35
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V36
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V37
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V38
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V39
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V40
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V41
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V42
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V43
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V44
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V45
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V46
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V47
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V48
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V49
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V50
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V51
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V52
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V53
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V54
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V55
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V56
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V57
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V58
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V59
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V60
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V61
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V62
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V63
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V64
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V65
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V66
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V67
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V68
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V69
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V70
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V71
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V72
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V73
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V74
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V75
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V76
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V77
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
+  - Name: V78
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 123456
 - Name: TestTreeModel
   Id: g=9a31a598bda884f6545ca3da8bbf3b73
   Type: BaseObjectType
@@ -30,8 +335,8 @@ Children:
     Children:
     - Name: Text
       Type: BaseDataVariableType
-      DataType: String
-      Value: "1"
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"1"}
     - Name: Image
       Type: BaseDataVariableType
       DataType: ResourceUri
@@ -57,8 +362,8 @@ Children:
         Children:
         - Name: Text
           Type: BaseDataVariableType
-          DataType: String
-          Value: "1-1"
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"1-1"}
         - Name: Image
           Type: BaseDataVariableType
           DataType: ResourceUri
@@ -66,7 +371,7 @@ Children:
         - Name: Tag
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Value: {"IdType":2,"Id":"4da78dd4be817094dda4fabcde2ba665","Namespace":7}
           Children:
           - Name: Kind
             Type: PropertyType
@@ -84,8 +389,8 @@ Children:
             Children:
             - Name: Text
               Type: BaseDataVariableType
-              DataType: String
-              Value: "1-1-1"
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"1-1-1"}
             - Name: Image
               Type: BaseDataVariableType
               DataType: ResourceUri
@@ -110,8 +415,8 @@ Children:
         Children:
         - Name: Text
           Type: BaseDataVariableType
-          DataType: String
-          Value: "1-2"
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"1-2"}
         - Name: Image
           Type: BaseDataVariableType
           DataType: ResourceUri
@@ -136,8 +441,8 @@ Children:
         Children:
         - Name: Text
           Type: BaseDataVariableType
-          DataType: String
-          Value: "1-3"
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"1-3"}
         - Name: Image
           Type: BaseDataVariableType
           DataType: ResourceUri
@@ -162,8 +467,8 @@ Children:
     Children:
     - Name: Text
       Type: BaseDataVariableType
-      DataType: String
-      Value: "2"
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"2"}
     - Name: Image
       Type: BaseDataVariableType
       DataType: ResourceUri
@@ -171,7 +476,7 @@ Children:
     - Name: Tag
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Value: {"IdType":2,"Id":"9513f176c826aac8010c9b2eff512664","Namespace":7}
       Children:
       - Name: Kind
         Type: PropertyType
@@ -380,3 +685,20 @@ Children:
               Type: DynamicLink
               DataType: NodePath
               Value: "../../../Position"
+- Name: Object2
+  Type: BaseObjectType
+- Name: Object3
+  Type: BaseObjectType
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: SystemInfo
+  Type: BaseObjectType
+  Children:
+  - Name: Version
+    Id: g=fc1211b29ad960cedef427189ada0cc0
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0.0.1"

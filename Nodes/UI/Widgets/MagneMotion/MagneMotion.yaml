@@ -586,8 +586,10 @@ Children:
           Value: 2
     - Class: Method
       Name: AddVehicle
+      Id: g=e1002b163bd7069f1ed2c24ee842847e
     - Class: Method
       Name: SetVehicleLocation
+      Id: g=2302e69fe882131a5ba53d015271d08c
       Children:
       - Name: ns=0;InputArguments
         Type: BaseVariableType
@@ -598,6 +600,7 @@ Children:
         Value: [{"TypeId":{"Id":296},"Body":{"Name":"vehicleNo","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"pathId","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"position","DataType":{"Id":10},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
     - Class: Method
       Name: BuildLayout
+      Id: g=3441136a77371065e74c8a1d0874aa79
   - Name: TrackFile
     Type: BaseDataVariableType
     DataType: String

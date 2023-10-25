@@ -25,6 +25,8 @@ using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
 using FTOptix.WebUI;
+using FTOptix.System;
+using FTOptix.Report;
 public class GFlow_Viewer_RuntimeNetLogic : BaseNetLogic
 {
     IUANode WorkflowsObject;

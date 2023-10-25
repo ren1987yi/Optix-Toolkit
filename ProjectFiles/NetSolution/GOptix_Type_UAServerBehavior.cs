@@ -20,6 +20,8 @@ using FTOptix.OPCUAServer;
 using GOptixLib;
 using GOptixLib.OpcUA;
 using Newtonsoft.Json;
+using FTOptix.System;
+using FTOptix.Report;
 [CustomBehavior]
 public class GOptix_Type_UAServerBehavior : BaseNetBehavior
 {
@@ -34,29 +36,39 @@ public class GOptix_Type_UAServerBehavior : BaseNetBehavior
     }
 
     [ExportMethod]
-    public void GetNodeInfo(string nodepath,out string result){
+    public void GetNodeInfo(string nodepath, out string result)
+    {
         // result = "1";
 
 
-        var res = new MethodExecuteResult(){
+        var res = new MethodExecuteResult()
+        {
             Success = false,
             ErrorMessage = "node not exists",
             Result = null
         };
 
         var node = Project.Current.Get(nodepath);
-        if(node != null){
+        if (node != null)
+        {
 
             var nodeinfo = new NodeInfoDto();
 
             nodeinfo.TypeName = node.GetType().Name;
-            if(node.GetType().IsSubclassOf(typeof(UAVariable))){
+            if (node.GetType().IsSubclassOf(typeof(UAVariable)))
+            {
                 nodeinfo.NodeType = NodeType.Variable;
-            }else if(node.GetType().IsSubclassOf(typeof(UAObject))){
+            }
+            else if (node.GetType().IsSubclassOf(typeof(UAObject)))
+            {
                 nodeinfo.NodeType = NodeType.Object;
-            }else if(node.GetType().IsSubclassOf(typeof(Folder))){
+            }
+            else if (node.GetType().IsSubclassOf(typeof(Folder)))
+            {
                 nodeinfo.NodeType = NodeType.Folder;
-            }else if(node.GetType().IsSubclassOf(typeof(UANode))){
+            }
+            else if (node.GetType().IsSubclassOf(typeof(UANode)))
+            {
                 nodeinfo.NodeType = NodeType.Node;
             }
 
@@ -67,20 +79,20 @@ public class GOptix_Type_UAServerBehavior : BaseNetBehavior
             res.Result = nodeinfo;
             res.Success = true;
             res.ErrorMessage = string.Empty;
-            
+
         }
 
         result = JsonConvert.SerializeObject(res);
 
-        
+
     }
 
-    
 
 
-   
 
-#region Auto-generated code, do not edit!
+
+
+    #region Auto-generated code, do not edit!
     protected new GOptix_Type_UAServer Node => (GOptix_Type_UAServer)base.Node;
-#endregion
+    #endregion
 }

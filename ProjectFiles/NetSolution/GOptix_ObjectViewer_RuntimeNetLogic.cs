@@ -16,6 +16,8 @@ using FTOptix.CoreBase;
 using FTOptix.Store;
 using FTOptix.Core;
 using FTOptix.OPCUAServer;
+using FTOptix.System;
+using FTOptix.Report;
 #endregion
 
 public class GOptix_ObjectViewer_RuntimeNetLogic : BaseNetLogic

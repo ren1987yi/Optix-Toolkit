@@ -3,3 +3,39 @@ Type: FolderType
 Children:
 - Name: Object12
   Type: BaseObjectType
+- Class: DataType
+  Name: Enum_EChartDataSource
+  Id: g=47e4923c172fef459ef7d8fd3cc619d0
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_EChartDataSource",
+    "DataType": {
+     "IdType": 2,
+     "Id": "47e4923c172fef459ef7d8fd3cc619d0",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "From File"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "From URL"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"From File"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"From URL"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

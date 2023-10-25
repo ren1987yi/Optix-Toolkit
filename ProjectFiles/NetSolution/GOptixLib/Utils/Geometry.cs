@@ -12,6 +12,13 @@ using System.Numerics;
 namespace GOptixLib.Utils;
 
 public class Geometry{
+	/// <summary>
+	/// 两个向量的夹角，向量 (pt1,c),向量 (pt2,c)
+	/// </summary>
+	/// <param name="pt1">点1</param>
+	/// <param name="pt2">点2</param>
+	/// <param name="c">中心点</param>
+	/// <returns></returns> 
 	public static float VectorAngle2D(Vector2 pt1,Vector2 pt2,Vector2 c){
 		float theta = MathF.Atan2(pt1.Y - c.Y, pt1.X - c.X) - MathF.Atan2(pt2.Y - c.Y, pt2.X - c.X);
 		if (theta > MathF.PI)
@@ -25,6 +32,15 @@ public class Geometry{
 
 	}
 
+	/// <summary>
+	/// 线性变换 2维点
+	/// </summary>
+	/// <param name="x1"></param>
+	/// <param name="p1"></param>
+	/// <param name="x2"></param>
+	/// <param name="p2"></param>
+	/// <param name="x"></param>
+	/// <returns></returns>
 	public static Vector2 LinearPoint2D(float x1,Vector2 p1,float x2,Vector2 p2,float x){
 		if(x <= x1){
 			return p1;
@@ -39,6 +55,15 @@ public class Geometry{
 		}
 	}
 
+	/// <summary>
+	/// 线性变换
+	/// </summary>
+	/// <param name="x1"></param>
+	/// <param name="y1"></param>
+	/// <param name="x2"></param>
+	/// <param name="y2"></param>
+	/// <param name="x"></param>
+	/// <returns></returns>
 	public static float Linear2D(float x1,float y1,float x2,float y2,float x){
 		if(x <= x1){
 			return y1;

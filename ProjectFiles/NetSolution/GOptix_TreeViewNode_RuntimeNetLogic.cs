@@ -20,10 +20,12 @@ using GOptix.Widget;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
 using FTOptix.WebUI;
+using FTOptix.System;
+using FTOptix.Report;
 public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic
 {
     GOptix_Type_TreeNode TreeNode;
-    GOptix_TreeView TreeView; 
+    GOptix_TreeView TreeView;
 
     IUAVariable Expanded;
     IUAVariable Selected;
@@ -40,10 +42,20 @@ public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic
         Expanded = Owner.GetVariable(nameof(Expanded));
         Selected = Owner.GetVariable(nameof(Selected));
 
+        var uiTypeId = (Owner as Item)?.ObjectType?.NodeId;
+        if (uiTypeId == null)
+        {
+            #if DEBUG
+            Log.Error("ui type is null");
+            #endif
+            return;
+        }
+
         treeViewNode = new GOptix.Widget.TreeViewNode(
             TreeView
-            ,Owner
-            ,LogicObject.GetAlias("Container") as Item);
+            , Owner
+            , LogicObject.GetAlias("Container") as Item
+            , uiTypeId);
 
         treeViewNode.Build(TreeNode);
     }
@@ -54,25 +66,17 @@ public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic
     }
 
     [ExportMethod]
-    public void ClickNode(){
-        // if(TreeNode != null){
-        //     if(TreeNode.Nodes.Children.Count > 0){
-        //         Expanded.Value = !((bool)Expanded.Value);
-        //     }        
-        // }
-
-        // var v = TreeView.GetVariable("ClickedNode");
-        // if(v != null){
-        //     v.Value = Owner.NodeId;
-        // }
-
+    public void ClickNode()
+    {
+       
         treeViewNode.OnClick_Handle();
     }
 
 
 
     [ExportMethod]
-    public void OnExpand_Handle(){
+    public void OnExpand_Handle()
+    {
         treeViewNode.OnExpand_Handle();
     }
 }

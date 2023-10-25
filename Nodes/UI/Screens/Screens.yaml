@@ -1,2 +1,455 @@
 Name: Screens
 Type: ScreensCategoryFolder
+Children:
+- Name: NativeScreen
+  Id: g=24077c63c1639d24ae29a0e3c0cced9e
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Header
+      Type: Panel
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: bg
+        Type: Rectangle
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 4.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 4.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 4.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 4.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#888888"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Optix Toolkit"}
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 24.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: FontWeight
+            Type: BaseDataVariableType
+            DataType: FontWeightEnum
+            ModellingRule: Optional
+            Value: 700
+          - Name: FontFamily
+            Type: BaseDataVariableType
+            DataType: Font
+            ModellingRule: Optional
+            Value: ""
+        - Name: Label2
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=fc1211b2-9ad9-60ce-def4-27189ada0cc0}"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+    - Name: GOptix_PanelLoader1
+      Type: GOptix_PanelLoader
+      Children:
+      - Name: HL
+        Type: RowLayout
+        Children:
+        - Name: NavigationBar
+          Type: Panel
+          Children:
+          - Name: bg
+            Type: Rectangle
+            Children:
+            - Name: GOptix_TreeView1
+              Type: GOptix_TreeView
+              Children:
+              - Name: Model
+                Type: Alias
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../GOptix_PanelLoader_RuntimeNetLogic/TreeNode@NodeId"
+              - Name: GOptix_TreeView_RuntimeNetLogic
+                Type: NetLogic
+                Children:
+                - Name: Container
+                  Type: Alias
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../SV/VL@NodeId"
+                - Class: Reference
+                  Target: g=369eba92da79710d700270df0b34e86e
+                  Direction: Forward
+              - Name: SV
+                Type: ScrollView
+                Children:
+                - Name: VL
+                  Type: ColumnLayout
+              - Name: ClickedNode
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":2,"Id":"d83de1915f3dd985229146acb7f00579","Namespace":7}
+              - Name: SelectedNode
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":2,"Id":"2abd05da592d5abb6f7cb1762598217b","Namespace":7}
+              - Name: SelectedTag
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: colorNormal
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#00000000"
+              - Name: colorSelected
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#eeeeee"
+              - Name: colorArrow
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#000000"
+              - Name: Refresh
+                Type: MethodInvocation
+                Children:
+                - Name: ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"Id":58}
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../GOptix_TreeView_RuntimeNetLogic@NodeId"
+                - Name: Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Refresh"
+                - Class: Reference
+                  Target: ns=2;i=98
+                  Direction: Forward
+              - Name: TriggerRefresh
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: TriggerRefreshChanged
+                Type: VariableChangedEventDispatcher
+                Children:
+                - Name: VariableNodePath
+                  Type: BaseVariableType
+                  DataType: NodePath
+                  Value: "../TriggerRefresh"
+                - Name: VariableValueChangedEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"Id":42,"Namespace":2}
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: {"Id":58}
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../Refresh@NodeId"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "Invoke"
+                  - Name: EventArguments
+                    Type: VariableValueChangedEvent
+                    Children:
+                    - Name: VariableNodeId
+                      Type: BaseVariableType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: NewValue
+                      Type: BaseVariableType
+                      DataType: BaseDataType
+                    - Name: OldValue
+                      Type: BaseVariableType
+                      DataType: BaseDataType
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+              - Name: TreeNodeUIType
+                Type: Alias
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"2a771f5fed6a090b7e5a8994ec27c9f3","Namespace":7}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Body
+          Type: Panel
+          Children:
+          - Name: bg
+            Type: Rectangle
+            Children:
+            - Name: PanelLoader1
+              Type: PanelLoader
+              Children:
+              - Name: Panel
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":71,"Namespace":3}
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../NavigationBar/bg/GOptix_TreeView1/SelectedTag"
+              - Name: CurrentPanel
+                Type: NodePointer
+                DataType: NodeId
+                AccessLevel: Read
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":6,"Namespace":3}
+              - Class: Reference
+                Target: ns=3;i=478
+                Direction: Forward
+      - Name: Panels
+        Type: Alias
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"6c0ad62fa13106d5245b83d503ef0672","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":61}
+      - Name: GOptix_PanelLoader_RuntimeNetLogic
+        Type: NetLogic
+        Children:
+        - Name: TreeNode
+          Type: BaseObjectType
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0

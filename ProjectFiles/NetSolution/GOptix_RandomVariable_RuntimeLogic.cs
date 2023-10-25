@@ -22,6 +22,8 @@ using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
 using FTOptix.WebUI;
+using FTOptix.System;
+using FTOptix.Report;
 
 public class GOptix_RandomVariable_RuntimeLogic : BaseNetLogic
 {
@@ -36,18 +38,15 @@ public class GOptix_RandomVariable_RuntimeLogic : BaseNetLogic
             var range = child.Children.OfType<FTOptix.Core.Range>().FirstOrDefault();
             _Range_ r ;
             if(range == null){
-                //range = InformationModel.MakeObject<FTOptix.Core.Range>();
+              
                 r = new _Range_();
                 r.High = 100;
                 r.Low = 0;
 
-                
-                //child.Add(range);
             }else{
                 r = new _Range_();
                 r.High = range.High;
                 r.Low = range.Low;
-
                 
             }
 

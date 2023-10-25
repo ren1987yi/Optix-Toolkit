@@ -22,11 +22,15 @@ using System.Linq;
 namespace GOptix.Widget{
 
 
-
+    /// <summary>
+    /// 树形视图
+    /// </summary>
     public class TreeView : IDisposable{
         
         readonly Item _container;
         readonly IUANode _treeview;
+
+        readonly NodeId _treenodeTypeId;
         IUAVariable _ClickedNode;
         IUAVariable _varSelectedNode;
         IUAVariable _varSelectedTag;
@@ -98,9 +102,10 @@ namespace GOptix.Widget{
             }
         }
         
-        public TreeView(Item container,IUANode treeview){
+        public TreeView(Item container,IUANode treeview,NodeId treenodeTypeId){
             _container = container;
             _treeview = treeview;
+            _treenodeTypeId = treenodeTypeId;
             if(treeview != null){
                 _ClickedNode = treeview.GetVariable("ClickedNode");
                 if(_ClickedNode != null){
@@ -144,7 +149,7 @@ namespace GOptix.Widget{
 
             var nodes = model.Children.OfType<GOptix_Type_TreeNode>();
             foreach(var node in nodes){
-                var ui = InformationModel.Make<GOptix_TreeViewNode>(node.BrowseName);
+                var ui = InformationModel.MakeObject(node.BrowseName,_treenodeTypeId);
                 ui.SetAlias("TreeView",_treeview);
                 ui.SetAlias("TreeNode",node);
 
@@ -173,7 +178,7 @@ namespace GOptix.Widget{
         private void OnClickedNodeChanged_Handle(object sender,VariableChangeEventArgs args){
             var nodeId = (NodeId)args.NewValue;
 
-            var viewNode = InformationModel.Get<GOptix_TreeViewNode>(nodeId);
+            var viewNode = InformationModel.Get(nodeId) as GOptix_TreeViewNode;
             if(viewNode == null){
 
             }else{
@@ -189,6 +194,9 @@ namespace GOptix.Widget{
     }
 
 
+    /// <summary>
+    /// 树形节点视图
+    /// </summary> 
     public class TreeViewNode{
 
         GOptix_Type_TreeNode _treeNode;
@@ -204,7 +212,9 @@ namespace GOptix.Widget{
         IUAVariable _varColorSelected;
         IUAVariable _varColorArrow;
 
-        public TreeViewNode(IUANode treeview,IUANode owner, Item nodeContainer){
+        NodeId _uiTypeId;
+
+        public TreeViewNode(IUANode treeview,IUANode owner, Item nodeContainer ,NodeId uiTypeId){
 
             _treeView = treeview;
             _nodeContainer = nodeContainer;
@@ -213,6 +223,8 @@ namespace GOptix.Widget{
             _varColorNoraml = treeview.GetVariable("colorNoraml");
             _varColorSelected = treeview.GetVariable("colorSelected");
             _varColorArrow = treeview.GetVariable("colorArrow");
+
+            _uiTypeId = uiTypeId;
 
             Expanded = Owner.GetVariable(nameof(Expanded));
         }
@@ -231,7 +243,7 @@ namespace GOptix.Widget{
             _treeNode = model;
             var nodes = model.Nodes.Children.OfType<GOptix_Type_TreeNode>();
             foreach(var node in nodes){
-                var ui = InformationModel.Make<GOptix_TreeViewNode>(node.BrowseName);
+                var ui = InformationModel.MakeObject(node.BrowseName,_uiTypeId);
                 ui.SetAlias("TreeView",_treeView);
                 ui.SetAlias("TreeNode",node);
 

@@ -16,6 +16,8 @@ using FTOptix.CoreBase;
 using FTOptix.Store;
 using FTOptix.Core;
 using FTOptix.OPCUAServer;
+using FTOptix.System;
+using FTOptix.Report;
 #endregion
 
 public class GOptix_Calendar_Day_RuntimeNetLogic : BaseNetLogic
@@ -30,7 +32,8 @@ public class GOptix_Calendar_Day_RuntimeNetLogic : BaseNetLogic
         var format = (string)v.Value;
 
         v = Owner.GetVariable("UILocalTime");
-        if(!string.IsNullOrWhiteSpace(format)){
+        if (!string.IsNullOrWhiteSpace(format))
+        {
             v.Value = string.Format(now.ToString(format));
         }
 

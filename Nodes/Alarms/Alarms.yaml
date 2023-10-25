@@ -3,3 +3,79 @@ Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
 Children:
 - File: AlarmTypes/AlarmTypes.yaml
+- Name: GOptix_DigitalAlarm1
+  Id: g=b2c61a9e53ed501b3003f173dca2a632
+  Type: GOptix_DigitalAlarm
+  Children:
+  - Class: Reference
+    Target: ns=8;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=ae3cc96f4f884c5a1ac6e7645960776c
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=1265e83cf990af5173a6a5db324c2238
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=d30a0c418cc3658855d33952e09a2be3
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Data/Object3/Variable1"
+      Children:
+      - Name: Mode
+        Id: g=1775032dd558105846af5b4b89159a4e
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3d146976db88123acdcddf20ea3e79e9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Class
+    Id: g=f965358944a48d2119947b9c6f69e1ab
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Group
+    Id: g=f02d9bdb394299f4a65bc7efbb72192f
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Tag1Value
+    Id: g=657933c4531d246703ee992af79b7e6c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag2Value
+    Id: g=76f78a6ac0be3f1b871819e99a72087a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag3Value
+    Id: g=16f8b260ee6fa951d131ee6c424cbdda
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Tag4Value
+    Id: g=974817e7a71ec89c527b8ad8601260a5
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    Value: {"Type":6,"Body":0}
+  - Name: Message
+    Id: g=dcf1062f063d7fa3f8288740afb35e91
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"adfafafaffafas"}

@@ -29,6 +29,8 @@ using FTOptix.SQLiteStore;
 using FTOptix.OPCUAServer;
 using FTOptix.Recipe;
 using FTOptix.WebUI;
+using FTOptix.System;
+using FTOptix.Report;
 public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
 {
 
@@ -375,56 +377,6 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
             return null;
         }
 
-/*
-        var rootpath = "CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/";
-        //TODO 用project.current.
-        var vvv = Project.Current.Get(rootpath + "Controller Tags/ga");
-
-        var vvv2 = root.Get("Controller Tags/ga");
-        var vvv3 = root.Get("Controller Tags/hah/3/a");
-        var vvv4 = root.Get("Controller Tags/hah/3/c[1]");
-        
-
-
-        arrayIndex = null;
-        bitIndex = null;
-        string spliter = ".";
-        var paths = path.Split(spliter);
-        var node = root;
-        foreach(var p in paths){
-            if(uint.TryParse(p,out var prefix)){
-                bitIndex = prefix;
-                break;
-            }
-            
-            string text = p;
-            var _path = p;
-            int num = text.LastIndexOf('[');
-            int num2 = text.LastIndexOf(']');
-            if (num == -1 || num2 == -1)
-            {
-            }else{
-                _path = p.Substring(0,num);
-                string text2 = text.Substring(num + 1, num2 - num - 1);
-                if(uint.TryParse(text2,out var idx)){
-                    arrayIndex = idx;
-                }
-            }
-
-
-            node = node.Get(_path);
-            if(node == null){
-                
-                return null;
-            }
-
-            if(arrayIndex != null){
-                break;
-            }
-        }
-        return node;
-*/
-
     }
 
     private void BuildProgramDataSource(){
@@ -476,16 +428,6 @@ public class GOptix_RungSummaryViewer_RuntimeNetLogic : BaseNetLogic
     }
 
     
-
-
-
-
-
-
-
-
-
-
     private static T LoadFromFile<T>(string filepath)
     {
 

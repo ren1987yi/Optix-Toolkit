@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>echarts</title>
+</head>
+<body>
+	<style>
+		body {
+			overflow-y: hidden; /* 隐藏垂直滚动条 */
+			overflow-x: hidden; /* 隐藏水平滚动条 */
+			/* background-color: black; */
+			}
+
+		#main,
+		html,
+		body {
+		width: 100%;
+		}
+
+
+	#main {
+	  height: 100vh;
+	}
+
+	#error{
+		color: red;
+		font-size: xx-large;
+	}
+	</style>
+
+<div id="error"></div>
+<div id="main"></div>
+
+
+	<script src="js/lib/echarts/v5.4.2/echarts.js"></script>
+	<!-- <script src="js/theme/echart/dark01.js"></script> -->
+	<script src="js/lib/base64.js"></script>
+	<script src="js/utils.js"></script>
+
+	<script src="js/echart_main.js" ></script>
+
+</body>
+</html>

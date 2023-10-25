@@ -117,8 +117,8 @@ Children:
       Value: 0
     - Name: RootPath
       Type: BaseDataVariableType
-      DataType: String
-      Value: "StaticHtml/barcode_viewer.html"
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/StaticHtml/barcode_viewer.html"
     - Name: TriggerRefresh
       Type: BaseDataVariableType
       DataType: Boolean
@@ -280,8 +280,8 @@ Children:
       Value: ""
     - Name: RootPath
       Type: BaseDataVariableType
-      DataType: String
-      Value: "StaticHtml/qrcode_viewer.html"
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/StaticHtml/qrcode_viewer.html"
     - Name: TriggerRefresh
       Type: BaseDataVariableType
       DataType: Boolean
@@ -410,8 +410,8 @@ Children:
       Id: g=4540cfc7ff9000376017da380e2279a8
   - Name: RootPath
     Type: BaseDataVariableType
-    DataType: String
-    Value: "StaticHtml/barcode_viewer.html"
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/StaticHtml/barcode_viewer.html"
   - Name: TriggerRefresh
     Type: BaseDataVariableType
     DataType: Boolean
@@ -561,8 +561,8 @@ Children:
     Value: ""
   - Name: RootPath
     Type: BaseDataVariableType
-    DataType: String
-    Value: "StaticHtml/qrcode_viewer.html"
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/StaticHtml/qrcode_viewer.html"
   - Name: TriggerRefresh
     Type: BaseDataVariableType
     DataType: Boolean
@@ -1114,10 +1114,6 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: {"IdType":0,"Id":0,"Namespace":-1}
-          - Name: colorNormal
-            Type: BaseDataVariableType
-            DataType: Color
-            Value: "#00000000"
         - Name: colorNormal
           Type: BaseDataVariableType
           DataType: Color
@@ -1269,6 +1265,15 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 8.0
+        - Name: TreeNodeUIType
+          Type: Alias
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"d83de1915f3dd985229146acb7f00579","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1595,3 +1600,847 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+- File: VariableBrowser/VariableBrowser.yaml
+- Name: GOptix_CarouselLoader
+  Id: g=0a72470ecc569a41397659d157510670
+  Supertype: PanelLoader
+  Description: {"LocaleId":"en-US","Text":"轮播PanelLoader"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Panel
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":71,"Namespace":3}
+  - Name: CurrentPanel
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":6,"Namespace":3}
+  - Class: Reference
+    Target: ns=3;i=478
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Period
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"en-US","Text":"轮播间隔 (ms)"}
+    Value: 10000
+  - Name: PlayList
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: GOptix_CarouselLoader_RuntimeNetLogic
+    Type: NetLogic
+- File: CustomPanelLoader/CustomPanelLoader.yaml
+- Name: GOptix_PanelTemplate
+  Id: g=f4d455bd264e991ecac3905b8c208754
+  Supertype: Panel
+  DisplayName: {"LocaleId":"en-US","Text":"please input  panel display name for menu text"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Icon
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+- Name: GOptix_EchartViewer
+  Id: g=8b34c532f22f606f8aa9bad5f8c32bbc
+  Supertype: WebBrowser
+  ReferenceType: HasComponent
+  Children:
+  - Name: URL
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Class: Reference
+    Target: ns=3;i=354
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=356
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=358
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: RootPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/StaticHtml/echart.html"
+  - Name: BackgoundColor
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ffffff"
+  - Name: Blob
+    Type: BaseDataVariableType
+    DataType: String
+    DisplayName: {"LocaleId":"en-US","Text":"Chart Data(base64)"}
+    Description: {"LocaleId":"en-US","Text":"Base64"}
+    Value: ""
+  - Name: GOptix_EchartViewer_RuntimeNetLogic
+    Type: NetLogic
+- File: Track/Track.yaml
+- Name: GOptix_VerticalCollection
+  Id: g=30c4b7a2b08a6aadc95c17a3142fccfb
+  Supertype: ColumnLayout
+  Description: {"LocaleId":"en-US","Text":"垂直集合呈现"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Model
+    Type: Alias
+    DataType: NodeId
+    DisplayName: {"LocaleId":"en-US","Text":"Data Object"}
+    Description: {"LocaleId":"en-US","Text":"数据模型"}
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Object1@NodeId"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: UIType
+    Type: Alias
+    DataType: NodeId
+    DisplayName: {"LocaleId":"en-US","Text":"UI Type"}
+    Description: {"LocaleId":"en-US","Text":"UI 的类"}
+    Value: {"IdType":2,"Id":"64e2c042aa6b8af51111bbc9d6c12001","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"64e2c042aa6b8af51111bbc9d6c12001","Namespace":7}
+  - Name: GOptix_VerticalCollection_RuntimeNetLogic
+    Type: NetLogic
+  - Name: RowOffset
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: ColumnOffset
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Object1
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 3
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 111
+- Name: AlarmBanner
+  Id: g=3f0212d42b6a4040c50f37765c7265ca
+  Supertype: RowLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 371.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
+  - Name: CurrentAlarmText
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"####"}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:F} - {1}"}
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}+{1}"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../AlarmBannerLogic/CurrentDisplayedAlarm/Time"
+            - Name: ns=2;Source1
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../AlarmBannerLogic/CurrentDisplayedAlarm/LocalTime"
+        - Name: Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../AlarmBannerLogic/CurrentDisplayedAlarm/Message"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: Elide
+      Type: BaseDataVariableType
+      DataType: ElideEnum
+      ModellingRule: Optional
+      Value: 3
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ff0000"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} > 0"
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../AlarmBannerLogic/AlarmCount"
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: Blink
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../BlinkEnabled"
+  - Name: AlarmBannerLogic
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: NextAlarm
+    - Class: Method
+      Name: PreviousAlarm
+    - Name: AlarmCount
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: CurrentDisplayedAlarm
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":2915}
+    - Name: CurrentDisplayedAlarmIndex
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: RotationTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:0.0000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../RotationTime"
+  - Name: RotationTime
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:5.0000000"
+  - Name: BlinkEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PreviousAlarm
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"<"}
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: EventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: NodeClass
+              Type: PropertyType
+              DataType: NodePointerNodeClass
+              ModellingRule: Optional
+              Value: 2
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../AlarmBannerLogic@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PreviousAlarm"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} > 1"
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../AlarmBannerLogic/AlarmCount"
+  - Name: NextAlarm
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":">"}
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: EventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: NodeClass
+              Type: PropertyType
+              DataType: NodePointerNodeClass
+              ModellingRule: Optional
+              Value: 2
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../AlarmBannerLogic@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "NextAlarm"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} > 1"
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../AlarmBannerLogic/AlarmCount"
+- Name: SpinBox1
+  Id: g=64e2c042aa6b8af51111bbc9d6c12001
+  Supertype: SpinBox
+  ReferenceType: HasComponent
+  Children:
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{ab}"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 80.0
+  - Name: ab
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: GOptix_HorizontalCollection
+  Id: g=8f7807772855f832e9b240f9c8668d52
+  Supertype: RowLayout
+  Description: {"LocaleId":"en-US","Text":"垂直集合呈现"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Model
+    Type: Alias
+    DataType: NodeId
+    DisplayName: {"LocaleId":"en-US","Text":"Data Object"}
+    Description: {"LocaleId":"en-US","Text":"数据模型"}
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Object1@NodeId"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: UIType
+    Type: Alias
+    DataType: NodeId
+    DisplayName: {"LocaleId":"en-US","Text":"UI Type"}
+    Description: {"LocaleId":"en-US","Text":"UI 的类"}
+    Value: {"IdType":2,"Id":"64e2c042aa6b8af51111bbc9d6c12001","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: RowOffset
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: ColumnOffset
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Object1
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 3
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 111
+  - Name: GOptix_HorizontalCollection_RuntimeNetLogic
+    Type: NetLogic
+- Name: GOptix_GridCollection
+  Id: g=9fc9a0d0dc7d1eb107df34e494410ea1
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Model
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: UIType
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: RowOffset
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ColumnOffset
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ColumnCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: SV
+    Type: ScrollView
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: VL
+      Type: ColumnLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -1.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: GOptix_GridCollection_RuntimeNetLogic
+    Type: NetLogic
+    Children:
+    - Name: Container
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SV/VL@NodeId"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: FillMode
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RowHeight
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: -1
