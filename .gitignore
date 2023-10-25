@@ -3,6 +3,7 @@
 !*.gitattributes
 !*.optix
 !*.optix.design
+!readme.md
 !Nodes/
 !ProjectFiles/
 !DesignTimeNodes/
