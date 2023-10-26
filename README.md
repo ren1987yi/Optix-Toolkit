@@ -31,33 +31,9 @@ Optix Version : **V1.2.0.272**
 
 
 
-**添加流程：**
+#### 添加Nuget库
 
-官方流程 :https://learn.microsoft.com/zh-cn/nuget/consume-packages/install-use-packages-visual-studio
-
-1.若要更改 Visual Studio 从中加载包元数据的源，请从 包源 选择器中选择源。
-
-![](https://learn.microsoft.com/zh-cn/nuget/consume-packages/media/package-source-selector.png)
-
-2.若要管理包源，请选择“设置”图标或选择“工具>选项”。
-
-![](https://learn.microsoft.com/zh-cn/nuget/consume-packages/media/package-source-settings.png)
-
-3.在 “选项” 窗口中，展开 NuGet 包管理器 节点，然后选择 “包源”。
-
-![](https://learn.microsoft.com/zh-cn/nuget/consume-packages/media/package-sources.png)
-
-4.要添加源，请选择 +，编辑名称，在“源”控件中输入 URL 或路径，然后选择“更新”。
-
-源现在显示在 “包源 ”下拉列表中。
-
-5.若要更改包源，请选中它，在“名称”和“源”框中进行编辑，然后选择“更新”。
-
-6.若要禁用包源，请清除列表中名称左侧的框。
-
-7.要删除包源，请选中它，然后选择“X”按钮。
-
-如果在删除某个包源后，该包源重新出现，则它可能会列在计算机级或用户级 文件中。 有关这些文件的位置，请参阅 通用 NuGet 配置。 通过手动编辑包源或使用 nuget 源命令删除文件中的包源。
+微软官方流程 :https://learn.microsoft.com/zh-cn/nuget/consume-packages/install-use-packages-visual-studio
 
 ---
 
@@ -74,7 +50,22 @@ Optix Version : **V1.2.0.272**
 ---
 ### 0.3 项目结构
 
-
+- **Optix_Toolkit** (Project Main Folder)
+	- **Nodes** (Design file)
+		- **UI**
+			- **MainWindow**
+			- **Screens**
+				- **NativeScreen** : 本地呈现的窗体
+			- **Widgets** : 存放所有可视化部件
+			- **Test**	: 存放可浏览的画面
+		- **Model**
+			- **DataTypes** : 公用数据类型
+			- **Data**	: 数据
+			- **UA** : OPC UA Server 发布根节点
+	- **ProjectFiles** (Resource)
+		- **images** : 图片
+		- **ICT** : ICT / MML 相关图片
+		- **StaticHtml** : 借助WEB技术实现的功能的固定页面
 ---
 
 ## 1.Widgets - 可视化组件

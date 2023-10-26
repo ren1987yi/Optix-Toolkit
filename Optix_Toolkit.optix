@@ -113,13 +113,5 @@ Project:
    Uri: 'urn:FTOptix:OPCUAServer:Net'
    Module: FTOptix.OPCUAServer.Net
    Version: 1.1
-  29:
-   Uri: 'urn:FTOptix:Report'
-   Module: FTOptix.Report
-   Version: 1.2
-  30:
-   Uri: 'urn:FTOptix:Report:Net'
-   Module: FTOptix.Report.Net
-   Version: 1.1
  Nodes:
  - File: Nodes/Optix_Toolkit.yaml
