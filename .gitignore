@@ -5,6 +5,7 @@
 !*.optix.design
 !readme.md
 !Nodes/
+!doc/
 !ProjectFiles/
 !DesignTimeNodes/
 ProjectFiles/NetSolution/*.vs
