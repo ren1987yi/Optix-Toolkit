@@ -14,20 +14,20 @@ Optix Version : **V1.2.0.272**
 项目路径 : [github](https://github.com/ren1987yi/Optix-Toolkit)
 
 
-## Catalog
+---
 
-- 0.前言
-- 1.Widgets
-- 2.脚本
-- 3.代码库
+**目录**
 
+[TOC]
+
+---
 
 ## 0.前言
 
 ### 0.1 自建 Nuget库 
 	地址: http://52.130.64.23:50109/nuget
 
-![](doc\my_nuget.png)
+![](doc/my_nuget.png)
 
 
 
@@ -78,7 +78,7 @@ Optix Version : **V1.2.0.272**
 并把阶梯内所有引用的标签和状态显示在画面中。
 每个标签和状态的显示元素，可自定义。
 
-![](doc\rungviewer.png)
+![](doc/rungviewer.png)
 
 梯形图信息构建工具地址 ： [在线工具](http://52.130.64.23:8078/ab/routine_summary)
 
@@ -108,7 +108,7 @@ Panel
 
 树形控件
 
-![](doc\treeview.png)
+![](doc/treeview.png)
 
 #### Browse Name
 GOptix_TreeView
@@ -149,7 +149,7 @@ GOptix_Type_TreeNode
 3维模型查看，通过使用浏览器控件，浏览web页面。web页面使用 threejs库，渲染模型。
 可支持 缩放、自动旋转、线框模式等功能特性。
 
-![](doc\3dviewer.png)
+![](doc/3dviewer.png)
 
 #### Browse Name
 GOptix_ModelViewer
@@ -177,7 +177,7 @@ Web browser
 
 月日历控件,点击单元格，选中日期。可跳转到今天，前后一个月，前后一年
 
-![](doc\calendar.png)
+![](doc/calendar.png)
 
 
 #### Browse Name
@@ -205,7 +205,7 @@ Panel
 
 节点查看器，可根据节点的数据结构，通过树形控件逐层展开。选中某个节点后，可查看节点内的元素(Variable)，并可修改。
 
-![](doc\modelviewer.png)
+![](doc/modelviewer.png)
 
 
 #### Browse Name
@@ -229,7 +229,7 @@ Panel
 
 变量查看对话框，通过树形控件查看节点内的变量，并可在选中变量后，把选中的变量信息，反馈到调用方。
 
-![](doc\variable_browser.png)
+![](doc/variable_browser.png)
 
 
 
@@ -289,7 +289,7 @@ Panel Loader
 
 条码查看器，通过浏览器，加载条码生成器。参数通过URL传递
 
-![](doc\barcode.png)
+![](doc/barcode.png)
 
 #### Browse Name
 GOptix_BarcodeViewer
@@ -330,7 +330,7 @@ Web browser
 
 二维码查看器，通过浏览器，加载二维码码生成器。参数通过URL传递
 
-![](doc\qrcode.png)
+![](doc/qrcode.png)
 
 #### Browse Name
 GOptix_QRcodeViewer
@@ -366,7 +366,7 @@ Web browser
 echart 查看器，通过URL传递数据，echart option 数据编码为base64
 
 
-![](doc\echart.png)
+![](doc/echart.png)
 
 #### Browse Name
 GOptix_EchartViewer
@@ -396,29 +396,29 @@ Web browser
 ```C#
 
 var template = @"
-        {
+{
 	xAxis: {
-	  type: 'category',
-	  data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+		type: 'category',
+		data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 	},
 	yAxis: {
-	  type: 'value'
+		type: 'value'
 	},
 	series: [
-	  {
+		{
 		data: [(%1%)],
 		type: 'bar',
 		showBackground: true,
 		color:'red',
 		backgroundStyle: {
-		  color: 'rgba(180, 180, 180, 0.2)'
+			color: 'rgba(180, 180, 180, 0.2)'
 		}
-	  }
+		}
 	]
-  }
-  ";
+}
+";
 
-  void OnChangeEchart(){
+void OnChangeEchart(){
 	var vals = new List<string>();
 	for(var i=0;i<10;i++){
 		vals.Add(rnd.Next(100).ToString());
@@ -427,32 +427,32 @@ var template = @"
 	var _val = string.Join(",",vals);
 	var _blob = template.Replace("(%1%)",_val);
 	var blob = Base64Encrypt(_blob);
-	//set echart weidget blob variable
+	
 
 
-  }
+}
 
 
-	/// <summary>
-	/// Base64编码，采用utf8编码
-	/// </summary>
-	/// <param name="strPath">待编码的明文</param>
-	/// <returns>Base64编码后的字符串</returns>
-	public  string Base64Encrypt(string strPath)
+/// <summary>
+/// Base64编码，采用utf8编码
+/// </summary>
+/// <param name="strPath">待编码的明文</param>
+/// <returns>Base64编码后的字符串</returns>
+public  string Base64Encrypt(string strPath)
+{
+	string returnData;
+	System.Text.Encoding encode = System.Text.Encoding.UTF8;
+	byte[] bytedata = encode.GetBytes(strPath);
+	try
 	{
-		string returnData;
-		System.Text.Encoding encode = System.Text.Encoding.UTF8;
-		byte[] bytedata = encode.GetBytes(strPath);
-		try
-		{
-			returnData = Convert.ToBase64String(bytedata, 0, bytedata.Length);
-		}
-		catch
-		{
-			returnData = strPath;
-		}
-		return returnData;
+		returnData = Convert.ToBase64String(bytedata, 0, bytedata.Length);
 	}
+	catch
+	{
+		returnData = strPath;
+	}
+	return returnData;
+}
 
 
 ```
@@ -469,7 +469,7 @@ var template = @"
 - VerticalCollection : 垂直排布
 - HorizontalCollection : 水平排布
 
-![](doc\vlcollection.png)
+![](doc/vlcollection.png)
 
 #### Browse Name
 GOptix_VerticalCollection / GOptix_HorizontalCollection
@@ -500,7 +500,7 @@ Panel
 
 可根据主数据节点内元素的个数，自动填充控件，并完成数据绑定。主数据节点内元素变更时自动更新界面UI。排布方式为 二维表格
 
-![](doc\gridcollection.png)
+![](doc/gridcollection.png)
 
 
 #### Browse Name
@@ -540,7 +540,7 @@ MagneMotion 查看器，可监视车辆，路径，电机。轨道坐标经过 m
  - PathId (int)
  - Position (float)
 
-![](doc\mml.png)
+![](doc/mml.png)
 
 
 
@@ -590,7 +590,7 @@ GOptix_Type_MML_VehicleStatus
 
 根据Optix 设计时的目录结构，自动完成导航侧边栏的建立，选中后显示对应的画面 Panel
 
-![](doc\panelloader.png)
+![](doc/panelloader.png)
 
 每个panel 需定义两个属性：
 - Icon : 显示的图标
@@ -623,7 +623,7 @@ Panel
 
 可视化部件收藏按钮，通过点击按钮，对感兴趣的部件进行收藏，并可在收藏夹中集中查看
 
-![](doc\favorite_button.png)
+![](doc/favorite_button.png)
 
 对应收藏的两种状态: 无收藏 / 收藏，组件内有两个图片控件进行切换显示。
 
@@ -631,7 +631,7 @@ Panel
 注：
 为了保证收藏夹内容能保存，需要把收藏夹节点加入到 **Retentivity** 中.
 
-![](doc\favorite_storage.png)
+![](doc/favorite_storage.png)
 
 
 
@@ -660,7 +660,7 @@ Panel
 
 `如下图所示：`
 
-![](doc\favorite_case1.png)
+![](doc/favorite_case1.png)
 
 1. 建立自定义的可视化部件 :**_NumEditor**
 
@@ -672,7 +672,7 @@ Panel
 
 
 `例子：`
-![](doc\favorite_case2.png)
+![](doc/favorite_case2.png)
 
 
 
@@ -683,7 +683,7 @@ Panel
 
 收藏夹的查看器，可清除收藏夹 和 刷新
 
-![](doc\favorite_case3.png)
+![](doc/favorite_case3.png)
 
 上图是显示已收藏的所有可视化组件，并自动完成部件内所有自定义变量的赋值。
 
@@ -691,7 +691,7 @@ Panel
 注：
 为了保证收藏夹内容能保存，需要把收藏夹节点加入到 **Retentivity** 中.
 
-![](doc\favorite_storage.png)
+![](doc/favorite_storage.png)
 
 
 
