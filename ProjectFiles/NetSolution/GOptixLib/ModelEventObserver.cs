@@ -78,7 +78,7 @@ namespace GOptixLib
 	}
 
 
-	internal class ModelObjectObserver : IReferenceObserver
+	class ModelObjectObserver : IReferenceObserver
 	{
 		private Action<IUANode, IUANode, NodeId, ulong> _onAdded_callback;
 		private Action<IUANode, IUANode, NodeId, ulong> _onRemoved_callback;

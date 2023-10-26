@@ -92,4 +92,24 @@ public static class UANodeExtensions
 
 	}
 
+
+	public static NodeId GetTypeNodeId(this IUANode node){
+		 var t = node.GetType();
+        var s = t.Assembly.FullName.Split(",").FirstOrDefault();
+
+        var aaaa = $"{s}.ObjectTypes";
+        var tObjectTypes = t.Assembly.GetType(aaaa);
+        if(tObjectTypes!= null){
+            var fInfo = tObjectTypes.GetField(t.Name);
+            var val = fInfo.GetValue(null);
+			if(val != null){
+				return val as NodeId;
+			}
+         
+        }
+
+		return null;
+	}
+
+
 }

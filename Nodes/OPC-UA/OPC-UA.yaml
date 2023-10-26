@@ -30,6 +30,19 @@ Children:
             Type: PropertyType
             DataType: NodePointerNodeClass
             Value: 0
+        - Name: Node2
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"9faa155c08de696b8e54652a1df172d8","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 2
       - Name: Users
         Type: BaseObjectType
         Children:

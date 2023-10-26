@@ -12,9 +12,13 @@
 
 using System;
 using System.Numerics;
+using System.Text;
+using System.Security.Cryptography;
+using System.Runtime.Intrinsics.Arm;
 namespace GOptixLib.Utils;
 
-public class Encode{
+public class Encode
+{
 
 
 	#region Base64加码解码
@@ -23,7 +27,7 @@ public class Encode{
 	/// </summary>
 	/// <param name="strPath">待编码的明文</param>
 	/// <returns>Base64编码后的字符串</returns>
-	public static  string Base64Encrypt(string strPath)
+	public static string Base64Encrypt(string strPath)
 	{
 		string returnData;
 		System.Text.Encoding encode = System.Text.Encoding.UTF8;
@@ -50,7 +54,7 @@ public class Encode{
 		byte[] bpath = Convert.FromBase64String(strPath);
 		try
 		{
-			returnData =  System.Text.Encoding.UTF8.GetString(bpath);
+			returnData = System.Text.Encoding.UTF8.GetString(bpath);
 		}
 		catch
 		{
@@ -58,6 +62,43 @@ public class Encode{
 		}
 		return returnData;
 	}
+	#endregion
+
+
+	#region  SHA256
+	/// <summary>
+	/// SHA256加密
+	/// </summary>
+	/// <param name="data"></param>
+	/// <returns></returns>
+	public static string SHA256EncryptString(string data)
+	{
+		byte[] bytes = Encoding.UTF8.GetBytes(data);
+		byte[] hash = SHA256.Create().ComputeHash(bytes);
+
+		StringBuilder builder = new StringBuilder();
+		for (int i = 0; i < hash.Length; i++)
+		{
+			builder.Append(hash[i].ToString("x2"));
+		}
+		return builder.ToString();
+	}
+
+	/// <summary>
+	/// SHA256加密
+	/// </summary>
+	/// <param name="StrIn">待加密字符串</param>
+	/// <returns>加密数组</returns>
+	public static Byte[] SHA256EncryptByte(string StrIn)
+	{
+		var sha256 = SHA256.Create();
+		var Asc = new ASCIIEncoding();
+		var tmpByte = Asc.GetBytes(StrIn);
+		var EncryptBytes = sha256.ComputeHash(tmpByte);
+		sha256.Clear();
+		return EncryptBytes;
+	}
+
 	#endregion
 }
 

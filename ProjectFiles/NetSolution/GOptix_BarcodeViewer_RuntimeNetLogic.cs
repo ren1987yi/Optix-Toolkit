@@ -70,9 +70,6 @@ public class GOptix_BarcodeViewer_RuntimeNetLogic : BaseNetLogic
 
         var uri = new ResourceUri(_path.Value);
 
-
-
-
         WebRootPath = uri.ConvertToURL();
     }
 

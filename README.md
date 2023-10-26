@@ -619,6 +619,113 @@ Panel
 
 ---
 
+### 1.15 GOptix_FavoriteButton
+
+可视化部件收藏按钮，通过点击按钮，对感兴趣的部件进行收藏，并可在收藏夹中集中查看
+
+![](doc\favorite_button.png)
+
+对应收藏的两种状态: 无收藏 / 收藏，组件内有两个图片控件进行切换显示。
+
+
+注：
+为了保证收藏夹内容能保存，需要把收藏夹节点加入到 **Retentivity** 中.
+
+![](doc\favorite_storage.png)
+
+
+
+#### Browse Name
+GOptix_FavoriteButton 
+
+
+#### Script Name
+GOptix_FavoriteButton_RuntimeNetLogic
+
+
+#### Super Type
+Panel
+
+#### Data Type
+无
+
+#### 参数
+
+|Name|DataType|Description|
+|--|--|--|
+|Favorites|Alias|保存收藏夹内容的父节点,必须为 **`Object`** |
+|IsAdded|bool|此部件是否已经收藏|
+
+#### 用法
+
+`如下图所示：`
+
+![](doc\favorite_case1.png)
+
+1. 建立自定义的可视化部件 :**_NumEditor**
+
+2. 在 **_NumEditor** 中的 第1层内加入 **收藏按钮 (FavoriteButton)**
+
+3. 定义好 **收藏按钮** 中的参数 **Favorites**
+
+
+
+
+`例子：`
+![](doc\favorite_case2.png)
+
+
+
+---
+
+
+### 1.16 GOptix_FavoritesViewer
+
+收藏夹的查看器，可清除收藏夹 和 刷新
+
+![](doc\favorite_case3.png)
+
+上图是显示已收藏的所有可视化组件，并自动完成部件内所有自定义变量的赋值。
+
+
+注：
+为了保证收藏夹内容能保存，需要把收藏夹节点加入到 **Retentivity** 中.
+
+![](doc\favorite_storage.png)
+
+
+
+#### Browse Name
+GOptix_FavoritesViewer 
+
+
+#### Script Name
+GOptix_FavoritesViewer_RuntimeLogic
+
+
+#### Super Type
+Panel
+
+#### Data Type
+无
+
+#### 参数
+
+|Name|DataType|Description|
+|--|--|--|
+|Favorites|Alias|保存收藏夹内容的父节点,必须为 **`Object`** |
+
+
+
+
+
+
+
+
+---
+
+
+
 ## 2 脚本
 
 ### 2.1 随机数发生器

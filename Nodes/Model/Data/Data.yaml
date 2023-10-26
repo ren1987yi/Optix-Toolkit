@@ -694,6 +694,66 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: v1
+    Id: g=c7103de58966d910a92603380716eb2a
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v2
+    Id: g=6b7d5fccf3618f9e3561a11887a52f1b
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v3
+    Id: g=cc5fcd9f2da38076e2e2e01b78b18597
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v4
+    Id: g=6df5799b0a318d38bb09cd374b5384e9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v10
+    Id: g=5e21e4e57a14fd13838a1cc432749745
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v11
+    Id: g=2855d9d10862bf063cbb688f763024c5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v12
+    Id: g=52a2b1eccb24831cb02493f62d5b3532
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: v13
+    Id: g=ed54a9344717161dcbc615c5373ba0d2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
 - Name: SystemInfo
   Type: BaseObjectType
   Children:
@@ -702,3 +762,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0.0.1"
+- Name: Favorites
+  Id: g=9faa155c08de696b8e54652a1df172d8
+  Type: BaseObjectType
