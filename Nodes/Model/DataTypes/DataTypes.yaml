@@ -39,3 +39,58 @@ Children:
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"From File"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"From URL"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Type01
+  Id: g=3ff1dc2d8ce5ecc813eada5e70ae94c7
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Type01",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3ff1dc2d8ce5ecc813eada5e70ae94c7",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "AAA"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "S-AAA"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BBB"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "S-BBB"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "CCC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "S-CCC"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [3]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"AAA"},"Description":{"LocaleId":"en-US","Text":"S-AAA"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"BBB"},"Description":{"LocaleId":"en-US","Text":"S-BBB"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"CCC"},"Description":{"LocaleId":"en-US","Text":"S-CCC"}}}]

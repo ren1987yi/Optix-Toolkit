@@ -1998,3 +1998,98 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: -1
+- Name: GOptix_ComboBox
+  Id: g=60fa0cc44121085480f438993e3072a2
+  Supertype: ComboBox
+  ReferenceType: HasComponent
+  Children:
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Model
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: ItemKind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../GOptix_ComboBox_RuntimeLogic/Options"
+  - Name: SelectedValue
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+  - Name: SelectedItem
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: UISelectedItem
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: UISelectedValue
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    AccessLevel: Read
+  - Class: Reference
+    Target: ns=3;i=480
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: Item
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EnumType
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"3ff1dc2d8ce5ecc813eada5e70ae94c7","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":29}
+  - Name: DisplayValuePath
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{Item}@DisplayName"
+  - Name: SelectedValuePath
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+  - Name: GOptix_ComboBox_RuntimeLogic
+    Type: NetLogic
+    Children:
+    - Name: Options
+      Type: BaseObjectType
+  - Name: Mode
+    Type: BaseVariableType
+    DataType: ComboBoxModeEnum
+    ModellingRule: Optional
+    Value: 0
