@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Luckysheet</title>
+
+	<link rel='stylesheet' href='./lib/luckysheet/plugins/css/pluginsCss.css' />
+	<link rel='stylesheet' href='./lib/luckysheet/plugins/plugins.css' />
+	<link rel='stylesheet' href='./lib/luckysheet/css/luckysheet.css' />
+	<link rel='stylesheet' href='./lib/luckysheet/assets/iconfont/iconfont.css' />
+	<script src="./lib/luckysheet/plugins/js/plugin.js"></script>
+
+	<!-- rollup luckysheet.js -->
+	<script src="./lib/luckysheet/luckysheet.umd.js"></script>
+
+	<!-- excel plugin -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/luckyexcel/dist/luckyexcel.umd.js"></script> -->
+	<script src="./lib/luckysheet/luckyexcel/luckyexcel.umd.js"></script>
+	<script src="js/utils.js"></script>
+
+</head>
+<body>
+	<div id="lucky-mask-demo" style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">Downloading</div>
+	<!-- <p style="text-align:center;">
+		 <input style="font-size:16px;" type="file" id="Luckyexcel-demo-file1" name="Luckyexcel-demo-file" change="demoHandler" />
+		  Or Load remote xlsx file: 
+		  <select style="height: 27px;top: -2px;position: relative;" id="Luckyexcel-select-demo"> 
+		<option value="">select a demo</option> 
+		<option value="https://minio.cnbabylon.com/public/luckysheet/money-manager-2.xlsx">Money Manager.xlsx</option> <option value="https://minio.cnbabylon.com/public/luckysheet/Activity%20costs%20tracker.xlsx">Activity costs tracker.xlsx</option><option value="https://minio.cnbabylon.com/public/luckysheet/House%20cleaning%20checklist.xlsx">House cleaning checklist.xlsx</option><option value="https://minio.cnbabylon.com/public/luckysheet/Student%20assignment%20planner.xlsx">Student assignment planner.xlsx</option><option value="https://minio.cnbabylon.com/public/luckysheet/Credit%20card%20tracker.xlsx">Credit card tracker.xlsx</option><option value="https://minio.cnbabylon.com/public/luckysheet/Blue%20timesheet.xlsx">Blue timesheet.xlsx</option><option value="https://minio.cnbabylon.com/public/luckysheet/Student%20calendar%20%28Mon%29.xlsx">Student calendar (Mon).xlsx</option><option value="https://minio.cnbabylon.com/public/luckysheet/Blue%20mileage%20and%20expense%20report.xlsx">Blue mileage and expense report.xlsx</option> </select> <a href="javascript:void(0)" id="Luckyexcel-downlod-file">Download source xlsx file</a></p>
+	
+	 -->
+		<div id="luckysheet" style="margin:0px;padding:0px;position:absolute;width:100%;left: 0px;top: 0px;bottom: 0px;outline: none;"></div>
+	
+	<script>
+		$(function () {
+			//Configuration item
+			var options = {
+				container: 'luckysheet', //luckysheet is the container id
+				showinfobar:false,
+			}
+			luckysheet.create(options)
+		});
+	</script>
+	<script>
+		function demoHandler(){
+			let upload = document.getElementById("Luckyexcel-demo-file");
+			let selectADemo = document.getElementById("Luckyexcel-select-demo");
+			let downlodDemo = document.getElementById("Luckyexcel-downlod-file");
+			let mask = document.getElementById("lucky-mask-demo");
+			if(upload){
+				
+				window.onload = () => {
+					
+					upload.addEventListener("change", function(evt){
+						var files = evt.target.files;
+						if(files==null || files.length==0){
+							alert("No files wait for import");
+							return;
+						}
+
+						let name = files[0].name;
+						let suffixArr = name.split("."), suffix = suffixArr[suffixArr.length-1];
+						if(suffix!="xlsx"){
+							alert("Currently only supports the import of xlsx files");
+							return;
+						}
+						LuckyExcel.transformExcelToLucky(files[0], function(exportJson, luckysheetfile){
+							
+							if(exportJson.sheets==null || exportJson.sheets.length==0){
+								alert("Failed to read the content of the excel file, currently does not support xls files!");
+								return;
+							}
+							
+							luckysheet.destroy();
+
+							var option = {
+								container: 'luckysheet', //luckysheet is the container id
+								showinfobar:false,
+								data:exportJson.sheets,
+								title:exportJson.info.name,
+								userInfo:exportJson.info.name.creator
+							};
+
+							luckysheet.create(option);
+						});
+					});
+
+					selectADemo.addEventListener("change", function(evt){
+						var obj = selectADemo;
+						var index = obj.selectedIndex;
+						var value = obj.options[index].value;
+						var name = obj.options[index].innerHTML;
+						if(value==""){
+							return;
+						}
+						mask.style.display = "flex";
+						LuckyExcel.transformExcelToLuckyByUrl(value, name, function(exportJson, luckysheetfile){
+							
+							if(exportJson.sheets==null || exportJson.sheets.length==0){
+								alert("Failed to read the content of the excel file, currently does not support xls files!");
+								return;
+							}
+							console.log(exportJson, luckysheetfile);
+							mask.style.display = "none";
+							window.luckysheet.destroy();
+							
+							window.luckysheet.create({
+								container: 'luckysheet', //luckysheet is the container id
+								showinfobar:false,
+								data:exportJson.sheets,
+								title:exportJson.info.name,
+								userInfo:exportJson.info.name.creator
+							});
+						});
+					});
+
+					downlodDemo.addEventListener("click", function(evt){
+						var obj = selectADemo;
+						var index = obj.selectedIndex;
+						var value = obj.options[index].value;
+
+						if(value.length==0){
+							alert("Please select a demo file");
+							return;
+						}
+
+						var elemIF = document.getElementById("Lucky-download-frame");
+						if(elemIF==null){
+							elemIF = document.createElement("iframe");
+							elemIF.style.display = "none";
+							elemIF.id = "Lucky-download-frame";
+							document.body.appendChild(elemIF);
+						}
+						elemIF.src = value;
+					});
+				}
+			}else{
+				window.onload = () =>{
+					var url_string = window.location.href;
+					var filepath = getQueryString(url_string, "f");//data file path
+					if(filepath){
+						console.log(filepath);
+						loadExcelFileFromUrl(filepath);
+					}
+
+
+				}
+			}
+		}
+
+
+
+
+
+		function loadExcelFileFromUrl(url){
+			// const httpRequest = new XMLHttpRequest();
+
+			// httpRequest.onreadystatechange = () => {
+
+			// if (httpRequest.readyState === XMLHttpRequest.DONE) {
+
+			// 	if (httpRequest.status == 200) {
+
+
+			// 	} else {
+					
+			// 	}
+			// } else {
+			// 	// 还没准备好。
+			// 	console.log("nok");
+			// }
+
+			// };
+
+			// var reqUrl = "./demoData/1.xlsx";
+			// httpRequest.open("GET", reqUrl, true);
+			// httpRequest.send();
+
+
+
+
+			var reqUrl = "./lib/luckysheet/demoData/2.xlsx";
+				reqUrl = url;
+
+			LuckyExcel.transformExcelToLuckyByUrl(reqUrl,"a", function(exportJson, luckysheetfile){
+							
+							if(exportJson.sheets==null || exportJson.sheets.length==0){
+								alert("Failed to read the content of the excel file, currently does not support xls files!");
+								return;
+							}
+							
+							luckysheet.destroy();
+
+							var option = {
+								container: 'luckysheet', //luckysheet is the container id
+								showinfobar:false,
+								data:exportJson.sheets,
+								title:exportJson.info.name,
+								userInfo:exportJson.info.name.creator
+								,lang:'zh'
+								,showtoolbar:false
+								,showsheetbar:false
+								,showstatisticBar:false
+								,allowUpdate:false
+								,sheetFormulaBar:false
+								,enableAddRow:false
+								,enableAddBackTop:false
+							};
+
+							luckysheet.create(option);
+
+							var allsheets = luckysheet.getAllSheets();
+							luckysheet.getLuckysheetfile()[0].config.authority = 
+							 {//当前工作表的权限配置
+								selectLockedCells:0, //选定锁定单元格
+								selectunLockedCells:0, //选定解除锁定的单元格
+								formatCells:0, //设置单元格格式
+								formatColumns:0, //设置列格式
+								formatRows:0, //设置行格式
+								insertColumns:0, //插入列
+								insertRows:0, //插入行
+								insertHyperlinks:0, //插入超链接
+								deleteColumns:0, //删除列
+								deleteRows:0, //删除行
+								sort:0, //排序
+								filter:0, //使用自动筛选
+								usePivotTablereports:0, //使用数据透视表和报表
+								editObjects:0, //编辑对象
+								editScenarios:0, //编辑方案    
+								sheet:1, //如果为1或true，则该工作表受到保护；如果为0或false，则该工作表不受保护。
+								hintText:"只读模式", //弹窗提示的文字
+								algorithmName:"None",//加密方案：MD2,MD4,MD5,RIPEMD-128,RIPEMD-160,SHA-1,SHA-256,SHA-384,SHA-512,WHIRLPOOL
+								saltValue:null, //密码解密的盐参数，为一个自己定的随机数值
+								
+								allowRangeList:[{ //区域保护
+									name:"area1", //名称
+									// password:"1", //密码
+									// password:"1", //密码
+									hintText:"11111", //提示文字
+									algorithmName:"None",//加密方案：MD2,MD4,MD5,RIPEMD-128,RIPEMD-160,SHA-1,SHA-256,SHA-384,SHA-512,WHIRLPOOL
+									saltValue:null, //密码解密的盐参数，为一个自己定的随机数值
+									sqref:"$A$1:$D$5" //区域范围
+								}],
+							};
+
+							
+						});
+		}
+
+
+
+
+
+		demoHandler();
+	</script>
+</body>
+</html>

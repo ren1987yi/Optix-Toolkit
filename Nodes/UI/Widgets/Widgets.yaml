@@ -2146,3 +2146,67 @@ Children:
     Value: ""
   - Name: GOptix_ApexchartViewer_RuntimeNetLogic
     Type: NetLogic
+- Name: GOpitx_ExcelViewer
+  Id: g=42c3da0cb68b1c9242cdeda5cd7a70c8
+  Supertype: WebBrowser
+  ReferenceType: HasComponent
+  Children:
+  - Name: URL
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"{0}?f={1}"}
+      - Name: ns=2;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../RootUrl"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FilePath"
+  - Class: Reference
+    Target: ns=3;i=354
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=356
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=358
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: FilePath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "./lib/luckysheet/demoData/1.xlsx"
+  - Name: RootUrl
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "http://127.0.0.1/OptixWeb/webexcel.html"
