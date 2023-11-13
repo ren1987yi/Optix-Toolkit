@@ -1600,6 +1600,15 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+  - Name: TreeNodeType
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"2abd05da592d5abb6f7cb1762598217b","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
 - File: VariableBrowser/VariableBrowser.yaml
 - Name: GOptix_CarouselLoader
   Id: g=0a72470ecc569a41397659d157510670
@@ -2093,3 +2102,47 @@ Children:
     DataType: ComboBoxModeEnum
     ModellingRule: Optional
     Value: 0
+- Name: GOptix_ApexchartViewer
+  Id: g=94197dc84505d7fc1c31ed429537c29a
+  Supertype: WebBrowser
+  ReferenceType: HasComponent
+  Children:
+  - Name: URL
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Class: Reference
+    Target: ns=3;i=354
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=356
+    Direction: Forward
+  - Class: Reference
+    Target: ns=3;i=358
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: RootPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/StaticHtml/apexchart_viewer.html"
+  - Name: BackgoundColor
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ffffff"
+  - Name: Blob
+    Type: BaseDataVariableType
+    DataType: String
+    DisplayName: {"LocaleId":"en-US","Text":"Chart Data(base64)"}
+    Description: {"LocaleId":"en-US","Text":"Base64"}
+    Value: ""
+  - Name: GOptix_ApexchartViewer_RuntimeNetLogic
+    Type: NetLogic

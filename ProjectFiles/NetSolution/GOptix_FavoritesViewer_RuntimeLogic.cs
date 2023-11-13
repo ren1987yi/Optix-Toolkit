@@ -31,18 +31,23 @@ public class GOptix_FavoritesViewer_RuntimeLogic : BaseNetLogic
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
+       
         GetLogicParameter();
         BuildUI();
         observer = new ModelEventObserver(Favorites
         , LogicObject
         , (s, e, t, l) => { ModelChanged(); }
         , (s, e, t, l) => { ModelChanged(); });
+       
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
-        observer.Dispose();
+        if(observer != null){
+
+            observer.Dispose();
+        }
     }
 
     private void GetLogicParameter()

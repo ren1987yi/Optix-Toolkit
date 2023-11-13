@@ -25,6 +25,7 @@ using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
 using FTOptix.System;
 using FTOptix.Report;
+using Microsoft.Extensions.Configuration;
 
 
 
@@ -95,7 +96,7 @@ public class GOptix_MML_Viewer_RuntimeNetLogic : BaseNetLogic
 
 
     public void TaskBuildTrack(){
-        layoutViewer.BuildTrack(_trackFilePath,VehicleModel);
+        layoutViewer.BuildTrack(_trackFilePath,VehicleModel,null);
     }
 
     [ExportMethod]

@@ -761,6 +761,15 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":2,"Id":"bc1492ff25fa46a062a7ebd3c0d4f9c2","Namespace":7}
+  - Name: TreeNodeType
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"2abd05da592d5abb6f7cb1762598217b","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
 - Name: GOptix_Type_VariableBrowserParameter
   Id: g=bc1492ff25fa46a062a7ebd3c0d4f9c2
   Supertype: BaseObjectType

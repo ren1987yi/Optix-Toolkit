@@ -34,7 +34,7 @@ public class GOptix_Dlg_VariableBrowser_RuntimeNetLogic : BaseNetLogic
         _param = Owner.GetAlias("Parameter") as GOptix_Type_VariableBrowserParameter;
         var treeroot = LogicObject.GetObject("TreeNode");
 
-
+        var tvnodeUIType = Owner.GetAlias("TreeNodeType");
         _varSelectedTag = LogicObject.GetVariable("TreeViewerSelectedTag");
         _varSelectedNode = LogicObject.GetVariable("TreeViewerSelectedNode");
 
@@ -42,7 +42,7 @@ public class GOptix_Dlg_VariableBrowser_RuntimeNetLogic : BaseNetLogic
         if (model != null && treeroot != null)
         {
 
-            model.BuildVariableTreeNode(treeroot);
+            model.BuildVariableTreeNode(treeroot,tvnodeUIType.NodeId);
         }
         else
         {

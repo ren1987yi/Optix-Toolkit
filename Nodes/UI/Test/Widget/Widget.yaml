@@ -2514,6 +2514,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 8.0
+    - Name: TreeNodeType
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"2abd05da592d5abb6f7cb1762598217b","Namespace":7}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: Width
     Type: BaseVariableType
     DataType: Size
@@ -4533,3 +4542,97 @@ Children:
       ModellingRule: Optional
       Value: 100.0
 - File: Favorites/Favorites.yaml
+- Name: test_ApexChartViewer
+  Id: g=7cfc0a2538e0e456167dfc2e770ea6a1
+  Supertype: GOptix_PanelTemplate
+  DisplayName: {"LocaleId":"en-US","Text":"ApexChart"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Icon
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/images/echartstat.svg"
+  - Name: GOptix_EchartViewer1
+    Type: GOptix_ApexchartViewer
+    Children:
+    - Name: URL
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+    - Class: Reference
+      Target: ns=3;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=3;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=3;i=358
+      Direction: Forward
+    - Name: RootPath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/StaticHtml/apexchart_viewer.html"
+    - Name: BackgoundColor
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ffffff"
+    - Name: Blob
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ewoJeEF4aXM6IHsKCSAgdHlwZTogJ2NhdGVnb3J5JywKCSAgZGF0YTogWydNb24nLCAnVHVlJywgJ1dlZCcsICdUaHUnLCAnRnJpJywgJ1NhdCcsICdTdW4nXQoJfSwKCXlBeGlzOiB7CgkgIHR5cGU6ICd2YWx1ZScKCX0sCglzZXJpZXM6IFsKCSAgewoJCWRhdGE6IFsxMjAsIDIwMCwgMTUwLCA4MCwgNzAsIDExMCwgMTMwXSwKCQl0eXBlOiAnYmFyJywKCQlzaG93QmFja2dyb3VuZDogdHJ1ZSwKCQljb2xvcjoncmVkJywKCQliYWNrZ3JvdW5kU3R5bGU6IHsKCQkgIGNvbG9yOiAncmdiYSgxODAsIDE4MCwgMTgwLCAwLjIpJwoJCX0KCSAgfQoJXQogIH0="
+    - Name: GOptix_ApexchartViewer_RuntimeNetLogic
+      Type: NetLogic
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../GOptix_EchartViewer1/URL"
+  - Name: RuntimeNetLogic2
+    Type: NetLogic
+    Children:
+    - Name: VV1
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../GOptix_EchartViewer1/Blob@NodeId"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2

@@ -16,12 +16,7 @@ using FTOptix.Store;
 using FTOptix.Core;
 using FTOptix.SQLiteStore;
 #endregion
-using GOptix.Widget;
-using FTOptix.OPCUAServer;
-using FTOptix.Recipe;
-using FTOptix.WebUI;
-using FTOptix.System;
-using FTOptix.Report;
+
 public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic
 {
     GOptix_Type_TreeNode TreeNode;
@@ -31,7 +26,7 @@ public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic
     IUAVariable Selected;
 
 
-    GOptix.Widget.TreeViewNode treeViewNode;
+    GOptixLib.Widget.TreeViewNode treeViewNode;
 
     public override void Start()
     {
@@ -51,7 +46,7 @@ public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic
             return;
         }
 
-        treeViewNode = new GOptix.Widget.TreeViewNode(
+        treeViewNode = new GOptixLib.Widget.TreeViewNode(
             TreeView
             , Owner
             , LogicObject.GetAlias("Container") as Item

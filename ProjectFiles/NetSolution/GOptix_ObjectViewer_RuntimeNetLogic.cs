@@ -33,11 +33,12 @@ public class GOptix_ObjectViewer_RuntimeNetLogic : BaseNetLogic
     {
         // Insert code to be executed when the user-defined logic is started
         model = Owner.GetAlias("Object") ;
-
+        var tvnodeUIType = Owner.GetAlias("TreeNodeType");
+        
         treeNode = LogicObject.GetObject("TreeNode");
         treeView = LogicObject.GetAlias("TreeViewer") as GOptix_TreeView;
         if(model != null){
-            (model as IUAObject).BuildTreeNode(treeNode);
+            (model as IUAObject).BuildTreeNode(treeNode,tvnodeUIType.NodeId);
             var v = treeView.GetVariable("TriggerRefresh");
             v.Value = !(bool)v.Value;
         }
