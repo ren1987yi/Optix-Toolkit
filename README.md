@@ -123,6 +123,12 @@ Optix Version : **V1.2.0.272**
 		- [2.1 随机数发生器](#21-随机数发生器)
 			- [名称](#名称)
 			- [参数](#参数-16)
+	- [3 高级报表](#3-高级报表)
+		- [3.1 流程逻辑](#31-流程逻辑)
+		- [3.2 关键代码](#32-关键代码)
+			- [Python](#python)
+		- [Template To Word](#template-to-word)
+			- [Word To PDF](#word-to-pdf)
 
 
 
@@ -851,3 +857,414 @@ GOptix_RandomVariable_RuntimeLogic
 |Name|DataType|Description|
 |--|--|--|
 |Period|int|随机变换周期|
+
+
+
+
+
+---
+
+## 3 高级报表 
+
+这个目前针对 Optix 中 Report 功能不全的暂时方案
+
+![](doc/report_x1.png)
+
+
+工具链详细介绍:
+1. request_html : https://github.com/psf/requests-html 
+	离线渲染HTML,并获取HTML内容
+
+2. MiniWord : https://github.com/mini-software/MiniWord
+	MiniWord .NET Word模板引擎，藉由Word模板和数据简单、快速生成文件。
+
+3. LibreOffice : LibreOffice 便携版
+
+	命令行帮助
+
+```BASH
+	C:\Users\liqiang>
+LibreOffice 6.0.6.2 0c292870b25a325b5ed35f6b45599d2ea4458e77
+
+Usage: soffice [argument...]
+       argument - switches, switch parameters and document URIs (filenames).
+
+Using without special arguments:
+Opens the start center, if it is used without any arguments.
+   {file}              Tries to open the file (files) in the components
+                       suitable for them.
+   {file} {macro:///Library.Module.MacroName}
+                       Opens the file and runs specified macros from
+                       the file.
+
+Getting help and information:
+   --help | -h | -?    Shows this help and quits.
+   --helpwriter        Opens built-in or online Help on Writer.
+   --helpcalc          Opens built-in or online Help on Calc.
+   --helpdraw          Opens built-in or online Help on Draw.
+   --helpimpress       Opens built-in or online Help on Impress.
+   --helpbase          Opens built-in or online Help on Base.
+   --helpbasic         Opens built-in or online Help on Basic scripting
+                       language.
+   --helpmath          Opens built-in or online Help on Math.
+   --version           Shows the version and quits.
+   --nstemporarydirectory
+                       (MacOS X sandbox only) Returns path of the temporary
+                       directory for the current user and exits. Overrides
+                       all other arguments.
+
+General arguments:
+   --quickstart[=no]   Activates[Deactivates] the Quickstarter service.
+   --nolockcheck       Disables check for remote instances using one
+                       installation.
+   --infilter={filter} Force an input filter type if possible. For example:
+                       --infilter="Calc Office Open XML"
+                       --infilter="Text (encoded):UTF8,LF,,,"
+   --pidfile={file}    Store soffice.bin pid to {file}.
+   --display {display} Sets the DISPLAY environment variable on UNIX-like
+                       platforms to the value {display} (only supported by a
+                       start script).
+
+User/programmatic interface control:
+   --nologo            Disables the splash screen at program start.
+   --minimized         Starts minimized. The splash screen is not displayed.
+   --nodefault         Starts without displaying anything except the splash
+                       screen (do not display initial window).
+   --invisible         Starts in invisible mode. Neither the start-up logo nor
+                       the initial program window will be visible. Application
+                       can be controlled, and documents and dialogs can be
+                       controlled and opened via the API. Using the parameter,
+                       the process can only be ended using the taskmanager
+                       (Windows) or the kill command (UNIX-like systems). It
+                       cannot be used in conjunction with --quickstart.
+   --headless          Starts in "headless mode" which allows using the
+                       application without GUI. This special mode can be used
+                       when the application is controlled by external clients
+                       via the API.
+   --norestore         Disables restart and file recovery after a system crash.
+   --safe-mode         Starts in a safe mode, i.e. starts temporarily with a
+                       fresh user profile and helps to restore a broken
+                       configuration.
+   --accept={UNO-URL}  Specifies an UNO-URL connect-string to create an UNO
+                       acceptor through which other programs can connect to
+                       access the API. UNO-URL is string the such kind
+                   uno:connection-type,params;protocol-name,params;ObjectName.
+   --unaccept={UNO-URL} Closes an acceptor that was created with --accept. Use
+                       --unaccept=all to close all open acceptors.
+   --language={lang}   Uses specified language, if language is not selected
+                       yet for UI. The lang is a tag of the language in IETF
+                       language tag.
+
+Developer arguments:
+   --terminate_after_init
+                       Exit after initialization complete (no documents loaded).
+   --eventtesting      Exit after loading documents.
+
+New document creation arguments:
+The arguments create an empty document of specified kind. Only one of them may
+be used in one command line. If filenames are specified after an argument,
+then it tries to open those files in the specified component.
+   --writer            Creates an empty Writer document.
+   --calc              Creates an empty Calc document.
+   --draw              Creates an empty Draw document.
+   --impress           Creates an empty Impress document.
+   --base              Creates a new database.
+   --global            Creates an empty Writer master (global) document.
+   --math              Creates an empty Math document (formula).
+   --web               Creates an empty HTML document.
+
+File open arguments:
+The arguments define how following filenames are treated. New treatment begins
+after the argument and ends at the next argument. The default treatment is to
+open documents for editing, and create new documents from document templates.
+   -n                  Treats following files as templates for creation of new
+                       documents.
+   -o                  Opens following files for editing, regardless whether
+                       they are templates or not.
+   --pt {Printername}  Prints following files to the printer {Printername},
+                       after which those files are closed. The splash screen
+                       does not appear. If used multiple times, only last
+                       {Printername} is effective for all documents of all
+                       --pt runs. Also, --printer-name argument of
+                       --print-to-file switch interferes with {Printername}.
+   -p                  Prints following files to the default printer, after
+                       which those files are closed. The splash screen does
+                       not appear. If the file name contains spaces, then it
+                       must be enclosed in quotation marks.
+   --view              Opens following files in viewer mode (read-only).
+   --show              Opens and starts the following presentation documents
+                       of each immediately. Files are closed after the showing.
+                       Files other than Impress documents are opened in
+                       default mode , regardless of previous mode.
+   --convert-to OutputFileExtension[:OutputFilterName]
+     [--outdir output_dir] [--convert-images-to]
+                       Batch convert files (implies --headless). If --outdir
+                       isn't specified, then current working directory is used
+                       as output_dir. If --convert-images-to is given, its
+                       parameter is taken as the target MIME format for *all*
+                       images written to the output format. If --convert-to is
+                       used more than once, the last value of OutputFileExtension
+                       [:OutputFilterName] is effective. If --outdir is used more
+                       than once, only its last value is effective. For example:
+                   --convert-to pdf *.odt
+                   --convert-to epub *.doc
+                   --convert-to pdf:writer_pdf_Export --outdir /home/user *.doc
+                   --convert-to "html:XHTML Writer File:UTF8" *.doc
+                   --convert-to "txt:Text (encoded):UTF8" *.doc
+   --print-to-file [--printer-name printer_name] [--outdir output_dir]
+                       Batch print files to file. If --outdir is not specified,
+                       then current working directory is used as output_dir.
+                       If --printer-name or --outdir used multiple times, only
+                       last value of each is effective. Also, {Printername} of
+                       --pt switch interferes with --printer-name.
+   --cat               Dump text content of the following files to console
+                       (implies --headless). Cannot be used with --convert-to.
+   --script-cat        Dump text content of any scripts embedded in the files to console
+                       (implies --headless). Cannot be used with --convert-to.
+   -env:<VAR>[=<VALUE>] Set a bootstrap variable. For example: to set
+                       a non-default user profile path:
+                       -env:UserInstallation=file:///tmp/test
+
+Ignored switches:
+   -psn                Ignored (MacOS X only).
+   -Embedding          Ignored (COM+ related; Windows only).
+   --nofirststartwizard Does nothing, accepted only for backward compatibility.
+   --protector {arg1} {arg2}
+                       Used only in unit tests and should have two arguments.
+```
+
+
+### 3.1 流程逻辑
+
+1. 使用 Python , Request_html 库 对图表进行渲染，等到图表的 **SVG** 的文件，保存在本地
+2. 使用 MiniWord，结合 **Word 模板** ，进行最终报表的渲染
+3. 使用 LibreOffice 的命令行工具，把 Word 文件 输出为 PDF 文件
+
+### 3.2 关键代码
+
+#### Python 
+
+```python
+# 获取 图表 格式为 svg
+import sys,os
+
+from requests_html import HTMLSession,UserAgent
+
+
+'''
+argv
+0: python file
+1: render url
+2: svg output absolut path
+3: fix svg format
+'''
+if __name__ == '__main__':
+
+
+    _count = len(sys.argv)
+    filename = ''
+    url = 'http://127.0.0.1:5501/echart_ssr.html'
+
+    fixSvg = False
+
+    out_file=''
+    if _count > 0:
+        filename = sys.argv[0]
+
+    if _count > 1:
+        url = sys.argv[1]
+        pass
+
+    if _count > 2:
+        out_file = sys.argv[2]
+
+    if _count > 3:
+        fixSvg = True
+
+
+    print('filename"',filename)
+    print('url:',url)
+    print('out_file:',out_file)
+
+
+    session = HTMLSession()
+    user_agent = UserAgent().random
+    header = {"User-Agent": user_agent}
+    r = session.get(url,headers=header)
+
+    r.html.render()  # 首次使用，自动下载chromium
+
+
+    x = r.html.xpath("//svg")
+
+    _svg = ''
+    for _ in x:
+        # print(_.html)
+        if fixSvg:
+            el = _.element
+
+            vbox = el.attrib['viewbox']
+            vboxs = vbox.split(' ')
+
+
+            width = el.attrib['width']
+
+            el.attrib['width'] = vboxs[2]
+            el.attrib['height'] = vboxs[3]
+            el.attrib['xmlns'] = "http://www.w3.org/2000/svg"
+        _svg = _.html
+        break
+
+    print(_svg)
+
+
+
+
+    if out_file != '':
+        with open(out_file, 'w') as f:
+            f.write(_svg)
+        print("save svg")
+    pass
+
+```
+
+
+### Template To Word
+
+```csharp
+
+	//查询数据库 并 构建 word 渲染值
+ 	private object QueryAndBuildValue()
+    {
+       
+        var st = (DateTime)StartTime.Value.Value;
+        var et = (DateTime)EndTime.Value.Value;
+
+
+        var _st = st.ToString("yyyy-MM-ddTHH:mm:ss");
+        var _et = et.ToString("yyyy-MM-ddTHH:mm:ss");
+
+
+        var store = Project.Current.GetObject("DataStores").Get<Store.Store>("LocalDB");
+        var logger = Project.Current.GetObject("Loggers/DataLogger1") as DataLogger;
+        var sql = @$"select LocalTimestamp as DT,V1,V2,V3 from DataLogger1 where LocalTimestamp >= '{_st}' and LocalTimestamp <= '{_et}' order by LocalTimestamp";
+        Log.Info(sql);
+       
+
+        var res = StoreHelpr.Query(store, sql);
+
+
+    
+        var s2 = res;
+
+        sql = @$"select 
+        MAX(V1) AS maxV1
+        ,MIN(V1) AS minV1
+        ,MAX(V2) AS maxV2
+        ,MIN(V2) AS minV2
+        ,MAX(V3) AS maxV3
+        ,MIN(V3) AS minV3
+         from DataLogger1 where LocalTimestamp >= '{_st}' and LocalTimestamp <= '{_et}' order by LocalTimestamp";
+        res = StoreHelpr.Query(store, sql);
+
+        var s1 = new List<Dictionary<string, object>>();
+
+        s1.Add(new Dictionary<string, object>(){
+            { "Name","V1"},
+            { "MaxValue",res.First()["maxV1"]},
+            { "MinValue",res.First()["minV1"]},
+        });
+
+        s1.Add(new Dictionary<string, object>(){
+            { "Name","V2"},
+            { "MaxValue",res.First()["maxV2"]},
+            { "MinValue",res.First()["minV2"]},
+        });
+
+        s1.Add(new Dictionary<string, object>(){
+            { "Name","V3"},
+            { "MaxValue",res.First()["maxV3"]},
+            { "MinValue",res.First()["minV3"]},
+        });
+
+
+
+        
+        var option_path = @"D:\Work\Optix\Optix_Toolkit\ProjectFiles\StaticHtml\chartdata\options\echart_ssr_data.js";
+        EChartTrend.SaveSSROption(store,logger,st,et,new string[]{"V1","V3","V4"},option_path); //保存 echart 的Option
+        GenerateTrend("d:\\aaa.svg",900,540); //服务端渲染SVG
+
+
+        var qr_url = @$"http://127.0.0.1/OPtixWeb/qrcode_viewer.html?value={DateTime.Now}f&useSVG=true";
+        ServerSiderRenderSVG(qr_url,@"d:\aaa1.svg",true); //服务端渲染SVG
+
+
+
+        var value = new Dictionary<string, object>()
+        {
+            ["StartTime"] = st,
+            ["EndTime"] = et,
+            ["S1"] = s1,
+            ["S2"] = s2,
+            ["img"] = new MiniWordPicture() { Path = @"d:\aaa.svg", Width = 900, Height = 540 },
+            ["qrcode"] = new MiniWordPicture() { Path = @"d:\aaa1.svg", Width = 200, Height = 200 }
+        };
+
+
+
+        return value;
+    }
+
+
+    /// <summary>
+    /// 生成word
+    /// </summary>
+    /// <param name="tmpFilepath">模板文件</param>
+    /// <param name="optFilepath">输出路径</param>
+    /// <param name="value">渲染值</param>
+    private void GenerateWord(string tmpFilepath, string optFilepath, object value)
+    {
+        MiniWord.SaveAsByTemplate(optFilepath, tmpFilepath, value);
+    }
+
+
+```
+
+
+#### Word To PDF
+
+```csharp
+
+
+    /// <summary>
+    /// Word Convert to PDF
+    /// </summary>
+    /// <param name="wordfile">word file</param>
+    /// <param name="outFolder">输出目录</param>
+    private int Word2Pdf(string wordfile, string outFolder)
+    {
+        string libreOfficePath = @"D:\Download\Software\LibreOfficePortablePrevious\App\libreoffice\program\soffice.exe";
+
+        // FIXME: file name escaping: I have not idea how to do it in .NET.
+        ProcessStartInfo procStartInfo = new ProcessStartInfo(libreOfficePath, string.Format("--headless --convert-to pdf --nologo \"{0}\" --outdir \"{1}\"", wordfile, outFolder));
+        procStartInfo.RedirectStandardOutput = true;
+        procStartInfo.UseShellExecute = false;
+        procStartInfo.CreateNoWindow = true;
+        // procStartInfo.WorkingDirectory = Environment.CurrentDirectory;
+
+        Process process = new Process() { StartInfo = procStartInfo, };
+        process.Start();
+        process.WaitForExit();
+
+        // Check for failed exit code.
+        if (process.ExitCode != 0)
+        {
+            Log.Error(string.Format("LibreOffice has failed with {0}", process.ExitCode));
+            return process.ExitCode;
+            // throw new LibreOfficeFailedException(process.ExitCode);
+        }else{
+            return 0;
+        }
+    }
+
+```

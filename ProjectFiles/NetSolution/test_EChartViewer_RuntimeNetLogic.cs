@@ -21,9 +21,11 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Buffers.Text;
 using FTOptix.System;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
-public class RuntimeNetLogic1 : BaseNetLogic
+public class test_EChartViewer_RuntimeNetLogic : BaseNetLogic
 {
     IUAVariable varBlob;
 

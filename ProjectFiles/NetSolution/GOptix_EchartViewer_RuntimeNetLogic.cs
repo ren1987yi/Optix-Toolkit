@@ -19,6 +19,8 @@ using FTOptix.Store;
 using FTOptix.Core;
 using System.Reflection.Metadata;
 using FTOptix.System;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class GOptix_EchartViewer_RuntimeNetLogic : BaseNetLogic

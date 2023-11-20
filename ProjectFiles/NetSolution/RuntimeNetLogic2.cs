@@ -18,6 +18,8 @@ using FTOptix.Store;
 using FTOptix.Core;
 #endregion
 using System.Collections.Generic;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 public class RuntimeNetLogic2 : BaseNetLogic
 {
      IUAVariable varBlob;

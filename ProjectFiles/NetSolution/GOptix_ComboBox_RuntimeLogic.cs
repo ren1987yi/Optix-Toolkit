@@ -16,6 +16,8 @@ using FTOptix.CoreBase;
 using FTOptix.CommunicationDriver;
 using FTOptix.Store;
 using FTOptix.Core;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class GOptix_ComboBox_RuntimeLogic : BaseNetLogic

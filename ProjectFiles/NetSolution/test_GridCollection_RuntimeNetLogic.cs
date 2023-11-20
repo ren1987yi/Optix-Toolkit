@@ -19,6 +19,8 @@ using FTOptix.Store;
 using FTOptix.Core;
 using System.Linq;
 using FTOptix.System;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class test_GridCollection_RuntimeNetLogic : BaseNetLogic

@@ -21,3 +21,30 @@ var regu = "^[ ]+$";
 var re = new RegExp(regu);
 return re.test(str);
 }
+
+//HTML标签转义（  < -----> &lt;）
+
+function html2Escape(sHtml) {
+
+	return sHtml.replace(/[<>&"]/g,function(c){
+   
+	  return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+   
+	});
+   
+   }
+
+   //HTML标签反转义（  &lt; ----> < ）
+
+function escape2Html(str) {
+
+	var arrEntities={'lt':'<','gt':'>','nbsp':' ','amp':'&','quot':'"'};
+  
+	return str.replace(/&(lt|gt|nbsp|amp|quot);/ig,function(all,t){
+  
+	  return arrEntities[t];
+  
+	});
+  
+  }
+  

@@ -18,6 +18,8 @@ using FTOptix.Core;
 using FTOptix.OPCUAServer;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class GOptix_Calendar_Day_RuntimeNetLogic : BaseNetLogic

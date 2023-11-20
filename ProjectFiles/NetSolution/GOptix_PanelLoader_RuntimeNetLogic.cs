@@ -21,6 +21,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Linq;
 using Jint.Native;
 using FTOptix.System;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class GOptix_PanelLoader_RuntimeNetLogic : BaseNetLogic

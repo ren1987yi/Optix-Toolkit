@@ -20,6 +20,8 @@ using System.Linq;
 #endregion
 
 using GOptixLib.Widget;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 
 public class GOptix_CalendarMonth_RuntimeNetLogic : BaseNetLogic
 {

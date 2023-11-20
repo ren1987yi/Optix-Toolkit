@@ -24,6 +24,8 @@ using System.Collections.Generic;
 using System.Linq;
 using GOptixLib;
 using FTOptix.System;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 
 public class GOptix_VerticalCollection_RuntimeNetLogic : BaseNetLogic
 {

@@ -25,6 +25,7 @@ using FTOptix.Recipe;
 using FTOptix.WebUI;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
 public class GOptix_QRcodeViewer_RuntimeNetLogic : BaseNetLogic
 {
     string WebRootPath;

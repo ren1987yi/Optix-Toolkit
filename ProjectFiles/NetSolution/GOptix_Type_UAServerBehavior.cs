@@ -22,6 +22,8 @@ using GOptixLib.OpcUA;
 using Newtonsoft.Json;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 [CustomBehavior]
 public class GOptix_Type_UAServerBehavior : BaseNetBehavior
 {

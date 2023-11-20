@@ -20,6 +20,7 @@ using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
 #endregion
 
 public class test_Treeview_RuntimeNetLogic : BaseNetLogic

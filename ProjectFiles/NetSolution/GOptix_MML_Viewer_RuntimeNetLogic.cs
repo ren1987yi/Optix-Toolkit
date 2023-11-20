@@ -26,6 +26,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.System;
 using FTOptix.Report;
 using Microsoft.Extensions.Configuration;
+using FTOptix.DataLogger;
 
 
 

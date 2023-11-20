@@ -16,7 +16,7 @@
 			,'height'
 			,'dark'
 			,'light'
-
+,'useSVG'
 			
 			
 		];
@@ -29,7 +29,7 @@
 		height:128,
 		dark : "#000000",
 		light  : "#ffffff",
-		// useSVG: true
+		useSVG: false
 
 	  };
 
@@ -56,6 +56,8 @@
 
 		option.colorDark = option.dark.toString();		
 		option.colorLight = option.light.toString();		
+
+		option.useSVG = option.useSVG === 'true';
 
 	  var qrcode = new QRCode(document.getElementById("qrcode"),option);
 	

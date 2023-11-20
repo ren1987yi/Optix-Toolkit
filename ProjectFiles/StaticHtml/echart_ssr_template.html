@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>echart ssr template</title>
+	
+</head>
+<body>
+	<style>
+		body {
+			overflow-y: hidden; /* 隐藏垂直滚动条 */
+			overflow-x: hidden; /* 隐藏水平滚动条 */
+			/* background-color: black; */
+			}
+
+		#main,
+		html,
+		body {
+		width: 100%;
+		}
+
+
+
+	</style>
+
+<div id="main" style="background-color: white;"></div>
+
+
+
+	<script src="js/lib/echarts/v5.4.2/echarts.js"></script>
+	<!-- <script src="js/theme/echart/dark01.js"></script> -->
+	<script src="js/lib/base64.js"></script>
+	<script src="js/utils.js"></script>
+
+<script>
+
+	function RenderSVG(chart,domsvg){
+		var svgStr = chart.renderToSVGString();
+		domsvg.innerHTML = svgStr;
+		
+		
+		chart.dispose();
+		chart = null;
+	}
+
+
+
+	const default_width = 1024;
+	const default_height = 768;
+	
+	var url_string = window.location.href;
+
+
+	var width = default_width;
+	var height = default_height;
+
+	var _width = getQueryString(url_string, "w");
+	if (_width != undefined) {
+		var _ = parseInt(_width);
+		if (!isNaN(_)) {
+			width = _;
+		}
+	}
+
+	var _height = getQueryString(url_string, "h");
+	if (_height != undefined) {
+		var _ = parseInt(_height);
+		if (!isNaN(_)) {
+			height = _;
+		}
+	}
+
+
+	var myChart = echarts.init(null, null, {
+		renderer: 'svg', // 必须使用 SVG 模式
+		ssr: true, // 开启 SSR
+		width: width, // 需要指明高和宽
+		height: height
+	});
+
+
+
+	var domSvg = document.getElementById("main");
+	domSvg.innerHTML = "";
+
+
+	var option = {%option%};
+
+	myChart.setOption(option);
+	RenderSVG(myChart,domSvg);
+
+</script>
+
+</body>
+</html>

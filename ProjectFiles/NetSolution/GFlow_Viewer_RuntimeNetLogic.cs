@@ -27,6 +27,7 @@ using FTOptix.Recipe;
 using FTOptix.WebUI;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
 public class GFlow_Viewer_RuntimeNetLogic : BaseNetLogic
 {
     IUANode WorkflowsObject;

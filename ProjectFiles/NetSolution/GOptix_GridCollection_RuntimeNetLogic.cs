@@ -21,6 +21,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 #endregion
 
 using GOptixLib.Widget;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 public class GOptix_GridCollection_RuntimeNetLogic : BaseNetLogic
 {
     IUANode Model;

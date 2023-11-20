@@ -20,6 +20,8 @@ using System.Collections.Generic;
 using System.Linq;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class GOptix_CarouselLoader_RuntimeNetLogic : BaseNetLogic

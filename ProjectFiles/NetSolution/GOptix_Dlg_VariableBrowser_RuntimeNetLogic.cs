@@ -19,6 +19,8 @@ using FTOptix.Core;
 using System.Linq;
 using FTOptix.System;
 using FTOptix.Report;
+using FTOptix.DataLogger;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class GOptix_Dlg_VariableBrowser_RuntimeNetLogic : BaseNetLogic
