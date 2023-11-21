@@ -22,6 +22,7 @@ using System.Linq;
 using GOptixLib.Widget;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 
 public class GOptix_CalendarMonth_RuntimeNetLogic : BaseNetLogic
 {

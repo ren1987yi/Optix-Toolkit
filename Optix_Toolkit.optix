@@ -129,5 +129,13 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  33:
+   Uri: 'urn:FTOptix:Report'
+   Module: FTOptix.Report
+   Version: 1.2
+  34:
+   Uri: 'urn:FTOptix:Report:Net'
+   Module: FTOptix.Report.Net
+   Version: 1.1
  Nodes:
  - File: Nodes/Optix_Toolkit.yaml

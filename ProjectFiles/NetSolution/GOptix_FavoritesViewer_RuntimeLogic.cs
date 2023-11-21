@@ -24,6 +24,7 @@ using GOptixLib;
 using System.Collections.Generic;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 
 public class GOptix_FavoritesViewer_RuntimeLogic : BaseNetLogic
 {

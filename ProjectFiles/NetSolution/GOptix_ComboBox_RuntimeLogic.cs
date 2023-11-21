@@ -18,6 +18,7 @@ using FTOptix.Store;
 using FTOptix.Core;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 #endregion
 
 public class GOptix_ComboBox_RuntimeLogic : BaseNetLogic

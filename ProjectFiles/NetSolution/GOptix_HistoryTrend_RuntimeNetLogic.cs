@@ -22,11 +22,12 @@ using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Collections.Generic;
 using OptixHelper;
+using FTOptix.Report;
 
 
 
 #endregion
-
+using GOptixLib;
 public class GOptix_HistoryTrend_RuntimeNetLogic : BaseNetLogic
 {
     Store store;
@@ -40,13 +41,19 @@ public class GOptix_HistoryTrend_RuntimeNetLogic : BaseNetLogic
 
     List<ChannelMapper> chMapper;
 
+    LongRunningTask _task_export;
 
 
+    Report expReport;
+DialogType dialogType;
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
         store = Owner.GetAlias("Store") as Store;
         logger = Owner.GetAlias("Logger") as DataLogger;
+
+        dialogType = Owner.GetAlias("DlgPdf") as DialogType;
+
         ChannelContainer = LogicObject.GetAlias(nameof(ChannelContainer)) as Item;
 
         varBlob = LogicObject.GetAlias("Blob") as IUAVariable;
@@ -54,15 +61,24 @@ public class GOptix_HistoryTrend_RuntimeNetLogic : BaseNetLogic
 
         QueryStartTime = LogicObject.GetVariable("QueryStartTime") as IUAVariable;
         QueryEndTime = LogicObject.GetVariable("QueryEndTime") as IUAVariable;
-
+        _task_export = new LongRunningTask(Task_Export,LogicObject);
 
         chMapper = new List<ChannelMapper>();
+
+
+        expReport = Project.Current.Get("Reports/ReportTrend") as Report;
+        expReport.UAEvent += (s,e) => {OnPdfGenerated_Handle();};
+
+
         BuildChannelUI();
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
+
+        expReport.UAEvent -= (s,e) => {OnPdfGenerated_Handle();};
+        _task_export.Dispose();
     }
 
 
@@ -160,8 +176,40 @@ public class GOptix_HistoryTrend_RuntimeNetLogic : BaseNetLogic
 
     [ExportMethod]
     public void Export(){
+      _task_export.Start();
+    }
+
+    ResourceUri pdf_out;
+    private void OnPdfGenerated_Handle(){
+      Item a = Owner as Item;
+
+      a.OpenDialog(dialogType);
+      
       
     }
+
+
+    private void Task_Export(){
+      var st = (DateTime)QueryStartTime.Value.Value;
+      var et = (DateTime)QueryEndTime.Value.Value;
+
+     var channels = chMapper.Where(c => c.UI.Checked == true).Select(cc => cc.ChannelName).ToList();
+
+      var echart_option = EChartTrend.BuildOption(store,logger,st,et,channels,false);
+      var uri = ResourceUri.FromProjectRelativePath("PDFs\\tmp\\t1.svg");
+      Log.Info(uri.Uri);
+      var client = new ServerSiderRenderChart(10000000,"http://localhost:18080");
+      var svg = client.GetEChartSvg(900,540,echart_option,out_file:uri.Uri);
+
+
+      var rpt = Project.Current.Get("Reports/ReportTrend") as Report;
+      var pdf_uri = ResourceUri.FromProjectRelativePath("PDFs\\trend.pdf");
+      pdf_out = pdf_uri;
+      rpt.GeneratePdf(pdf_uri,"",out Guid oid);
+    }
+
+
+
 
 
     const string EChart_OPTION_Template = @"{

@@ -30,8 +30,11 @@ using OpenXmlPowerTools;
 using DocumentFormat.OpenXml.Bibliography;
 using DocumentFormat.OpenXml.Wordprocessing;
 using System.Linq;
+using GOptixLib;
+using FTOptix.Report;
 public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
 {
+    ServerSiderRenderChart client;
 
     PdfViewer Viewer;
 
@@ -64,6 +67,7 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
 
         Busy = LogicObject.GetVariable(nameof(Busy));
 
+        client = new ServerSiderRenderChart(10000000,"http://localhost:18080");
 
         _taskGenerate = new LongRunningTask(GenerateHandle, LogicObject);
         Busy.Value = false;
@@ -101,7 +105,7 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
     {
         var tmp = ResourceUri.FromProjectRelativePath(TemplateFilePath.Value.Value as string);
         var folder = ResourceUri.FromProjectRelativePath(OutputFolder.Value.Value as string);
-
+        Viewer.Path = "";
         if (reRender)
         {
             var outfile = Path.Combine(folder.Uri, "oo.docx");
@@ -119,7 +123,7 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
             Busy.Value = false;
 
             var pdffile = Path.Combine(Path.GetDirectoryName(outfile), "oo.pdf");
-            Viewer.Path = "";
+            // Viewer.Path = "";
             Viewer.Path = pdffile;
         }
         else
@@ -133,7 +137,7 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
             Busy.Value = false;
 
             var pdffile = Path.Combine(Path.GetDirectoryName(outfile), Path.GetFileNameWithoutExtension(tmp.Uri) + ".pdf");
-            Viewer.Path = "";
+            
             Viewer.Path = pdffile;
         }
     }
@@ -196,13 +200,25 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
 
 
         
-        var option_path = @"D:\Work\Optix\Optix_Toolkit\ProjectFiles\StaticHtml\chartdata\options\echart_ssr_data.js";
-        EChartTrend.SaveSSROption(store,logger,st,et,new string[]{"V1","V3","V4"},option_path); //保存 echart 的Option
-        GenerateTrend("d:\\aaa.svg",900,540); //服务端渲染SVG
+        // var option_path = @"D:\Work\Optix\Optix_Toolkit\ProjectFiles\StaticHtml\chartdata\options\echart_ssr_data.js";
+        // EChartTrend.SaveSSROption(store,logger,st,et,new string[]{"V1","V3","V4"},option_path); //保存 echart 的Option
+        // GenerateTrend("d:\\aaa.svg",900,540); //服务端渲染SVG
+
+        var echart_option = EChartTrend.BuildOption(store,logger,st,et,new string[]{"V1","V3","V4"},false);
+        var svg = client.GetEChartSvg(900,540,echart_option,out_file:@"d:\aaa.svg");
+        // File.WriteAllText(@"d:\aaa.svg",svg);
+        Log.Info(svg);
+
+        svg = client.GetQRcodeSvg(DateTime.Now.ToString(),200,200,out_file:@"d:\aaa1.svg");
+        // File.WriteAllText(@"d:\aaa1.svg",svg);
+        Log.Info(svg);
 
 
-        var qr_url = @$"http://127.0.0.1/OPtixWeb/qrcode_viewer.html?value={DateTime.Now}f&useSVG=true";
-        ServerSiderRenderSVG(qr_url,@"d:\aaa1.svg",true); //服务端渲染SVG
+        svg = client.GetBarcodeSvg(DateTime.Now.ToString(),out_file:@"d:\aaa2.svg");
+        // File.WriteAllText(@"d:\aaa2.svg",svg);
+        Log.Info(svg);
+        // var qr_url = @$"http://127.0.0.1/OPtixWeb/qrcode_viewer.html?value={DateTime.Now}f&useSVG=true";
+        // ServerSiderRenderSVG(qr_url,@"d:\aaa1.svg",true); //服务端渲染SVG
 
 
 
@@ -213,7 +229,8 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
             ["S1"] = s1,
             ["S2"] = s2,
             ["img"] = new MiniWordPicture() { Path = @"d:\aaa.svg", Width = 900, Height = 540 },
-            ["qrcode"] = new MiniWordPicture() { Path = @"d:\aaa1.svg", Width = 200, Height = 200 }
+            ["qrcode"] = new MiniWordPicture() { Path = @"d:\aaa1.svg", Width = 200, Height = 200 },
+            ["barcode"] = new MiniWordPicture() { Path = @"d:\aaa2.svg", Width = 600, Height = 200 }
         };
 
 
@@ -323,140 +340,5 @@ public class GOptix_ReportX_PanelTemplate_RuntimeNetLogic : BaseNetLogic
 
 
 
-
-    class EChartTrend
-    {
-        const string EChart_OPTION_Template = @"var echart_option = {
-        xAxis: {
-            type: 'category',
-            data: [(%Xs%)]
-        },
-        yAxis: {
-            type: 'value'
-        }, 
-       
-           
-        legend: {
-            show:true
-        },
-       
-        series: [
-            (%Ys%)
-        ]
-        };";
-
-
-
-
-        class ChannelMapper
-        {
-            public FTOptix.UI.CheckBox UI { get; set; }
-            public string ChannelName { get; set; }
-
-        }
-
-        class Serie
-        {
-            static string EChart_SERIES_TEMPLATE = @"
-                {
-                data:[(%Data%)],
-                name:'(%Name%)',
-                type: 'line',
-                smooth: true
-                }";
-            public string Name { get; set; }
-
-            private List<object> _data = new List<object>();
-            public List<object> Data
-            {
-                get { return _data; }
-                set { _data = value; }
-            }
-
-            public override string ToString()
-            {
-                var _op1 = EChart_SERIES_TEMPLATE.Replace("(%Name%)", Name);
-
-
-                return _op1.Replace("(%Data%)", string.Join(",", _data.Select(t => t.ToString())));
-
-
-            }
-        }
-        public static string BuildOption(Store.Store store, DataLogger logger,DateTime start_time,DateTime end_time,IEnumerable<string> chs,bool isBase64=true)
-        {
-            var myStore = store;
-            var tbName = string.IsNullOrWhiteSpace(logger.TableName) ? logger.BrowseName : logger.TableName;
-
-            var st = (DateTime)start_time;
-            var et = (DateTime)end_time;
-
-            var channels = chs.ToList();
-
-            var _chs = string.Join(",", channels);
-
-
-
-
-            var _st = st.ToString("yyyy-MM-ddTHH:mm:ss");
-            var _et = et.ToString("yyyy-MM-ddTHH:mm:ss");
-            var sql = $"SELECT LocalTimestamp as RecordTime,{_chs} FROM {tbName} where LocalTimestamp >= '{_st}' AND LocalTimestamp <= '{_et}' ";
-            // myStore.Query("SELECT LocalTimestamp,V1,V2,V3 FROM DataLogger1 where LocalTimestamp >= '2023-11-17T14:00:00' AND LocalTimestamp <= '2023-11-17T14:30:00' ", out header, out resultSet);
-            Log.Info(sql);
-            var res = StoreHelpr.Query(myStore, sql);
-
-            var xdata = new List<string>();
-
-            var Series = new List<Serie>();
-            foreach (var ch in channels)
-            {
-
-                Series.Add(new Serie() { Name = ch });
-
-            }
-
-            foreach (var row in res)
-            {
-                // xdata.Add("'" + ((DateTime)row["RecordTime"]).ToString("yyyy-MM-dd HH:mm:ss") + "'");
-                xdata.Add("'" + row["RecordTime"] + "'");
-
-
-                for (var i = 0; i < channels.Count; i++)
-                {
-                    var ch = channels[i];
-                    Series[i].Data.Add(row[ch]);
-                    // Series[1].Data.Add(row["V3"]);
-                    // Series[2].Data.Add(row["V4"]);
-                }
-
-            }
-
-            var option_1 = EChart_OPTION_Template.Replace("(%Xs%)", string.Join(",", xdata));
-
-            var _ss = new List<string>();
-            foreach (var s in Series)
-            {
-                _ss.Add(s.ToString());
-            }
-
-
-            var option = option_1.Replace("(%Ys%)", string.Join(",", _ss));
-            Log.Info(option);
-
-            if(isBase64){
-
-                var blob = GOptixLib.Utils.Encode.Base64Encrypt(option);
-                return blob;
-            }else{
-                return option;
-            }
-        }
-
-        public static void SaveSSROption(Store.Store store, DataLogger logger,DateTime start_time,DateTime end_time,IEnumerable<string> chs,string output_file){
-            var option = BuildOption(store,logger,start_time,end_time,chs,false);
-
-            File.WriteAllText(output_file,option);
-        }
-    }
 
 }

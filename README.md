@@ -20,115 +20,125 @@ Optix Version : **V1.2.0.272**
 
 
 - [Optix Toolkit](#optix-toolkit)
-	- [0.前言](#0前言)
-		- [0.1 自建 Nuget库](#01-自建-nuget库)
-			- [添加Nuget库](#添加nuget库)
-		- [0.2 引用的库](#02-引用的库)
-		- [0.3 项目结构](#03-项目结构)
-	- [1.Widgets - 可视化组件](#1widgets---可视化组件)
-		- [1.1 GOptix\_RungSummaryViewer](#11-goptix_rungsummaryviewer)
-			- [Browse Name](#browse-name)
-			- [Script Name](#script-name)
-			- [Super Type](#super-type)
-			- [参数](#参数)
-		- [1.2 GOptix\_TreeView](#12-goptix_treeview)
-			- [Browse Name](#browse-name-1)
-			- [Script Name](#script-name-1)
-			- [Super Type](#super-type-1)
-			- [Data Type](#data-type)
-			- [参数](#参数-1)
-		- [1.3 GOptix\_ModelViewer](#13-goptix_modelviewer)
-			- [Browse Name](#browse-name-2)
-			- [Script Name](#script-name-2)
-			- [Super Type](#super-type-2)
-			- [参数](#参数-2)
-		- [1.4 GOptix\_CalendarMonth](#14-goptix_calendarmonth)
-			- [Browse Name](#browse-name-3)
-			- [Script Name](#script-name-3)
-			- [Super Type](#super-type-3)
-			- [参数](#参数-3)
-		- [1.5 GOptix\_ObjectViewer](#15-goptix_objectviewer)
-			- [Browse Name](#browse-name-4)
-			- [Script Name](#script-name-4)
-			- [Super Type](#super-type-4)
-			- [参数](#参数-4)
-		- [1.6 GOptix\_Dlg\_VariableBrowser](#16-goptix_dlg_variablebrowser)
-			- [Browse Name](#browse-name-5)
-			- [Script Name](#script-name-5)
-			- [Super Type](#super-type-5)
-			- [Data Type](#data-type-1)
-			- [参数](#参数-5)
-		- [1.7 GOptix\_CarouselLoader](#17-goptix_carouselloader)
-			- [Browse Name](#browse-name-6)
-			- [Script Name](#script-name-6)
-			- [Super Type](#super-type-6)
-			- [Data Type](#data-type-2)
-			- [参数](#参数-6)
-		- [1.8 GOptix\_BarcodeViewer](#18-goptix_barcodeviewer)
-			- [Browse Name](#browse-name-7)
-			- [Script Name](#script-name-7)
-			- [Super Type](#super-type-7)
-			- [Data Type](#data-type-3)
-			- [参数](#参数-7)
-		- [1.9 GOptix\_QRcodeViewer](#19-goptix_qrcodeviewer)
-			- [Browse Name](#browse-name-8)
-			- [Script Name](#script-name-8)
-			- [Super Type](#super-type-8)
-			- [Data Type](#data-type-4)
-			- [参数](#参数-8)
-		- [1.10 GOptix\_EchartViewer](#110-goptix_echartviewer)
-			- [Browse Name](#browse-name-9)
-			- [Script Name](#script-name-9)
-			- [Super Type](#super-type-9)
-			- [Data Type](#data-type-5)
-			- [参数](#参数-9)
-		- [1.11 GOptix\_VerticalCollection / GOptix\_HorizontalCollection](#111-goptix_verticalcollection--goptix_horizontalcollection)
-			- [Browse Name](#browse-name-10)
-			- [Script Name](#script-name-10)
-			- [Super Type](#super-type-10)
-			- [Data Type](#data-type-6)
-			- [参数](#参数-10)
-		- [1.12 GOptix\_GridCollection](#112-goptix_gridcollection)
-			- [Browse Name](#browse-name-11)
-			- [Script Name](#script-name-11)
-			- [Super Type](#super-type-11)
-			- [Data Type](#data-type-7)
-			- [参数](#参数-11)
-		- [1.13 GOptix\_MML\_Viewer](#113-goptix_mml_viewer)
-			- [Browse Name](#browse-name-12)
-			- [Script Name](#script-name-12)
-			- [Super Type](#super-type-12)
-			- [Data Type](#data-type-8)
-			- [参数](#参数-12)
-		- [1.14 GOptix\_PanelLoader](#114-goptix_panelloader)
-			- [Browse Name](#browse-name-13)
-			- [Script Name](#script-name-13)
-			- [Super Type](#super-type-13)
-			- [Data Type](#data-type-9)
-			- [参数](#参数-13)
-		- [1.15 GOptix\_FavoriteButton](#115-goptix_favoritebutton)
-			- [Browse Name](#browse-name-14)
-			- [Script Name](#script-name-14)
-			- [Super Type](#super-type-14)
-			- [Data Type](#data-type-10)
-			- [参数](#参数-14)
-			- [用法](#用法)
-		- [1.16 GOptix\_FavoritesViewer](#116-goptix_favoritesviewer)
-			- [Browse Name](#browse-name-15)
-			- [Script Name](#script-name-15)
-			- [Super Type](#super-type-15)
-			- [Data Type](#data-type-11)
-			- [参数](#参数-15)
-	- [2 脚本](#2-脚本)
-		- [2.1 随机数发生器](#21-随机数发生器)
-			- [名称](#名称)
-			- [参数](#参数-16)
-	- [3 高级报表](#3-高级报表)
-		- [3.1 流程逻辑](#31-流程逻辑)
-		- [3.2 关键代码](#32-关键代码)
-			- [Python](#python)
-		- [Template To Word](#template-to-word)
-			- [Word To PDF](#word-to-pdf)
+  - [0.前言](#0前言)
+    - [0.1 自建 Nuget库](#01-自建-nuget库)
+      - [添加Nuget库](#添加nuget库)
+    - [0.2 引用的库](#02-引用的库)
+    - [0.3 项目结构](#03-项目结构)
+  - [1.Widgets - 可视化组件](#1widgets---可视化组件)
+    - [1.1 GOptix\_RungSummaryViewer](#11-goptix_rungsummaryviewer)
+      - [Browse Name](#browse-name)
+      - [Script Name](#script-name)
+      - [Super Type](#super-type)
+      - [参数](#参数)
+    - [1.2 GOptix\_TreeView](#12-goptix_treeview)
+      - [Browse Name](#browse-name-1)
+      - [Script Name](#script-name-1)
+      - [Super Type](#super-type-1)
+      - [Data Type](#data-type)
+      - [参数](#参数-1)
+    - [1.3 GOptix\_ModelViewer](#13-goptix_modelviewer)
+      - [Browse Name](#browse-name-2)
+      - [Script Name](#script-name-2)
+      - [Super Type](#super-type-2)
+      - [参数](#参数-2)
+    - [1.4 GOptix\_CalendarMonth](#14-goptix_calendarmonth)
+      - [Browse Name](#browse-name-3)
+      - [Script Name](#script-name-3)
+      - [Super Type](#super-type-3)
+      - [参数](#参数-3)
+    - [1.5 GOptix\_ObjectViewer](#15-goptix_objectviewer)
+      - [Browse Name](#browse-name-4)
+      - [Script Name](#script-name-4)
+      - [Super Type](#super-type-4)
+      - [参数](#参数-4)
+    - [1.6 GOptix\_Dlg\_VariableBrowser](#16-goptix_dlg_variablebrowser)
+      - [Browse Name](#browse-name-5)
+      - [Script Name](#script-name-5)
+      - [Super Type](#super-type-5)
+      - [Data Type](#data-type-1)
+      - [参数](#参数-5)
+    - [1.7 GOptix\_CarouselLoader](#17-goptix_carouselloader)
+      - [Browse Name](#browse-name-6)
+      - [Script Name](#script-name-6)
+      - [Super Type](#super-type-6)
+      - [Data Type](#data-type-2)
+      - [参数](#参数-6)
+    - [1.8 GOptix\_BarcodeViewer](#18-goptix_barcodeviewer)
+      - [Browse Name](#browse-name-7)
+      - [Script Name](#script-name-7)
+      - [Super Type](#super-type-7)
+      - [Data Type](#data-type-3)
+      - [参数](#参数-7)
+    - [1.9 GOptix\_QRcodeViewer](#19-goptix_qrcodeviewer)
+      - [Browse Name](#browse-name-8)
+      - [Script Name](#script-name-8)
+      - [Super Type](#super-type-8)
+      - [Data Type](#data-type-4)
+      - [参数](#参数-8)
+    - [1.10 GOptix\_EchartViewer](#110-goptix_echartviewer)
+      - [Browse Name](#browse-name-9)
+      - [Script Name](#script-name-9)
+      - [Super Type](#super-type-9)
+      - [Data Type](#data-type-5)
+      - [参数](#参数-9)
+    - [1.11 GOptix\_VerticalCollection / GOptix\_HorizontalCollection](#111-goptix_verticalcollection--goptix_horizontalcollection)
+      - [Browse Name](#browse-name-10)
+      - [Script Name](#script-name-10)
+      - [Super Type](#super-type-10)
+      - [Data Type](#data-type-6)
+      - [参数](#参数-10)
+    - [1.12 GOptix\_GridCollection](#112-goptix_gridcollection)
+      - [Browse Name](#browse-name-11)
+      - [Script Name](#script-name-11)
+      - [Super Type](#super-type-11)
+      - [Data Type](#data-type-7)
+      - [参数](#参数-11)
+    - [1.13 GOptix\_MML\_Viewer](#113-goptix_mml_viewer)
+      - [Browse Name](#browse-name-12)
+      - [Script Name](#script-name-12)
+      - [Super Type](#super-type-12)
+      - [Data Type](#data-type-8)
+      - [参数](#参数-12)
+    - [1.14 GOptix\_PanelLoader](#114-goptix_panelloader)
+      - [Browse Name](#browse-name-13)
+      - [Script Name](#script-name-13)
+      - [Super Type](#super-type-13)
+      - [Data Type](#data-type-9)
+      - [参数](#参数-13)
+    - [1.15 GOptix\_FavoriteButton](#115-goptix_favoritebutton)
+      - [Browse Name](#browse-name-14)
+      - [Script Name](#script-name-14)
+      - [Super Type](#super-type-14)
+      - [Data Type](#data-type-10)
+      - [参数](#参数-14)
+      - [用法](#用法)
+    - [1.16 GOptix\_FavoritesViewer](#116-goptix_favoritesviewer)
+      - [Browse Name](#browse-name-15)
+      - [Script Name](#script-name-15)
+      - [Super Type](#super-type-15)
+      - [Data Type](#data-type-11)
+      - [参数](#参数-15)
+    - [1.17 GOptix\_HistoryTrend](#117-goptix_historytrend)
+      - [Browse Name](#browse-name-16)
+      - [Script Name](#script-name-16)
+      - [Super Type](#super-type-16)
+      - [Data Type](#data-type-12)
+  - [2 脚本](#2-脚本)
+    - [2.1 随机数发生器](#21-随机数发生器)
+      - [名称](#名称)
+      - [参数](#参数-16)
+  - [3 高级报表](#3-高级报表)
+    - [3.1 流程逻辑](#31-流程逻辑)
+    - [3.2 关键代码](#32-关键代码)
+      - [ssr\_chart.exe](#ssr_chartexe)
+      - [Template To Word](#template-to-word)
+      - [Word To PDF](#word-to-pdf)
+  - [4 ReportPlus](#4-reportplus)
+    - [4.1 准备](#41-准备)
+    - [4.2 Report 设计](#42-report-设计)
+    - [4.3 Report生成](#43-report生成)
+    - [4.4 相关脚本](#44-相关脚本)
 
 
 
@@ -161,6 +171,8 @@ Optix Version : **V1.2.0.272**
 |GFlow.OptixWrapper|>=1.0.65|一个基于Optix的工作流引擎|
 |GFlow.Steps|>=1.0.66|一个基于Optix的工作流引擎组件|
 |MagneMotion.DSL|>=0.0.1|MagneMotion 的DSL组件|
+|GOptixLib|>=0.0.1.6|Optix工具库|
+
 
 
 ---
@@ -834,8 +846,34 @@ Panel
 
 
 
+---
+
+### 1.17 GOptix_HistoryTrend
+历史曲线查看器，可通过与 Report组件联动 生成 PDF
 
 
+![](doc/historytrend.png)
+
+
+#### Browse Name
+GOptix_HistoryTrend
+
+
+#### Script Name
+GOptix_HistoryTrend_RuntimeNetLogic
+
+#### Super Type
+Panel
+
+#### Data Type
+无
+
+
+|Name|DataType|Description|
+|--|--|--|
+|Store|Alias|Database 数据库的节点|
+|Logger|Alias|Data Logger 数据日志的节点|
+|DlgPdf|Alias|Dialog UI Type 对话框画面的节点|
 
 
 ---
@@ -864,6 +902,11 @@ GOptix_RandomVariable_RuntimeLogic
 
 ---
 
+
+
+
+
+
 ## 3 高级报表 
 
 这个目前针对 Optix 中 Report 功能不全的暂时方案
@@ -872,8 +915,7 @@ GOptix_RandomVariable_RuntimeLogic
 
 
 工具链详细介绍:
-1. request_html : https://github.com/psf/requests-html 
-	离线渲染HTML,并获取HTML内容
+1. ssr_chart.exe : node.js服务，SSR(Sever Sider Render) Charts 渲染图表为svg文件
 
 2. MiniWord : https://github.com/mini-software/MiniWord
 	MiniWord .NET Word模板引擎，藉由Word模板和数据简单、快速生成文件。
@@ -1036,105 +1078,106 @@ Ignored switches:
 
 ### 3.1 流程逻辑
 
-1. 使用 Python , Request_html 库 对图表进行渲染，等到图表的 **SVG** 的文件，保存在本地
+1. 使用 ssr_chart.exe , 对图表进行渲染，等到图表的 **SVG** 的文件，保存在本地
 2. 使用 MiniWord，结合 **Word 模板** ，进行最终报表的渲染
 3. 使用 LibreOffice 的命令行工具，把 Word 文件 输出为 PDF 文件
 
 ### 3.2 关键代码
 
-#### Python 
+#### ssr_chart.exe
 
-```python
-# 获取 图表 格式为 svg
-import sys,os
+- 采用 HttpRequest , 向 ssr_chart 服务发送数据 进行 图表的绘制 和 本地保存。
+- WebApi (Method : POST):
+  - /barcode : 条形码 
+  
+    param:
+  
+    |name|type|comment|
+    |--|--|--|
+    |value|string|条码值|
+    |ofile|string|保存的本地路径|
 
-from requests_html import HTMLSession,UserAgent
+    body: 条码配置
 
+    ```js
+    {
+        format:'{format}'
+        ,width:{width}
+        ,height:{height}
+        ,displayValue:{displayValue.ToString().ToLower()}
+        ,font:'{font}'
+        ,textAlign:'{textAlign}'
+        ,textPosition:'{textPosition}'
+        ,textMargin:{textMargin}
+        ,fontSize:{fontSize}
+        ,background:'{background}'
+        ,lineColor:'{lineColor}'
+        ,margin:{margin}
 
-'''
-argv
-0: python file
-1: render url
-2: svg output absolut path
-3: fix svg format
-'''
-if __name__ == '__main__':
+	}
+    ```
 
-
-    _count = len(sys.argv)
-    filename = ''
-    url = 'http://127.0.0.1:5501/echart_ssr.html'
-
-    fixSvg = False
-
-    out_file=''
-    if _count > 0:
-        filename = sys.argv[0]
-
-    if _count > 1:
-        url = sys.argv[1]
-        pass
-
-    if _count > 2:
-        out_file = sys.argv[2]
-
-    if _count > 3:
-        fixSvg = True
-
-
-    print('filename"',filename)
-    print('url:',url)
-    print('out_file:',out_file)
-
-
-    session = HTMLSession()
-    user_agent = UserAgent().random
-    header = {"User-Agent": user_agent}
-    r = session.get(url,headers=header)
-
-    r.html.render()  # 首次使用，自动下载chromium
+    | Option | Default value | Type |
+    |--------|---------------|------|
+    | [`width`](https://github.com/lindell/JsBarcode/wiki/Options#width) | `2` | `Number` |
+    | [`height`](https://github.com/lindell/JsBarcode/wiki/Options#height) | `100` | `Number` |
+    | [`displayValue`](https://github.com/lindell/JsBarcode/wiki/Options#display-value) | `true` | `Boolean` |
+    | [`text`](https://github.com/lindell/JsBarcode/wiki/Options#text) | `undefined` | `String` |
+    | [`fontOptions`](https://github.com/lindell/JsBarcode/wiki/Options#font-options) | `""` | `String` |
+    | [`font`](https://github.com/lindell/JsBarcode/wiki/Options#font) | `"monospace"` | `String` |
+    | [`textAlign`](https://github.com/lindell/JsBarcode/wiki/Options#text-align) | `"center"` | `String` |
+    | [`textPosition`](https://github.com/lindell/JsBarcode/wiki/Options#text-position) | `"bottom"` | `String` |
+    | [`textMargin`](https://github.com/lindell/JsBarcode/wiki/Options#text-margin) | `2` | `Number` |
+    | [`fontSize`](https://github.com/lindell/JsBarcode/wiki/Options#font-size) | `20` | `Number` |
+    | [`background`](https://github.com/lindell/JsBarcode/wiki/Options#background)  | `"#ffffff"` | `String (CSS color)` |
+    | [`lineColor`](https://github.com/lindell/JsBarcode/wiki/Options#line-color) | `"#000000"` | `String (CSS color)` |
+    | [`margin`](https://github.com/lindell/JsBarcode/wiki/Options#margins) | `10` | `Number` |
 
 
-    x = r.html.xpath("//svg")
+  - /qrcode : 二维码生成
+  
+    param:
+  
+    |name|type|comment|
+    |--|--|--|
+    |value|string|条码值|
+    |ofile|string|保存的本地路径|
 
-    _svg = ''
-    for _ in x:
-        # print(_.html)
-        if fixSvg:
-            el = _.element
-
-            vbox = el.attrib['viewbox']
-            vboxs = vbox.split(' ')
-
-
-            width = el.attrib['width']
-
-            el.attrib['width'] = vboxs[2]
-            el.attrib['height'] = vboxs[3]
-            el.attrib['xmlns'] = "http://www.w3.org/2000/svg"
-        _svg = _.html
-        break
-
-    print(_svg)
-
-
+    body:
+    ```js
+    {
+    	type:'svg',
+        width:100, //width
+        height:100, //height
+        color:{
+            dark:'#000000ff', //fore color
+            light:'ffffffff' //back color
+        }
+    }
+    ```
 
 
-    if out_file != '':
-        with open(out_file, 'w') as f:
-            f.write(_svg)
-        print("save svg")
-    pass
+  - /echart : echart 图表生成
+  
+    param:
+  
+    |name|type|comment|
+    |--|--|--|
+    |w|int|宽度|
+    |h|int|高度|
+    |ofile|string|保存的本地路径|
 
-```
+    body:
+    根据需求 构建 echart option 对象
 
 
-### Template To Word
+
+
+#### Template To Word
 
 ```csharp
-
-	//查询数据库 并 构建 word 渲染值
- 	private object QueryAndBuildValue()
+    //查询并构建报表的值
+	private object QueryAndBuildValue()
     {
        
         var st = (DateTime)StartTime.Value.Value;
@@ -1190,16 +1233,19 @@ if __name__ == '__main__':
 
 
         
-        var option_path = @"D:\Work\Optix\Optix_Toolkit\ProjectFiles\StaticHtml\chartdata\options\echart_ssr_data.js";
-        EChartTrend.SaveSSROption(store,logger,st,et,new string[]{"V1","V3","V4"},option_path); //保存 echart 的Option
-        GenerateTrend("d:\\aaa.svg",900,540); //服务端渲染SVG
+   
+        var echart_option = EChartTrend.BuildOption(store,logger,st,et,new string[]{"V1","V3","V4"},false);
+        var svg = client.GetEChartSvg(900,540,echart_option,out_file:@"d:\aaa.svg");
+        Log.Info(svg);
+
+        svg = client.GetQRcodeSvg(DateTime.Now.ToString(),200,200,out_file:@"d:\aaa1.svg");
+        Log.Info(svg);
 
 
-        var qr_url = @$"http://127.0.0.1/OPtixWeb/qrcode_viewer.html?value={DateTime.Now}f&useSVG=true";
-        ServerSiderRenderSVG(qr_url,@"d:\aaa1.svg",true); //服务端渲染SVG
-
-
-
+        svg = client.GetBarcodeSvg(DateTime.Now.ToString(),out_file:@"d:\aaa2.svg");
+     
+        Log.Info(svg);
+   
         var value = new Dictionary<string, object>()
         {
             ["StartTime"] = st,
@@ -1207,14 +1253,14 @@ if __name__ == '__main__':
             ["S1"] = s1,
             ["S2"] = s2,
             ["img"] = new MiniWordPicture() { Path = @"d:\aaa.svg", Width = 900, Height = 540 },
-            ["qrcode"] = new MiniWordPicture() { Path = @"d:\aaa1.svg", Width = 200, Height = 200 }
+            ["qrcode"] = new MiniWordPicture() { Path = @"d:\aaa1.svg", Width = 200, Height = 200 },
+            ["barcode"] = new MiniWordPicture() { Path = @"d:\aaa2.svg", Width = 600, Height = 200 }
         };
 
 
 
         return value;
     }
-
 
     /// <summary>
     /// 生成word
@@ -1243,7 +1289,7 @@ if __name__ == '__main__':
     /// <param name="outFolder">输出目录</param>
     private int Word2Pdf(string wordfile, string outFolder)
     {
-        string libreOfficePath = @"D:\Download\Software\LibreOfficePortablePrevious\App\libreoffice\program\soffice.exe";
+        string libreOfficePath = @"D:\Download\Software\LibreOfficePortablePrevious\App\libreoffice\program\soffice.exe"; //libreoffice exe path
 
         // FIXME: file name escaping: I have not idea how to do it in .NET.
         ProcessStartInfo procStartInfo = new ProcessStartInfo(libreOfficePath, string.Format("--headless --convert-to pdf --nologo \"{0}\" --outdir \"{1}\"", wordfile, outFolder));
@@ -1268,3 +1314,50 @@ if __name__ == '__main__':
     }
 
 ```
+
+
+
+## 4 ReportPlus
+增强报表 (带图表)
+![](doc/report_x3.png)
+
+### 4.1 准备
+
+1. ssr_chart.exe ：这个一个Node.js 服务，提供服务端渲染 图表 (echart,barcode,qrcode)
+   
+2. FTOptix + Report组件 : 生成合成报表并输出为PDF
+
+3. .net Package
+   
+```xml
+  <ItemGroup>
+    <PackageReference Include="OptixHelper" Version="0.0.1.3"/>
+    <PackageReference Include="GOptixLib" Version="0.0.1.6"/>
+  </ItemGroup>
+```
+
+
+### 4.2 Report 设计
+
+ **需要图表时，使用 Image 控件**
+
+![](doc/report_x2.png)
+
+图表路径配置
+![](doc/report_x4.png)
+
+
+其他 Grid 的设计按常规配置流程进行设计
+
+### 4.3 Report生成
+
+流程：
+1. 根据查询条件生成图表
+2. 根据查询条件生成 Model ...
+3. 调用 Report 的 Generate Method
+4. 生成完成通过PDF 查看
+
+### 4.4 相关脚本
+
+**图表生成**
+

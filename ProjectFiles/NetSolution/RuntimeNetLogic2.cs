@@ -20,6 +20,7 @@ using FTOptix.Core;
 using System.Collections.Generic;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 public class RuntimeNetLogic2 : BaseNetLogic
 {
      IUAVariable varBlob;

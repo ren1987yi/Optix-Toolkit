@@ -16,6 +16,7 @@ using FTOptix.Store;
 using FTOptix.Core;
 using FTOptix.SQLiteStore;
 using FTOptix.DataLogger;
+using FTOptix.Report;
 #endregion
 
 public class GOptix_TreeViewNode_RuntimeNetLogic : BaseNetLogic

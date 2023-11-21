@@ -22,6 +22,7 @@ using GOptixLib.Model;
 using GOptixLib;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 
 public class GOptix_FavoriteButton_RuntimeNetLogic : BaseNetLogic
 {

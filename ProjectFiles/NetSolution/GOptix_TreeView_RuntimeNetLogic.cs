@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using GOptixLib.Widget;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 
 
 

@@ -21,6 +21,7 @@ using MiniExcelLibs;
 using System.Collections.Generic;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.Report;
 public class test_ExcelViewer_RuntimeNetLogic : BaseNetLogic
 {
     public override void Start()
